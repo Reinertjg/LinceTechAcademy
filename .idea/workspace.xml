@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizacao da atividade ap2.dart">
-      <change beforePath="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap2.dart" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Config Git">
+      <change afterPath="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap3.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,30 +37,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Dart Command Line App.ap1.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.ap2.dart.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jgcos_kqplwrp/IdeaProjects/LinceTechAcademy/Formação Dart/ap1_variaveis&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Dart Command Line App.ap1.dart.executor": "Run",
+    "Dart Command Line App.ap2.dart.executor": "Run",
+    "Dart Command Line App.ap3.dart.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jgcos_kqplwrp/IdeaProjects/LinceTechAcademy/Formação Dart/ap1_variaveis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap1_variaveis" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.ap2.dart">
+  <component name="RunManager" selected="Dart Command Line App.ap3.dart">
     <configuration name="ap1.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap1.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap1_variaveis" />
@@ -70,8 +72,14 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap1_variaveis" />
       <method v="2" />
     </configuration>
+    <configuration name="ap3.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap3.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap1_variaveis" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.ap3.dart" />
         <item itemvalue="Dart Command Line App.ap2.dart" />
         <item itemvalue="Dart Command Line App.ap1.dart" />
       </list>
@@ -94,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743659085085</updated>
       <workItem from="1743659086404" duration="4732000" />
-      <workItem from="1743700501359" duration="325000" />
+      <workItem from="1743700501359" duration="2557000" />
     </task>
     <task id="LOCAL-00001" summary="Organizacao LinceTech Academy">
       <option name="closed" value="true" />
@@ -128,7 +136,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743662856745</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Usando const na atividade ap2.dart">
+      <option name="closed" value="true" />
+      <created>1743700855895</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743700855895</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Config Git">
+      <option name="closed" value="true" />
+      <created>1743700893548</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743700893549</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +174,8 @@
     <MESSAGE value="Realizacao da atividade Interação IA - Variáveis" />
     <MESSAGE value="Realizacao da atividade ap1.dart" />
     <MESSAGE value="Realizacao da atividade ap2.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Realizacao da atividade ap2.dart" />
+    <MESSAGE value="Usando const na atividade ap2.dart" />
+    <MESSAGE value="Config Git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config Git" />
   </component>
 </project>
