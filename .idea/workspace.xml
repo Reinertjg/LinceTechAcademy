@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizado atividade ap2_colecoes\ap2.dart">
-      <change afterPath="$PROJECT_DIR$/Formação Dart/ap2_colecoes/ap3.dart" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Reestruturação atividade ap2_colecoes\ap3.dart">
+      <change afterPath="$PROJECT_DIR$/Formação Dart/ap2_colecoes/ap4.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,9 @@
     "Dart Command Line App.ap1.dart.executor": "Run",
     "Dart Command Line App.ap2.dart (1).executor": "Run",
     "Dart Command Line App.ap2.dart.executor": "Run",
+    "Dart Command Line App.ap3.dart (1).executor": "Run",
     "Dart Command Line App.ap3.dart.executor": "Run",
+    "Dart Command Line App.ap4.dart (1).executor": "Run",
     "Dart Command Line App.ap4.dart.executor": "Run",
     "Dart Command Line App.ap5.dart.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -70,7 +73,7 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap1_variaveis" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.ap3.dart (1)">
+  <component name="RunManager" selected="Dart Command Line App.ap4.dart (1)">
     <configuration name="ap1.dart (1)" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap2_colecoes/ap1.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap2_colecoes" />
@@ -86,9 +89,9 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap2_colecoes" />
       <method v="2" />
     </configuration>
-    <configuration name="ap4.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap4.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap1_variaveis" />
+    <configuration name="ap4.dart (1)" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap2_colecoes/ap4.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap2_colecoes" />
       <method v="2" />
     </configuration>
     <configuration name="ap5.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
@@ -98,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Dart Command Line App.ap3.dart (1)" />
+        <item itemvalue="Dart Command Line App.ap4.dart (1)" />
         <item itemvalue="Dart Command Line App.ap2.dart (1)" />
         <item itemvalue="Dart Command Line App.ap1.dart (1)" />
+        <item itemvalue="Dart Command Line App.ap3.dart (1)" />
         <item itemvalue="Dart Command Line App.ap5.dart" />
-        <item itemvalue="Dart Command Line App.ap4.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743659085085</updated>
       <workItem from="1743659086404" duration="4732000" />
-      <workItem from="1743700501359" duration="11170000" />
+      <workItem from="1743700501359" duration="12617000" />
     </task>
     <task id="LOCAL-00001" summary="Organizacao LinceTech Academy">
       <option name="closed" value="true" />
@@ -229,7 +232,39 @@
       <option name="project" value="LOCAL" />
       <updated>1743743802467</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Realizado atividade ap2_colecoes\ap3.dart">
+      <option name="closed" value="true" />
+      <created>1743744235309</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1743744235309</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Reestruturação atividade ap2_colecoes\ap1.dart">
+      <option name="closed" value="true" />
+      <created>1743744643955</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1743744643955</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Reestruturação atividade ap2_colecoes\ap2.dart">
+      <option name="closed" value="true" />
+      <created>1743744799125</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1743744799125</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Reestruturação atividade ap2_colecoes\ap3.dart">
+      <option name="closed" value="true" />
+      <created>1743744924021</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1743744924021</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +295,10 @@
     <MESSAGE value="Realizado atividade ia_coleoces.md" />
     <MESSAGE value="Realizado atividade ap2_colecoes\ap1.dart" />
     <MESSAGE value="Realizado atividade ap2_colecoes\ap2.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Realizado atividade ap2_colecoes\ap2.dart" />
+    <MESSAGE value="Realizado atividade ap2_colecoes\ap3.dart" />
+    <MESSAGE value="Reestruturação atividade ap2_colecoes\ap1.dart" />
+    <MESSAGE value="Reestruturação atividade ap2_colecoes\ap2.dart" />
+    <MESSAGE value="Reestruturação atividade ap2_colecoes\ap3.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reestruturação atividade ap2_colecoes\ap3.dart" />
   </component>
 </project>
