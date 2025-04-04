@@ -2,15 +2,13 @@ import 'dart:math';
 
 void main() {
   List<int> numeros = []; // Criando uma lista vazia
-  const int totalNumeros = 50;
   final random = Random();
 
-  for (int i = 0; i < totalNumeros; i++) {
-    var numeroAleatorio = random.nextInt(15);
-    numeros.add(numeroAleatorio);
+  for (int i = 0; i < 50; i++) {
+    numeros.add(random.nextInt(15));
   }
 
-  print("Lista original: ${numeros}");
-  numeros.removeWhere((numero) => numero % 2 == 0);
-  print("Lista atualizada: $numeros");
+  print("Lista original: ${numeros.join(' ; ')}");
+  numeros.removeWhere((numero) => numero.isEven);
+  print("Lista atualizada: ${numeros.join(' ; ')}");
 }
