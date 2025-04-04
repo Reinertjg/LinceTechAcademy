@@ -10,5 +10,5 @@ void main() {
 
   print("Lista original: ${numeros.join(' ; ')}");
   Set<int> numerosUnicos = Set.from(numeros);
-  print("Lista atualizada: ${numeros.join(' ; ')}");
+  print("Lista atualizada: ${numerosUnicos.join(' ; ')}");
 }
