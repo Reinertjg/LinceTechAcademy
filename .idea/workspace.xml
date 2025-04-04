@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizado atividade ap4.dart">
-      <change afterPath="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap5.dart" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Configura Git">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743659085085</updated>
       <workItem from="1743659086404" duration="4732000" />
-      <workItem from="1743700501359" duration="7432000" />
+      <workItem from="1743700501359" duration="9094000" />
     </task>
     <task id="LOCAL-00001" summary="Organizacao LinceTech Academy">
       <option name="closed" value="true" />
@@ -182,7 +181,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743707108449</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Realizado atividade ap5.dart">
+      <option name="closed" value="true" />
+      <created>1743709823464</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743709823464</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Configura Git">
+      <option name="closed" value="true" />
+      <created>1743709839815</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743709839815</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +223,8 @@
     <MESSAGE value="Config Git" />
     <MESSAGE value="Realizado atividade ap3.dart" />
     <MESSAGE value="Realizado atividade ap4.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Realizado atividade ap4.dart" />
+    <MESSAGE value="Realizado atividade ap5.dart" />
+    <MESSAGE value="Configura Git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configura Git" />
   </component>
 </project>
