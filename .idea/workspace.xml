@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Configura Git">
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizado atividade ia_coleoces.md">
+      <change afterPath="$PROJECT_DIR$/Formação Dart/ap2_colecoes/ap1.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,13 +32,16 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2vCpoTsrOMZmkGtFhcThky1cPlB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Dart Command Line App.ap1.dart (1).executor": "Run",
     "Dart Command Line App.ap1.dart.executor": "Run",
     "Dart Command Line App.ap2.dart.executor": "Run",
     "Dart Command Line App.ap3.dart.executor": "Run",
@@ -62,10 +66,10 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap1_variaveis" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.ap5.dart">
-    <configuration name="ap1.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap1.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap1_variaveis" />
+  <component name="RunManager" selected="Dart Command Line App.ap1.dart (1)">
+    <configuration name="ap1.dart (1)" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap2_colecoes/ap1.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap2_colecoes" />
       <method v="2" />
     </configuration>
     <configuration name="ap2.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
@@ -90,11 +94,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.ap1.dart (1)" />
         <item itemvalue="Dart Command Line App.ap5.dart" />
         <item itemvalue="Dart Command Line App.ap4.dart" />
         <item itemvalue="Dart Command Line App.ap3.dart" />
         <item itemvalue="Dart Command Line App.ap2.dart" />
-        <item itemvalue="Dart Command Line App.ap1.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743659085085</updated>
       <workItem from="1743659086404" duration="4732000" />
-      <workItem from="1743700501359" duration="9094000" />
+      <workItem from="1743700501359" duration="10076000" />
     </task>
     <task id="LOCAL-00001" summary="Organizacao LinceTech Academy">
       <option name="closed" value="true" />
@@ -197,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743709839815</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Realizado atividade ia_coleoces.md">
+      <option name="closed" value="true" />
+      <created>1743741993691</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743741993691</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +237,7 @@
     <MESSAGE value="Realizado atividade ap4.dart" />
     <MESSAGE value="Realizado atividade ap5.dart" />
     <MESSAGE value="Configura Git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configura Git" />
+    <MESSAGE value="Realizado atividade ia_coleoces.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realizado atividade ia_coleoces.md" />
   </component>
 </project>
