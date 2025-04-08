@@ -17,7 +17,4 @@ void main() {
   print(converte(listaString));
 }
 
-List converte(List listaString) {
-  List<int> listaNumeros = [];
-  return listaString.map((elemento) => int.tryParse(elemento) ?? 0).toList();
-}
+List converte(List listaString) => listaString.map((elemento) => int.tryParse(elemento) ?? 0).toList();
