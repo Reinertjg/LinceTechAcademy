@@ -1,4 +1,3 @@
-import 'dart:math';
 
 void main() {
   List<int> listaAnos = [2016, 1988, 2000,  2100, 2300, 1993];
