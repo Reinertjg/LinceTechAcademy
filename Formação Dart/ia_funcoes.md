@@ -1,13 +1,12 @@
-# IA como Apoio – Estudo sobre Funções em Dart
+# Usando IA como apoio – Funções
 **Lince Tech Academy**
 
 ---
 
-## Interações com a IA
 
 ### 1. Quais cuidados devo ter ao criar funções em Dart?
 
-**Resposta da IA:**
+**Resposta:**
 - Nome claro e descritivo para a função.
 - Evitar funções muito longas (seguir o princípio da responsabilidade única).
 - Manter número reduzido de parâmetros (boas práticas indicam até 3).
@@ -21,7 +20,7 @@ Essa resposta me fez entender melhor como manter o código mais limpo e organiza
 
 ### 2. Posso chamar minha função dentro dela mesma?
 
-**Resposta da IA:**  
+**Resposta:**  
 Sim, isso se chama recursão. Ela é útil em estruturas como árvores ou problemas matemáticos como fatorial ou Fibonacci. No entanto, é importante garantir uma condição de parada, para evitar loop infinito e erro de stack overflow.
 
 **Observação:**  
@@ -31,7 +30,7 @@ Eu já tinha visto isso antes, mas agora ficou mais claro o quanto é importante
 
 ### 3. Existe limite de parâmetros em uma função?
 
-**Resposta da IA:**  
+**Resposta:**  
 Tecnicamente, não há um limite rígido. No entanto, boas práticas recomendam que uma função tenha poucos parâmetros. Muitos parâmetros podem indicar que a função está fazendo coisas demais.
 
 **Observação:**  
@@ -41,7 +40,7 @@ Faz total sentido manter o número de parâmetros baixo. Eu vou tentar sempre de
 
 ### 4. É recomendado usar `dynamic` nos parâmetros de uma função?
 
-**Resposta da IA:**  
+**Resposta:**  
 Não é recomendado usar `dynamic` a menos que seja realmente necessário. Isso reduz a verificação de tipo em tempo de compilação e pode causar erros em tempo de execução.
 
 **Observação:**  
@@ -51,7 +50,7 @@ Essa foi uma boa dica. Eu gosto de usar tipos definidos porque me dá mais contr
 
 ### 5. Quando usar operadores de valores opcionais e requeridos em uma função Dart?
 
-**Resposta da IA:**
+**Resposta:**
 - Parâmetros nomeados opcionais: usados com `{}` e geralmente com valor padrão.
 - Parâmetros nomeados obrigatórios: usados com `required`.  
   Esses ajudam a tornar a função mais legível e clara no uso dos argumentos.
@@ -65,7 +64,7 @@ void saudacao({required String nome, int idade = 18}) {
 
 ### 6. O que são parâmetros nomeados em uma função?
 
-**Resposta da IA:**  
+**Resposta:**  
 São parâmetros passados por nome na chamada da função, facilitando a leitura e clareza. São definidos com {} na declaração da função.
     
 **Observação:**  
@@ -75,7 +74,7 @@ Achei bem útil isso. Quando a função tem muitos parâmetros, os nomeados ajud
 
 ### 7. Quais métodos existem para variáveis do tipo Function em Dart?
 
-**Resposta da IA:**  
+**Resposta:**  
 Function é um tipo que representa qualquer função. Pode ser invocada com () como se fosse uma função normal.
 
 ```dart
@@ -89,7 +88,7 @@ Gostei bastante desse exemplo. Achei legal ver como dá pra armazenar uma funç�
 
 ### 8. Diferença entre olaMundo e olaMundo()?
 
-**Resposta da IA:**  
+**Resposta:**  
 olaMundo refere-se à função como objeto (sem executá-la).
 
 olaMundo() executa a função.
