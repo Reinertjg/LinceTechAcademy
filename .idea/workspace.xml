@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Corrigido atividade ap3_operadores\ap5.dart">
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizada Atividade ia_condicionais_e_lacos.md">
+      <change afterPath="$PROJECT_DIR$/Formação Dart/ap5_logica/ap1.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap1.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap2.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap3.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Formação Dart/ap1_variaveis/ap3.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Dart/ia_colecoes.md" beforeDir="false" afterPath="$PROJECT_DIR$/Formação Dart/ia_colecoes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Dart/ia_funcoes.md" beforeDir="false" afterPath="$PROJECT_DIR$/Formação Dart/ia_funcoes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Dart/ia_operadores.md" beforeDir="false" afterPath="$PROJECT_DIR$/Formação Dart/ia_operadores.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Dart/ia_variaveis.md" beforeDir="false" afterPath="$PROJECT_DIR$/Formação Dart/ia_variaveis.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +77,10 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap1_variaveis" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.ap4.dart">
-    <configuration name="ap2.dart (1)" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap4_operadores/ap2.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap4_operadores" />
+  <component name="RunManager" selected="Dart Command Line App.ap1.dart">
+    <configuration name="ap1.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap5_logica/ap1.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap5_logica" />
       <method v="2" />
     </configuration>
     <configuration name="ap3.dart (1)" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
@@ -111,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Dart Command Line App.ap4.dart" />
+        <item itemvalue="Dart Command Line App.ap1.dart" />
         <item itemvalue="Dart Command Line App.ap5.dart" />
+        <item itemvalue="Dart Command Line App.ap4.dart" />
         <item itemvalue="Dart Command Line App.ap4.dart (1)" />
         <item itemvalue="Dart Command Line App.ap3.dart (1)" />
-        <item itemvalue="Dart Command Line App.ap2.dart (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +131,8 @@
       <updated>1743659085085</updated>
       <workItem from="1743659086404" duration="4732000" />
       <workItem from="1743700501359" duration="43684000" />
-      <workItem from="1744303789773" duration="1877000" />
+      <workItem from="1744303789773" duration="4143000" />
+      <workItem from="1744319448387" duration="2967000" />
     </task>
     <task id="LOCAL-00001" summary="Organizacao LinceTech Academy">
       <option name="closed" value="true" />
@@ -419,7 +414,63 @@
       <option name="project" value="LOCAL" />
       <updated>1744154613448</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Corrigido atividade ia_variaveis.md">
+      <option name="closed" value="true" />
+      <created>1744306108610</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1744306108610</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Corrigido atividade ia_operadores.md">
+      <option name="closed" value="true" />
+      <created>1744306134398</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1744306134398</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Corrigido atividade ia_funcoes.md">
+      <option name="closed" value="true" />
+      <created>1744306153253</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1744306153253</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Corrigido atividade ia_colecoes.md">
+      <option name="closed" value="true" />
+      <created>1744306171495</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1744306171495</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Realizada documentação ap1_variaveis">
+      <option name="closed" value="true" />
+      <created>1744306230704</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1744306230704</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Configura Git">
+      <option name="closed" value="true" />
+      <created>1744306245173</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1744306245173</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Realizada Atividade ia_condicionais_e_lacos.md">
+      <option name="closed" value="true" />
+      <created>1744320964280</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1744320964282</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,13 +500,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizado atividade ap4.dart" />
-    <MESSAGE value="Realizado atividade ap5.dart" />
-    <MESSAGE value="Configura Git" />
-    <MESSAGE value="Realizado atividade ia_coleoces.md" />
-    <MESSAGE value="Realizado atividade ap2_colecoes\ap1.dart" />
-    <MESSAGE value="Realizado atividade ap2_colecoes\ap2.dart" />
-    <MESSAGE value="Realizado atividade ap2_colecoes\ap3.dart" />
     <MESSAGE value="Reestruturação atividade ap2_colecoes\ap1.dart" />
     <MESSAGE value="Reestruturação atividade ap2_colecoes\ap2.dart" />
     <MESSAGE value="Reestruturação atividade ap2_colecoes\ap4.dart" />
@@ -474,6 +518,13 @@
     <MESSAGE value="Corrigido atividade ap3_operadores\ap3.dart" />
     <MESSAGE value="Corrigido atividade ap3_operadores\ap4.dart" />
     <MESSAGE value="Corrigido atividade ap3_operadores\ap5.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrigido atividade ap3_operadores\ap5.dart" />
+    <MESSAGE value="Corrigido atividade ia_variaveis.md" />
+    <MESSAGE value="Corrigido atividade ia_operadores.md" />
+    <MESSAGE value="Corrigido atividade ia_funcoes.md" />
+    <MESSAGE value="Corrigido atividade ia_colecoes.md" />
+    <MESSAGE value="Realizada documentação ap1_variaveis" />
+    <MESSAGE value="Configura Git" />
+    <MESSAGE value="Realizada Atividade ia_condicionais_e_lacos.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realizada Atividade ia_condicionais_e_lacos.md" />
   </component>
 </project>
