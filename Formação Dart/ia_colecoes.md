@@ -1,13 +1,9 @@
-# 📘 IA como apoio – Coleções em Dart
-**Lince Tech Academy**  
-**Arquivo:** `ia_colecoes.md`  
-**Objetivo:** Utilizar a IA como ferramenta de apoio para aprofundar o entendimento sobre listas, conjuntos (sets) e mapas (maps) em Dart.
+# Usando IA como apoio - Coleções
+**Lince Tech Academy**
+
 ---
 
-## 🔹 1. Boas práticas no uso de listas em Dart
-
-**Pergunta feita à IA:**
-> Quais as boas práticas no uso de listas em Dart?
+##  1. Quais as boas práticas no uso de listas em Dart?
 
 **Resposta:**
 - Declarar o tipo da lista para evitar erros de runtime.
@@ -20,10 +16,7 @@ Me chamou a atenção o uso de listas imutáveis. Nunca tinha usado `List.unmodi
 
 ---
 
-## 🔹 2. Otimizando performance com listas
-
-**Pergunta feita à IA:**
-> Que práticas posso adotar para trazer uma melhor performance ao usar listas em Dart?
+##  2. Que práticas posso adotar para trazer uma melhor performance ao usar listas em Dart?
 
 **Resposta:**
 - Preferir `for` tradicional a `.forEach()` em listas grandes.
@@ -35,10 +28,7 @@ Não sabia que `.forEach()` era menos eficiente. Em projetos futuros vou prioriz
 
 ---
 
-## 🔹 3. O que evitar ao usar listas
-
-**Pergunta feita à IA:**
-> O que não é recomendado fazer quando se usa listas em Dart?
+## 3. O que não é recomendado fazer quando se usa listas em Dart?
 
 **Resposta:**
 - Não alterar a lista enquanto está sendo percorrida.
@@ -50,10 +40,7 @@ Já enfrentei bugs por alterar lista dentro de `forEach()`. Agora vejo que o ide
 
 ---
 
-## 🔹 4. Diferenças entre listas e mapas
-
-**Pergunta feita à IA:**
-> Como entender quando usar listas e quando usar mapas?
+##  4. Como entender quando usar listas e quando usar mapas?
 
 **Resposta:**
 - Use listas quando a ordem importa e os itens não têm identificadores únicos.
@@ -65,10 +52,7 @@ Ficou bem claro. Posso pensar em listas como “coleções ordenadas” e mapas 
 
 ---
 
-## 🔹 5. Práticas recomendadas com mapas
-
-**Pergunta feita à IA:**
-> Em Dart, quais práticas são interessantes no uso de mapas?
+##  5. Em Dart, quais práticas são interessantes no uso de mapas?
 
 **Resposta:**
 - Definir tipos de chave e valor.
@@ -80,10 +64,8 @@ O método `putIfAbsent` é uma joia escondida. Evita muita lógica desnecessári
 
 ---
 
-## 🔹 6. Métodos úteis em listas e sets
+##  6. Quais métodos podem me auxiliar no uso de listas e sets em Dart?
 
-**Pergunta feita à IA:**
-> Quais métodos podem me auxiliar no uso de listas e sets em Dart?
 
 **Resposta:**
 - **Listas**: `add`, `remove`, `map`, `where`, `fold`, `contains`
@@ -94,10 +76,7 @@ Achei muito poderoso o `.intersection()` e `.difference()` nos sets. Já imagino
 
 ---
 
-## 🔹 7. Cuidados ao trabalhar com sets
-
-**Pergunta feita à IA:**
-> Quais cuidados devo levar ao usar sets?
+##  7. Quais cuidados devo levar ao usar sets?
 
 **Resposta:**
 - Sets não aceitam valores duplicados.
@@ -109,7 +88,7 @@ Eu pensava que sets sempre mantinham a ordem de inserção, mas agora sei que is
 
 ---
 
-## 🔹 8. Documentação do `elementAtOrNull`
+## 8. Documentação do `elementAtOrNull`
 
 **Pergunta feita à IA:**
 > Traga a documentação do método `elementAtOrNull`.
