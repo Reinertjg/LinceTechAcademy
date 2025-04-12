@@ -28,7 +28,7 @@ class ArquivoTexto implements Arquivo {
   // Atributo final (imutável) com o nome do arquivo
   final String nome;
 
-  // Implementação do método abrir
+  // Implementação do metodo abrir
   @override
   void abrir() {
     try {
