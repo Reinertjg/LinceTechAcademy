@@ -20,7 +20,7 @@ void main() {
 }
 
 // Define uma interface abstrata chamada Forma
-// Toda classe que implementar Forma precisa ter um método calcularArea()
+// Toda classe que implementar Forma precisa ter um metodo calcularArea()
 abstract class Forma {
   double calcularArea();
 }
