@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizada Atividade ap6_erros\ap3.dart">
-      <change afterPath="$PROJECT_DIR$/Formação Dart/ap6_erros/ap4.dart" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizada Atividade ap6_erros\ap4.dart">
+      <change afterPath="$PROJECT_DIR$/Formação Dart/ia_excecoes.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,31 +135,9 @@
       <workItem from="1744303789773" duration="4143000" />
       <workItem from="1744319448387" duration="8918000" />
       <workItem from="1744432278177" duration="3207000" />
-      <workItem from="1744478649579" duration="4216000" />
-    </task>
-    <task id="LOCAL-00004" summary="Realizacao da atividade ap2.dart">
-      <option name="closed" value="true" />
-      <created>1743662856745</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1743662856745</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Usando const na atividade ap2.dart">
-      <option name="closed" value="true" />
-      <created>1743700855895</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1743700855895</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Config Git">
-      <option name="closed" value="true" />
-      <created>1743700893548</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1743700893549</updated>
+      <workItem from="1744478649579" duration="4334000" />
+      <workItem from="1744573734070" duration="124000" />
+      <workItem from="1744748995540" duration="1125000" />
     </task>
     <task id="LOCAL-00007" summary="Realizado atividade ap3.dart">
       <option name="closed" value="true" />
@@ -529,7 +507,31 @@
       <option name="project" value="LOCAL" />
       <updated>1744481527532</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Realizada Atividade ap6_erros\ap4.dart">
+      <option name="closed" value="true" />
+      <created>1744482934783</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1744482934783</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Realizada Atividade ap6_erros\ap3.dart">
+      <option name="closed" value="true" />
+      <created>1744482979817</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1744482979817</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Realizada Atividade ap6_erros\ap4.dart">
+      <option name="closed" value="true" />
+      <created>1744482992926</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1744482992926</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +561,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizado atividade ap3_funcoes\ap2.dart" />
     <MESSAGE value="Realizado atividade ap3_funcoes\ap3.dart" />
     <MESSAGE value="Realizado atividade ap3_funcoes\ap4.dart" />
     <MESSAGE value="Realizado atividade ia_operadores.md" />
@@ -584,6 +585,7 @@
     <MESSAGE value="Realizada Atividade ap6_erros\ap1.dart" />
     <MESSAGE value="Realizada Atividade ap6_erros\ap2.dart" />
     <MESSAGE value="Realizada Atividade ap6_erros\ap3.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Realizada Atividade ap6_erros\ap3.dart" />
+    <MESSAGE value="Realizada Atividade ap6_erros\ap4.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realizada Atividade ap6_erros\ap4.dart" />
   </component>
 </project>
