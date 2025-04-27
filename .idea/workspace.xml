@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart.">
-      <change afterPath="$PROJECT_DIR$/Formação Dart/ap8_oop2/ap1.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Formação Dart/ap8_oop2/ap2.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Formação Dart/ap8_oop2/ap3.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Formação Dart/ap8_oop2/ap4.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formação Dart/ap9_concorrencia/ap1.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formação Dart/ap9_concorrencia/ap2.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formação Dart/ap9_concorrencia/ap3.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formação Dart/ap9_concorrencia/ap4.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formação Dart/ia_concorrencia.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,33 +46,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Dart Command Line App.ap1.dart (1).executor": "Run",
-    "Dart Command Line App.ap1.dart.executor": "Run",
-    "Dart Command Line App.ap2.dart (1).executor": "Run",
-    "Dart Command Line App.ap2.dart.executor": "Run",
-    "Dart Command Line App.ap3.dart (1).executor": "Run",
-    "Dart Command Line App.ap3.dart.executor": "Run",
-    "Dart Command Line App.ap4.dart (1).executor": "Run",
-    "Dart Command Line App.ap4.dart.executor": "Run",
-    "Dart Command Line App.ap5.dart (1).executor": "Run",
-    "Dart Command Line App.ap5.dart.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jgcos_kqplwrp/IdeaProjects/LinceTechAcademy/Formação Dart/ap7_oop1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Dart Command Line App.ap1.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap1.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap2.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap2.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap3.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap3.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap4.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap4.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap5.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap5.dart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jgcos_kqplwrp/IdeaProjects/LinceTechAcademy/Formação Dart/ap7_oop1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap7_oop1" />
@@ -80,26 +81,29 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap4_operadores" />
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
+    </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.ap4.dart">
-    <configuration name="ap1.dart (1)" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap8_oop2/ap1.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap8_oop2" />
+  <component name="RunManager" selected="Dart Command Line App.ap4.dart (1)">
+    <configuration name="ap1.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap9_concorrencia/ap1.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap9_concorrencia" />
       <method v="2" />
     </configuration>
-    <configuration name="ap2.dart (1)" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap8_oop2/ap2.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap8_oop2" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ap3.dart (1)" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap8_oop2/ap3.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap8_oop2" />
+    <configuration name="ap2.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap9_concorrencia/ap2.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap9_concorrencia" />
       <method v="2" />
     </configuration>
     <configuration name="ap3.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap7_oop1/ap3.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap7_oop1" />
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap9_concorrencia/ap3.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap9_concorrencia" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ap4.dart (1)" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/ap9_concorrencia/ap4.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/ap9_concorrencia" />
       <method v="2" />
     </configuration>
     <configuration name="ap4.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
@@ -109,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Dart Command Line App.ap4.dart" />
-        <item itemvalue="Dart Command Line App.ap3.dart (1)" />
-        <item itemvalue="Dart Command Line App.ap2.dart (1)" />
-        <item itemvalue="Dart Command Line App.ap1.dart (1)" />
+        <item itemvalue="Dart Command Line App.ap4.dart (1)" />
         <item itemvalue="Dart Command Line App.ap3.dart" />
+        <item itemvalue="Dart Command Line App.ap2.dart" />
+        <item itemvalue="Dart Command Line App.ap1.dart" />
+        <item itemvalue="Dart Command Line App.ap4.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -141,15 +145,8 @@
       <workItem from="1744478649579" duration="4334000" />
       <workItem from="1744573734070" duration="124000" />
       <workItem from="1744748995540" duration="1607000" />
-      <workItem from="1745369010430" duration="8136000" />
-    </task>
-    <task id="LOCAL-00010" summary="Configura Git">
-      <option name="closed" value="true" />
-      <created>1743709839815</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1743709839815</updated>
+      <workItem from="1745369010430" duration="14733000" />
+      <workItem from="1745729339442" duration="816000" />
     </task>
     <task id="LOCAL-00011" summary="Realizado atividade ia_coleoces.md">
       <option name="closed" value="true" />
@@ -535,7 +532,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745373847839</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart.">
+      <option name="closed" value="true" />
+      <created>1745549362792</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1745549362792</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
