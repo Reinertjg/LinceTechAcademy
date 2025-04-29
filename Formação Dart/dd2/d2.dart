@@ -7,13 +7,17 @@ void main() {
     FornecedorDeSaladas(),
     FornecedorDePetiscos(),
   ];
-  
+
   final pessoa = Pessoa();
   final random = Random();
   final fornecedorAleatorio = fornecedores[random.nextInt(fornecedores.length)];
 
   // Consumindo produtos fornecidos
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 6;   i++) {
+    if (!pessoa.precisaComer()) {
+      print("Nao precisa comer!!");
+      continue;
+    }
     pessoa.refeicao(fornecedorAleatorio);
   }
 
@@ -82,7 +86,7 @@ class FornecedorDeBolos implements Fornecedor {
   /// Retorna um produto que pode ser consumido por um consumidor
   Produto fornecer() {
     return _bolosDisponiveis[_random.nextInt(_bolosDisponiveis.length)];
-  
+
   }
 }
 
@@ -127,24 +131,47 @@ enum StatusCal {
 
 
 class Pessoa {
+  static final random = Random();
   // Acumulador de calorias
-  int _caloriasConsumidas = 0;
-  
- 
+  int _caloriasIniciais = random.nextInt(3000); // exemplo de calorias iniciais
+  int quantidadeRefeicoes = 0;
+
+
+  StatusCal status(){
+    if(_caloriasIniciais <= 500) {
+      return StatusCal.deficitExtremo;
+    } else if (_caloriasIniciais <= 1800) {
+      return StatusCal.deficit;
+    } else if (_caloriasIniciais <= 2500) {
+      return StatusCal.satisfeito;
+    } else if (_caloriasIniciais > 2500) {
+      return StatusCal.excesso;
+    }
+    return StatusCal.deficit;
+  }
+
+  bool precisaComer() {
+    StatusCal statusAtual = status();
+    return statusAtual == StatusCal.deficitExtremo || statusAtual == StatusCal.deficit;  }
 
   /// Imprime as informacoes desse consumidor
   void informacoes() {
-    print('Calorias consumidas: $_caloriasConsumidas');
+    StatusCal statusAtual = status();
+
+    print('Calorias consumidas: $_caloriasIniciais');
+    print("Status Calorico: ${statusAtual.name} ");
+    print("Refeicoes realizadas: $quantidadeRefeicoes");
   }
 
   /// Consome um produto e aumenta o número de calorias
   void refeicao(Fornecedor fornecedor) {
-    final produto = fornecedor.fornecer();
-    print('Consumindo ${produto.nome} (${produto.calorias} calorias)');
 
-    _caloriasConsumidas += produto.calorias;
+    final produto = fornecedor.fornecer();
+      print('Consumindo ${produto.nome} (${produto.calorias} calorias)');
+      quantidadeRefeicoes++;
+    }
   }
-}
+
 
 
 /*
