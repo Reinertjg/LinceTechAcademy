@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizada as atividades do Desafio cronometrado #1 (d1.dart, d2.dart, d3.dart, d4.dart, d5.dart, d6.dart e d7.dart).">
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizada as atividades do Desafio cronometrado #2 (d1.dart, d2.dart).">
+      <change afterPath="$PROJECT_DIR$/Formação Dart/dd2/d3.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Dart/dd2/d2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Formação Dart/dd2/d2.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,15 +93,15 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.d2.dart">
+  <component name="RunManager" selected="Dart Command Line App.d3.dart">
     <configuration name="d2.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d2.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
       <method v="2" />
     </configuration>
-    <configuration name="d4.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd1/d4.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd1" />
+    <configuration name="d3.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d3.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
       <method v="2" />
     </configuration>
     <configuration name="d5.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.d3.dart" />
         <item itemvalue="Dart Command Line App.d2.dart" />
         <item itemvalue="Dart Command Line App.d7.dart" />
         <item itemvalue="Dart Command Line App.d6.dart" />
         <item itemvalue="Dart Command Line App.d5.dart" />
-        <item itemvalue="Dart Command Line App.d4.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -155,15 +155,7 @@
       <workItem from="1744748995540" duration="1607000" />
       <workItem from="1745369010430" duration="14733000" />
       <workItem from="1745729339442" duration="10074000" />
-      <workItem from="1745878879132" duration="4550000" />
-    </task>
-    <task id="LOCAL-00013" summary="Realizado atividade ap2_colecoes\ap2.dart">
-      <option name="closed" value="true" />
-      <created>1743743802467</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1743743802467</updated>
+      <workItem from="1745878879132" duration="7122000" />
     </task>
     <task id="LOCAL-00014" summary="Realizado atividade ap2_colecoes\ap3.dart">
       <option name="closed" value="true" />
@@ -549,7 +541,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745792803961</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Realizada as atividades do Desafio cronometrado #2 (d1.dart, d2.dart).">
+      <option name="closed" value="true" />
+      <created>1745899000833</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1745899000835</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +579,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corrigido atividade ap3_operadores\ap1.dart e ap1.dart" />
     <MESSAGE value="Corrigido atividade ap3_operadores\ap3.dart" />
     <MESSAGE value="Corrigido atividade ap3_operadores\ap4.dart" />
     <MESSAGE value="Corrigido atividade ap3_operadores\ap5.dart" />
@@ -604,6 +603,7 @@
     <MESSAGE value="Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart." />
     <MESSAGE value="Realizada as atividades de concorrência (ap1.dart, ap2.dart, ap3.dart e ap4.dart)." />
     <MESSAGE value="Realizada as atividades do Desafio cronometrado #1 (d1.dart, d2.dart, d3.dart, d4.dart, d5.dart, d6.dart e d7.dart)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Realizada as atividades do Desafio cronometrado #1 (d1.dart, d2.dart, d3.dart, d4.dart, d5.dart, d6.dart e d7.dart)." />
+    <MESSAGE value="Realizada as atividades do Desafio cronometrado #2 (d1.dart, d2.dart)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Realizada as atividades do Desafio cronometrado #2 (d1.dart, d2.dart)." />
   </component>
 </project>
