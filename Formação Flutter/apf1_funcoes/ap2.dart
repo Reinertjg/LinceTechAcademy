@@ -24,10 +24,14 @@ class Jogo extends StatefulWidget {
 class _JogoState extends State<Jogo> {
   Color corDeFundo = Colors.white;
   int tentativa = 0;
-  int botaoCorreto = random.nextInt(3);
+  int botaoCorreto = -1;
   String mensagem = "Escolha um Botão!!";
   
-  static get random => null;
+  @override
+  void initState()  {
+    super.initState();
+    escolherBotao();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +73,10 @@ class _JogoState extends State<Jogo> {
     );
   }
 
-
+  void escolherBotao() {
+    var random = Random();
+    botaoCorreto = random.nextInt(3);
+  }
 
   void validarTentativa(int botaoEscolhido) {
     setState(() {
@@ -77,10 +84,16 @@ class _JogoState extends State<Jogo> {
       if (botaoEscolhido == botaoCorreto) {
         corDeFundo = Colors.green;
         mensagem = 'Você acertou!';
+        tentativa = 0;
+        escolherBotao();
       } else if (tentativa >= 2) {
         corDeFundo = Colors.red;
         mensagem = 'Você perdeu!';
         tentativa = 0;
+        escolherBotao();
+      } else {
+        corDeFundo = Colors.white;
+        mensagem = 'Escolha um botão!!';
       }
     });
   }
