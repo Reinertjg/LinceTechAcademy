@@ -46,7 +46,7 @@ class Tela1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tela 1'),
+        title: const Text('Arcoiris'),
         backgroundColor: Colors.blueAccent,
       ),
       body: ListView(
