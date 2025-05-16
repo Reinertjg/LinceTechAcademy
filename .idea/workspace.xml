@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizando a atividade do Desafio cronometrado #2 (d3.dart).">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Realizado a reestruturação do repository">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Flutter/apf1_funcoes/ap1.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Flutter/apf1_funcoes/ap2.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Flutter/apf1_funcoes/ap3.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Flutter/apf2_funcoes/ap1.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Flutter/apf2_funcoes/ap2.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Flutter/apf2_funcoes/ap3.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Flutter/apf3_funcoes/ap1.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formação Flutter/apf4_funcoes/ap1.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,12 +67,14 @@
     &quot;Dart Command Line App.d7.dart.executor&quot;: &quot;Run&quot;,
     &quot;Flutter.main.dart (1).executor&quot;: &quot;Debug&quot;,
     &quot;Flutter.main.dart (2).executor&quot;: &quot;Debug&quot;,
+    &quot;Flutter.main.dart (3).executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/LinceTechAcademy&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -107,12 +99,7 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.main.dart (2)">
-    <configuration name="d3.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d3.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Flutter.main.dart (3)">
     <configuration name="d4.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d4.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
@@ -126,17 +113,21 @@
       <option name="filePath" value="$PROJECT_DIR$/Formação Flutter/apf1_funcoes/ap1/lib/main.dart" />
       <method v="2" />
     </configuration>
+    <configuration name="main.dart (3)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf1_funcoes/ap1/lib/main.dart" />
+      <method v="2" />
+    </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Formação Flutter/main.dart" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter.main.dart (3)" />
         <item itemvalue="Flutter.main.dart (2)" />
         <item itemvalue="Flutter.main.dart (1)" />
         <item itemvalue="Flutter.main.dart" />
         <item itemvalue="Dart Command Line App.d4.dart" />
-        <item itemvalue="Dart Command Line App.d3.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -171,14 +162,7 @@
       <workItem from="1746498192401" duration="3724000" />
       <workItem from="1747360256182" duration="1968000" />
       <workItem from="1747392667943" duration="182000" />
-    </task>
-    <task id="LOCAL-00016" summary="Reestruturação atividade ap2_colecoes\ap2.dart">
-      <option name="closed" value="true" />
-      <created>1743744799125</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1743744799125</updated>
+      <workItem from="1747392871377" duration="406000" />
     </task>
     <task id="LOCAL-00017" summary="Reestruturação atividade ap2_colecoes\ap3.dart">
       <option name="closed" value="true" />
@@ -564,7 +548,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747360318761</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Realizado a reestruturação do repository">
+      <option name="closed" value="true" />
+      <created>1747393125438</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1747393125439</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +586,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corrigido atividade ap3_operadores\ap4.dart" />
     <MESSAGE value="Corrigido atividade ap3_operadores\ap5.dart" />
     <MESSAGE value="Corrigido atividade ia_variaveis.md" />
     <MESSAGE value="Corrigido atividade ia_operadores.md" />
@@ -619,7 +610,8 @@
     <MESSAGE value="Realizada as atividades do Desafio cronometrado #1 (d1.dart, d2.dart, d3.dart, d4.dart, d5.dart, d6.dart e d7.dart)." />
     <MESSAGE value="Realizada as atividades do Desafio cronometrado #2 (d1.dart, d2.dart)." />
     <MESSAGE value="Realizando a atividade do Desafio cronometrado #2 (d3.dart)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Realizando a atividade do Desafio cronometrado #2 (d3.dart)." />
+    <MESSAGE value="Realizado a reestruturação do repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realizado a reestruturação do repository" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
