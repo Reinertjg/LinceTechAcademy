@@ -16,18 +16,18 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: _tela());
+    return MaterialApp(home: _Tela());
   }
 }
 
-class _tela extends StatefulWidget {
-  const _tela({super.key});
+class _Tela extends StatefulWidget {
+  const _Tela();
 
   @override
-  State<_tela> createState() => _telaState();
+  State<_Tela> createState() => _TelaState();
 }
 
-class _telaState extends State<_tela> {
+class _TelaState extends State<_Tela> {
   Container forma = Container();
   Color corDaForma = Colors.red;
   String messageButton = 'Alterar para quadrado';
@@ -75,7 +75,7 @@ class _telaState extends State<_tela> {
                 ],
               ),
               SizedBox(height: 20),
-              mostrarForma? _Quadrado(cor: corDaForma,):_Circulo(cor: corDaForma,)
+              mostrarForma? _Formas(corDaForma, BoxShape.rectangle):_Formas( corDaForma, BoxShape.circle)
             ],
           ),
         ),
@@ -84,46 +84,23 @@ class _telaState extends State<_tela> {
   }
 }
 
+class _Formas extends StatefulWidget {
+  const _Formas(this.cor, this.forma);
 
-class _Quadrado extends StatefulWidget {
   final Color cor;
-
-  const _Quadrado({super.key, required this.cor});
+  final BoxShape forma;
 
   @override
-  State<_Quadrado> createState() => __QuadradoState();
+  State<_Formas> createState() => __FormasState();
 }
 
-class __QuadradoState extends State<_Quadrado> {
+class __FormasState extends State<_Formas> {
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 75,
       width: 75,
-      color: widget.cor,
-    );
-  }
-}
-
-
-
-class _Circulo extends StatefulWidget {
-  final Color cor;
-
-
-  const _Circulo({super.key, required this.cor});
-
-  @override
-  State<_Circulo> createState() => __CirculoState();
-}
-
-class __CirculoState extends State<_Circulo> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 75,
-      width: 75,
-      decoration: new BoxDecoration(color: widget.cor, shape: BoxShape.circle),
+      decoration: BoxDecoration(color: widget.cor, shape: widget.forma),
     );
   }
 }

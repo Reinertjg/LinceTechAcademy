@@ -27,149 +27,83 @@ class _MyAppState extends State<MyApp> {
             children: [
 
               // Primeiro Stack
-              Stack(
-                children: [
-                  Container(height: 100, width: 100, color: Colors.grey),
-                  Positioned(
-                    top: 7,
-                    left: 7,
-                    child: Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.red),
-                  ),
-                  Positioned(
-                    top: 17,
-                    left: 17,
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      color: Colors.green,
-                    ),
-                  ),
-                  Positioned(
-                    top: 27,
-                    left: 27,
-                    child: Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.blue),
-                  ),
-                ],
+              CriarMonte(
+                  Colors.grey,
+                  [
+                    Colors.red,
+                    Colors.green,
+                    Colors.blue
+                  ]
               ),
-
-              const SizedBox(height: 16),
 
               // Segundo Stack
-              Stack(
-                children: [
-                  Container(height: 100, width: 100, color: Colors.black),
-                  Positioned(
-                    top: 7,
-                    left: 7,
-                    child: Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.cyan),
-                  ),
-                  Positioned(
-                    top: 17,
-                    left: 17,
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      color: Colors.purple,
-                    ),
-                  ),
-                  Positioned(
-                    top: 27,
-                    left: 27,
-                    child: Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.yellow),
-                  ),
-                ],
+              CriarMonte(
+                  Colors.black,
+                  [
+                    Colors.blue,
+                    Colors.purple,
+                    Colors.yellow
+                  ]
               ),
-
-              const SizedBox(height: 16),
 
               // Terceiro Stack
-              Stack(
-                children: [
-                  Container(height: 100, width: 100, color: null),
-                  Positioned(
-                    top: 7,
-                    left: 7,
-                    child: Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.red),
-                  ),
-                  Positioned(
-                    top: 17,
-                    left: 17,
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      color: Colors.yellow,
-                    ),
-                  ),
-                  Positioned(
-                    top: 27,
-                    left: 27,
-                    child: Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.blue),
-                  ),
-                ],
+              CriarMonte(
+                  null,
+                  [
+                    Colors.red,
+                    Colors.yellow,
+                    Colors.blue
+                  ]
               ),
 
-              const SizedBox(height: 16),
-
               // Quarto Stack
-              Stack(
-                children: [
-                  Container(height: 100, width: 100, color: Colors.white),
-                  Positioned(
-                    top: 7,
-                    left: 7,
-                    child: Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.purple),
-                  ),
-                  Positioned(
-                    top: 17,
-                    left: 17,
-                    child: Container(
-                      height: 50,
-                      width: 50,
-                      color: Colors.red,
-                    ),
-                  ),
-                  Positioned(
-                    top: 27,
-                    left: 27,
-                    child: Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.yellow),
-                  ),
-                  Positioned(
-                    top: 37,
-                    left: 37,
-                    child: Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.lightGreen),
-                  ),
-                ],
+              CriarMonte(
+                  Colors.white,
+                  [
+                    Colors.purple,
+                    Colors.red,
+                    Colors.yellow,
+                    Colors.green
+                  ]
               ),
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class CriarMonte extends StatelessWidget {
+  const CriarMonte(
+      this.backgroudColor,
+      this.listaCores,
+      {super.key}
+      );
+
+  final Color? backgroudColor;
+  final List<Color> listaCores;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.all(8),
+      color: backgroudColor,
+      width: 100,
+      height: 100,
+      child: Stack(
+        children: [
+          for(var i = 0; i < listaCores.length; i++)
+            Positioned(
+                top: i * 8 + 8,
+                left: i * 8 + 8,
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  color: listaCores[i],
+                ))
+
+        ],
       ),
     );
   }
