@@ -2,7 +2,32 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf1_funcoes/ap1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf1_funcoes/ap1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf1_funcoes/ap1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf1_funcoes/ap2/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf1_funcoes/ap2/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf1_funcoes/ap2/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf1_funcoes/ap3/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf1_funcoes/ap3/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf1_funcoes/ap3/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf2_funcoes/ap1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf2_funcoes/ap1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf2_funcoes/ap1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf2_funcoes/ap2/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf2_funcoes/ap2/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf2_funcoes/ap2/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf2_funcoes/ap3/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf2_funcoes/ap3/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf2_funcoes/ap3/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf3_funcoes/ap1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf3_funcoes/ap1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf3_funcoes/ap1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf4_funcoes/ap1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf4_funcoes/ap1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Formação Flutter/apf4_funcoes/ap1/build" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
