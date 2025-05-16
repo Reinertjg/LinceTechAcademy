@@ -55,6 +55,7 @@ class FornecedorDeBebidas implements Fornecedor {
   }
 }
 
+// Criar novos fornecedores: sanduíches, bolos, saladas, petiscos, ultra-calóricos
 class FornecedorDeSanduiches implements Fornecedor {
   final _random = Random();
   final _sanduichesDisponiveis = <Produto>[
