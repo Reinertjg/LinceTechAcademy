@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Adicionado projeto Dart - Desafio cronometrado #2 (d4.dart)">
-      <change afterPath="$PROJECT_DIR$/Formação Dart/dd2/d5.dart" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Adicionado projeto Dart - Desafio cronometrado #2 (d5.dart)">
+      <change afterPath="$PROJECT_DIR$/Formação Dart/dd2/d6.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +102,7 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.d5.dart">
+  <component name="RunManager" selected="Dart Command Line App.d6.dart">
     <configuration name="d4.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d4.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
@@ -113,8 +113,9 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
       <method v="2" />
     </configuration>
-    <configuration name="main.dart (3)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf1_funcoes/ap1/lib/main.dart" />
+    <configuration name="d6.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d6.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
       <method v="2" />
     </configuration>
     <configuration name="main.dart (4)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
@@ -127,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.d6.dart" />
         <item itemvalue="Dart Command Line App.d5.dart" />
         <item itemvalue="Dart Command Line App.d4.dart" />
         <item itemvalue="Flutter.main.dart (5)" />
         <item itemvalue="Flutter.main.dart (4)" />
-        <item itemvalue="Flutter.main.dart (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -168,15 +169,7 @@
       <workItem from="1747392667943" duration="182000" />
       <workItem from="1747392871377" duration="1142000" />
       <workItem from="1747428878009" duration="8490000" />
-      <workItem from="1747497337866" duration="3063000" />
-    </task>
-    <task id="LOCAL-00020" summary="Reestruturação atividade ap2_colecoes\ap3.dart">
-      <option name="closed" value="true" />
-      <created>1743745573217</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1743745573217</updated>
+      <workItem from="1747497337866" duration="6849000" />
     </task>
     <task id="LOCAL-00021" summary="Realizada atividade ia_funcoes.md">
       <option name="closed" value="true" />
@@ -562,7 +555,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747490376345</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Adicionado projeto Dart - Desafio cronometrado #2 (d5.dart)">
+      <option name="closed" value="true" />
+      <created>1747500438752</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1747500438754</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corrigido atividade ia_operadores.md" />
     <MESSAGE value="Corrigido atividade ia_funcoes.md" />
     <MESSAGE value="Corrigido atividade ia_colecoes.md" />
     <MESSAGE value="Realizada documentação ap1_variaveis" />
@@ -617,7 +617,8 @@
     <MESSAGE value="Realizado a reestruturação do repository" />
     <MESSAGE value="Adicionado projeto Flutter - AP2 Funcoes" />
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d4.dart)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado projeto Dart - Desafio cronometrado #2 (d4.dart)" />
+    <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d5.dart)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionado projeto Dart - Desafio cronometrado #2 (d5.dart)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
