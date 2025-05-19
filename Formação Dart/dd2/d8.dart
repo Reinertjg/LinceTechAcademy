@@ -66,14 +66,12 @@ class Album {
   final List<Figura> repetidas = [];
 
   void colar(List<Figura> figurinhasNovas) {
-    for (var item in figurinhasNovas) {
       for (var item in figurinhasNovas) {
         if (!albumFigura.contains(item)) {
           albumFigura.add(item);
         } else {
           repetidas.add(item);
         }
-      }
     }
   }
 
