@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Adicionado projeto Dart - Desafio cronometrado #2 (d6.dart)">
-      <change afterPath="$PROJECT_DIR$/Formação Dart/dd2/d7.dart" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Adicionado projeto Dart - Desafio cronometrado #2 (d7.dart)">
+      <change afterPath="$PROJECT_DIR$/Formação Dart/dd2/d8.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,49 +47,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Dart Command Line App.ap1.dart (1).executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.ap1.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.ap2.dart (1).executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.ap2.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.ap3.dart (1).executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.ap3.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.ap4.dart (1).executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.ap4.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.ap5.dart (1).executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.ap5.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.d1.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.d2.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.d3.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.d4.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.d5.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.d6.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Dart Command Line App.d7.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Flutter.main.dart (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Flutter.main.dart (2).executor&quot;: &quot;Debug&quot;,
-    &quot;Flutter.main.dart (3).executor&quot;: &quot;Debug&quot;,
-    &quot;Flutter.main.dart (4).executor&quot;: &quot;Debug&quot;,
-    &quot;Flutter.main.dart (5).executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/LinceTechAcademy&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;emulator&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Dart Command Line App.ap1.dart (1).executor": "Run",
+    "Dart Command Line App.ap1.dart.executor": "Run",
+    "Dart Command Line App.ap2.dart (1).executor": "Run",
+    "Dart Command Line App.ap2.dart.executor": "Run",
+    "Dart Command Line App.ap3.dart (1).executor": "Run",
+    "Dart Command Line App.ap3.dart.executor": "Run",
+    "Dart Command Line App.ap4.dart (1).executor": "Run",
+    "Dart Command Line App.ap4.dart.executor": "Run",
+    "Dart Command Line App.ap5.dart (1).executor": "Run",
+    "Dart Command Line App.ap5.dart.executor": "Run",
+    "Dart Command Line App.d1.dart.executor": "Run",
+    "Dart Command Line App.d2.dart.executor": "Run",
+    "Dart Command Line App.d3.dart.executor": "Run",
+    "Dart Command Line App.d4.dart.executor": "Run",
+    "Dart Command Line App.d5.dart.executor": "Run",
+    "Dart Command Line App.d6.dart.executor": "Run",
+    "Dart Command Line App.d7.dart.executor": "Run",
+    "Dart Command Line App.d8.dart.executor": "Run",
+    "Flutter.main.dart (1).executor": "Debug",
+    "Flutter.main.dart (2).executor": "Debug",
+    "Flutter.main.dart (3).executor": "Debug",
+    "Flutter.main.dart (4).executor": "Debug",
+    "Flutter.main.dart (5).executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/LinceTechAcademy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "emulator",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy" />
@@ -102,7 +103,7 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.d7.dart">
+  <component name="RunManager" selected="Dart Command Line App.d8.dart">
     <configuration name="d4.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d4.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
@@ -123,17 +124,18 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
       <method v="2" />
     </configuration>
-    <configuration name="main.dart (5)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap2/lib/main.dart" />
+    <configuration name="d8.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d8.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.d8.dart" />
         <item itemvalue="Dart Command Line App.d7.dart" />
         <item itemvalue="Dart Command Line App.d6.dart" />
         <item itemvalue="Dart Command Line App.d5.dart" />
         <item itemvalue="Dart Command Line App.d4.dart" />
-        <item itemvalue="Flutter.main.dart (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -171,14 +173,7 @@
       <workItem from="1747392871377" duration="1142000" />
       <workItem from="1747428878009" duration="8490000" />
       <workItem from="1747497337866" duration="10104000" />
-    </task>
-    <task id="LOCAL-00022" summary="Realizada atividade ap3_funcoes\ap1.dart">
-      <option name="closed" value="true" />
-      <created>1743898048951</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1743898048952</updated>
+      <workItem from="1747556756587" duration="5430000" />
     </task>
     <task id="LOCAL-00023" summary="Configure Git">
       <option name="closed" value="true" />
@@ -564,7 +559,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747553070591</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Adicionado projeto Dart - Desafio cronometrado #2 (d7.dart)">
+      <option name="closed" value="true" />
+      <created>1747556856357</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1747556856357</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +597,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corrigido atividade ia_colecoes.md" />
     <MESSAGE value="Realizada documentação ap1_variaveis" />
     <MESSAGE value="Configura Git" />
     <MESSAGE value="Realizada Atividade ia_condicionais_e_lacos.md" />
@@ -619,7 +621,8 @@
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d4.dart)" />
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d5.dart)" />
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d6.dart)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado projeto Dart - Desafio cronometrado #2 (d6.dart)" />
+    <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d7.dart)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionado projeto Dart - Desafio cronometrado #2 (d7.dart)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
