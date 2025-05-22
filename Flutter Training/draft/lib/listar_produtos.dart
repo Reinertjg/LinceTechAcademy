@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:draft/detalhers_produto.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
@@ -12,39 +13,44 @@ class ListarProdutos extends StatefulWidget {
 }
 
 class _ListarProdutosState extends State<ListarProdutos> {
-  List<String> listaProduto = List<String>.generate(
-    20,
-        (i) => 'Produto ${i + 1}',
-  );
 
   Future<List<Produto>> _getProdutos() async {
-    Uri url = Uri.parse(
-      'https://api.json-generator.com/templates/SFhy78n33IvS/data?access_token=htth6zeba74eubpy3a2k5z5dr3z5lb5sbmqpw4qz',
-    );
-    print(url);
-
-    var response = await http.get(url);
-    var dados = json.decode(response.body) as List;
-
-    List<Produto> produtos = [];
-
-    dados.forEach((elemento) {
-      print(elemento['produto']);
-
-      Produto produto = Produto(
-        elemento['produto_id'],
-        elemento['produto'],
-        elemento['endereco'],
-        elemento['descricao'],
-        elemento['imagem'],
-        int.parse(elemento['quantidade']),
-        double.parse(elemento['preco']),
+    try {
+      Uri url = Uri.parse(
+        'https://api.json-generator.com/templates/SFhy78n33IvS/data?access_token=htth6zeba74eubpy3a2k5z5dr3z5lb5sbmqpw4qz',
       );
+      print('Buscando: $url');
 
-      produtos.add(produto);
-    });
-    return produtos;
+      var response = await http.get(url);
+
+      if (response.statusCode != 200) {
+        throw Exception('Erro na requisição: ${response.statusCode}');
+      }
+
+      var dados = json.decode(response.body) as List;
+      List<Produto> produtos = [];
+
+      for (var elemento in dados) {
+        print(elemento); // para debug
+
+        produtos.add(Produto(
+          elemento['produto_id'], // verifique se essa chave existe
+          elemento['produto'],
+          elemento['endereco'],
+          elemento['descricao'],
+          elemento['imagem'],
+          int.tryParse(elemento['quantidade'].toString()) ?? 0,
+          double.tryParse(elemento['preco'].toString()) ?? 0.0,
+        ));
+      }
+
+      return produtos;
+    } catch (e) {
+      print('Erro ao carregar produtos: $e');
+      return [];
+    }
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +68,7 @@ class _ListarProdutosState extends State<ListarProdutos> {
                 itemBuilder: (context, indice) {
                   return ListTile(
                     leading: Image.network(
-                      'https://i.pinimg.com/736x/5a/a0/71/5aa07122296293d574c1ee4e8e1ab584.jpg',
+                      snapshot.data[indice].imagem,
                     ),
                     title: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,11 +84,17 @@ class _ListarProdutosState extends State<ListarProdutos> {
                         ),
                       ],
                     ),
-                    subtitle: Text(snapshot.data[indice].descricao.toString().substring(0, 30) + '...'),
+                    subtitle: Text('${snapshot.data[indice].descricao.toString().substring(0, 30)}...'),
                     onTap: () {
-                      print(
-                        'O Produto selecionado foi ${listaProduto[indice]}, na posição $indice',
-                      );
+                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                        return DetalhesProdutos(
+                          produtoId: snapshot.data[indice].produtoId,
+                          produto: snapshot.data[indice].produto,
+                          descricao: snapshot.data[indice].descricao,
+                          imagem: snapshot.data[indice].imagem,
+                          preco: snapshot.data[indice].preco,
+                        );
+                      }));
                     },
                   );
                 },
