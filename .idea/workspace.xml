@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Corrigido projeto Dart - Desafio cronometrado #2 (d8.dart)">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/ia_flutter_assincrono.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Finalizado - Interação IA - Flutter: Programação">
+      <change afterPath="$PROJECT_DIR$/Flutter Training/draft/lib/listar_produtos.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,15 +174,7 @@
       <workItem from="1747428878009" duration="8490000" />
       <workItem from="1747497337866" duration="10104000" />
       <workItem from="1747556756587" duration="13124000" />
-      <workItem from="1747873537294" duration="928000" />
-    </task>
-    <task id="LOCAL-00025" summary="Realizado atividade ap3_funcoes\ap3.dart">
-      <option name="closed" value="true" />
-      <created>1743966496791</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1743966496791</updated>
+      <workItem from="1747873537294" duration="1291000" />
     </task>
     <task id="LOCAL-00026" summary="Realizado atividade ap3_funcoes\ap4.dart">
       <option name="closed" value="true" />
@@ -568,7 +560,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747691785164</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Finalizado - Interação IA - Flutter: Programação">
+      <option name="closed" value="true" />
+      <created>1747874692431</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1747874692432</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +598,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizada Atividade ia_condicionais_e_lacos.md" />
     <MESSAGE value="Realizada Atividade ap5_logica\ap1.dart" />
     <MESSAGE value="Realizada Atividade ap5_logica\ap2.dart" />
     <MESSAGE value="Realizada Atividade ap5_logica\ap3.dart" />
@@ -623,7 +622,8 @@
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d7.dart)" />
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d8.dart)" />
     <MESSAGE value="Corrigido projeto Dart - Desafio cronometrado #2 (d8.dart)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrigido projeto Dart - Desafio cronometrado #2 (d8.dart)" />
+    <MESSAGE value="Finalizado - Interação IA - Flutter: Programação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizado - Interação IA - Flutter: Programação" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
