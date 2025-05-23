@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: separa lógica de listagem de produtos em arquivos lista_produtos.dart e produtos_model.dart">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/ia_flutter_estado.md" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Finalizado - Interação IA -  Flutter: Gerenciamento de estados">
+      <change afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_formulario.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_listagem.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,12 +108,7 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.main.dart">
-    <configuration name="d5.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d5.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Flutter.main.dart (1)">
     <configuration name="d6.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d6.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
@@ -125,17 +124,21 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
       <method v="2" />
     </configuration>
+    <configuration name="main.dart (1)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" />
+      <method v="2" />
+    </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Flutter Training/draft/lib/main.dart" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter.main.dart (1)" />
         <item itemvalue="Flutter.main.dart" />
         <item itemvalue="Dart Command Line App.d8.dart" />
         <item itemvalue="Dart Command Line App.d7.dart" />
         <item itemvalue="Dart Command Line App.d6.dart" />
-        <item itemvalue="Dart Command Line App.d5.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -175,15 +178,7 @@
       <workItem from="1747497337866" duration="10104000" />
       <workItem from="1747556756587" duration="13124000" />
       <workItem from="1747873537294" duration="6591000" />
-      <workItem from="1747962560674" duration="468000" />
-    </task>
-    <task id="LOCAL-00028" summary="Realizado atividade ia_operadores.md">
-      <option name="closed" value="true" />
-      <created>1744138972327</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1744138972328</updated>
+      <workItem from="1747962560674" duration="3734000" />
     </task>
     <task id="LOCAL-00029" summary="Realizado atividade ap3_operadores\ap1.dart">
       <option name="closed" value="true" />
@@ -569,7 +564,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747880246085</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Finalizado - Interação IA -  Flutter: Gerenciamento de estados">
+      <option name="closed" value="true" />
+      <created>1747963226423</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1747963226423</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +602,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizada Atividade ap5_logica\ap2.dart" />
     <MESSAGE value="Realizada Atividade ap5_logica\ap3.dart" />
     <MESSAGE value="Realizada Atividade ap5_logica\ap4.dart" />
     <MESSAGE value="Realizada Atividade ap5_logica\ap5.dart" />
@@ -624,7 +626,8 @@
     <MESSAGE value="Corrigido projeto Dart - Desafio cronometrado #2 (d8.dart)" />
     <MESSAGE value="Finalizado - Interação IA - Flutter: Programação" />
     <MESSAGE value="feat: separa lógica de listagem de produtos em arquivos lista_produtos.dart e produtos_model.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: separa lógica de listagem de produtos em arquivos lista_produtos.dart e produtos_model.dart" />
+    <MESSAGE value="Finalizado - Interação IA -  Flutter: Gerenciamento de estados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizado - Interação IA -  Flutter: Gerenciamento de estados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
