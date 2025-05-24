@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Finalizado - Interação IA -  Flutter: Gerenciamento de estados">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_formulario.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_listagem.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Iniciando - Apf6_funcoes - Flutter Provider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_formulario.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_formulario.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_listagem.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_listagem.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
     &quot;Dart Command Line App.d6.dart.executor&quot;: &quot;Run&quot;,
     &quot;Dart Command Line App.d7.dart.executor&quot;: &quot;Run&quot;,
     &quot;Dart Command Line App.d8.dart.executor&quot;: &quot;Run&quot;,
-    &quot;Flutter.main.dart (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Flutter.main.dart (1).executor&quot;: &quot;Run&quot;,
     &quot;Flutter.main.dart (2).executor&quot;: &quot;Debug&quot;,
     &quot;Flutter.main.dart (3).executor&quot;: &quot;Debug&quot;,
     &quot;Flutter.main.dart (4).executor&quot;: &quot;Debug&quot;,
@@ -178,23 +177,7 @@
       <workItem from="1747497337866" duration="10104000" />
       <workItem from="1747556756587" duration="13124000" />
       <workItem from="1747873537294" duration="6591000" />
-      <workItem from="1747962560674" duration="3734000" />
-    </task>
-    <task id="LOCAL-00029" summary="Realizado atividade ap3_operadores\ap1.dart">
-      <option name="closed" value="true" />
-      <created>1744139691737</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1744139691737</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Realizado atividade ap3_operadores\ap2.dart">
-      <option name="closed" value="true" />
-      <created>1744141856976</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1744141856976</updated>
+      <workItem from="1747962560674" duration="8727000" />
     </task>
     <task id="LOCAL-00031" summary="Realizado atividade ap3_operadores\ap2.dart">
       <option name="closed" value="true" />
@@ -572,7 +555,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747963226423</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Iniciando - Apf6_funcoes - Flutter Provider">
+      <option name="closed" value="true" />
+      <created>1747968843271</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1747968843271</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Iniciando - Apf6_funcoes - Flutter Provider">
+      <option name="closed" value="true" />
+      <created>1747968877290</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1747968877290</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +601,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizada Atividade ap5_logica\ap3.dart" />
     <MESSAGE value="Realizada Atividade ap5_logica\ap4.dart" />
     <MESSAGE value="Realizada Atividade ap5_logica\ap5.dart" />
     <MESSAGE value="Realizada Atividade ap6_erros\ap1.dart" />
@@ -627,7 +625,8 @@
     <MESSAGE value="Finalizado - Interação IA - Flutter: Programação" />
     <MESSAGE value="feat: separa lógica de listagem de produtos em arquivos lista_produtos.dart e produtos_model.dart" />
     <MESSAGE value="Finalizado - Interação IA -  Flutter: Gerenciamento de estados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalizado - Interação IA -  Flutter: Gerenciamento de estados" />
+    <MESSAGE value="Iniciando - Apf6_funcoes - Flutter Provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iniciando - Apf6_funcoes - Flutter Provider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

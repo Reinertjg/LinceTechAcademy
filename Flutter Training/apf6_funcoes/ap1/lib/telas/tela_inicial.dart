@@ -11,8 +11,7 @@ class TelaInicial extends StatefulWidget {
 class _TelaInicialState extends State<TelaInicial> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Text('Tela Inicial'),
           backgroundColor: Colors.deepOrange,
@@ -24,14 +23,13 @@ class _TelaInicialState extends State<TelaInicial> {
             }, child: Text('Listagem'),
             ),
             ElevatedButton(onPressed: () {
-              Navigator.pushNamed(context, '/listagem');
+              Navigator.pushNamed(context, '/formulario');
             }, child: Text('Formulário'),
             ),
           ],
 
 
         ),
-      ),
-    );
+      );
   }
 }

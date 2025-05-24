@@ -7,9 +7,11 @@ import 'package:ap1/telas/tela_listagem.dart';
 const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
 
 void main() {
+  runApp(
   ChangeNotifierProvider(
     create: (_) => EstadoListaDePessoas(),
     child: MyApp()
+  )
   );
 }
 
@@ -67,28 +69,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: darkBlue,
       ),
-      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/': (_) => TelaInicial(),
-        // '/listagem': (_) => TelaListagem(),
-        // '/formulario': (_) => TelaFormulario(),
+        '/listagem': (_) => TelaListagem(),
+        '/formulario': (_) => TelaFormulario(),
       },
     );
   }
 }
 
-class MyWidget extends StatefulWidget {
-  @override
-  State<MyWidget> createState() => _MyWidgetState();
-}
-
-class _MyWidgetState extends State<MyWidget> {
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      'Hello, World!',
-      style: Theme.of(context).textTheme.headlineMedium,
-    );
-  }
-}
