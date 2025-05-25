@@ -15,12 +15,9 @@ class _TelaListagemState extends State<TelaListagem> {
 
   @override
   Widget build(BuildContext context) {
-    final lista = context
-        .watch<EstadoListaDePessoas>()
-        .pessoas;
-    final listaFiltrada = lista.where((p) =>
-        p.nome.toLowerCase().contains(filtro)
-    ).toList();
+    final lista = context.watch<EstadoListaDePessoas>().pessoas;
+    final listaFiltrada =
+        lista.where((p) => p.nome.toLowerCase().contains(filtro)).toList();
 
     return Scaffold(
       appBar: AppBar(
@@ -52,6 +49,23 @@ class _TelaListagemState extends State<TelaListagem> {
                 return ListTile(
                   title: Text(pessoa.nome),
                   subtitle: Text(pessoa.email),
+                  trailing: PopupMenuButton<String>(
+                    itemBuilder:
+                        (context) => [
+                          const PopupMenuItem(
+                            child: Text('Editar'),
+                            value: 'editar',
+                          ),
+                          const PopupMenuItem(child: Text('Excluir'), value: 'excluir',),
+                        ],
+                    onSelected: (valor) {
+                      if (valor == 'editar') {
+
+                      } else if (valor== 'excluir') {
+                        Provider.of<EstadoListaDePessoas>(context, listen: false).excluir(pessoa);
+                      }
+                    },
+                  ),
                 );
               },
             ),
@@ -64,13 +78,21 @@ class _TelaListagemState extends State<TelaListagem> {
 
 Color corPorTipoSanguineo(TipoSanguineo tipo) {
   switch (tipo) {
-  case TipoSanguineo.aPositivo: return Colors.blue;
-  case TipoSanguineo.aNegativo: return Colors.red;
-  case TipoSanguineo.abPositivo: return Colors.white;
-  case TipoSanguineo.abNegativo: return Colors.yellow;
-  case TipoSanguineo.bPositivo: return Colors.green;
-  case TipoSanguineo.bNegativo: return Colors.deepOrangeAccent;
-  case TipoSanguineo.oPositivo: return Colors.cyan;
-  case TipoSanguineo.oNegativo: return Colors.pinkAccent;
+    case TipoSanguineo.aPositivo:
+      return Colors.blue;
+    case TipoSanguineo.aNegativo:
+      return Colors.red;
+    case TipoSanguineo.abPositivo:
+      return Colors.white;
+    case TipoSanguineo.abNegativo:
+      return Colors.yellow;
+    case TipoSanguineo.bPositivo:
+      return Colors.green;
+    case TipoSanguineo.bNegativo:
+      return Colors.deepOrangeAccent;
+    case TipoSanguineo.oPositivo:
+      return Colors.cyan;
+    case TipoSanguineo.oNegativo:
+      return Colors.pinkAccent;
   }
 }

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Iniciando - Apf6_funcoes - Flutter Provider">
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="Iniciando - alteracao Apf6_funcoes - Flutter Provider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_formulario.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_formulario.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_listagem.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_listagem.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,14 +176,7 @@
       <workItem from="1747556756587" duration="13124000" />
       <workItem from="1747873537294" duration="6591000" />
       <workItem from="1747962560674" duration="8727000" />
-    </task>
-    <task id="LOCAL-00031" summary="Realizado atividade ap3_operadores\ap2.dart">
-      <option name="closed" value="true" />
-      <created>1744141895937</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1744141895937</updated>
+      <workItem from="1748088134858" duration="3468000" />
     </task>
     <task id="LOCAL-00032" summary="Corrigido atividade ap3_operadores\ap1.dart e ap1.dart">
       <option name="closed" value="true" />
@@ -571,7 +562,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747968877290</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Iniciando - alteracao Apf6_funcoes - Flutter Provider">
+      <option name="closed" value="true" />
+      <created>1748088363340</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1748088363340</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizada Atividade ap5_logica\ap4.dart" />
     <MESSAGE value="Realizada Atividade ap5_logica\ap5.dart" />
     <MESSAGE value="Realizada Atividade ap6_erros\ap1.dart" />
     <MESSAGE value="Realizada Atividade ap6_erros\ap2.dart" />
@@ -626,7 +624,8 @@
     <MESSAGE value="feat: separa lógica de listagem de produtos em arquivos lista_produtos.dart e produtos_model.dart" />
     <MESSAGE value="Finalizado - Interação IA -  Flutter: Gerenciamento de estados" />
     <MESSAGE value="Iniciando - Apf6_funcoes - Flutter Provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Iniciando - Apf6_funcoes - Flutter Provider" />
+    <MESSAGE value="Iniciando - alteracao Apf6_funcoes - Flutter Provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iniciando - alteracao Apf6_funcoes - Flutter Provider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
