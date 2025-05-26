@@ -22,7 +22,30 @@ class _TelaFormularioState extends State<TelaFormulario> {
   String email = '';
   String telefone = '';
   String github = '';
+
   TipoSanguineo? tipoSelecionado;
+  Pessoa? pessoa;
+  bool loandedData = false;
+
+  @override
+  void didChangeDependencies() {
+    // TODO: implement didChangeDependencies
+    super.didChangeDependencies();
+
+    if(!loandedData) {
+      pessoa = ModalRoute.of(context)!.settings.arguments as Pessoa?;
+
+      if (pessoa != null) {
+        nomeController.text = pessoa!.nome;
+        emailController.text = pessoa!.email;
+        telefoneController.text = pessoa!.telefone;
+        githublController.text = pessoa!.github;
+        tipoSelecionado = pessoa!.tipoSanguineo;
+      }
+
+      loandedData = true;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -141,7 +164,14 @@ class _TelaFormularioState extends State<TelaFormulario> {
                             github: githublController.text, // nem este
                             tipoSanguineo: tipoSelecionado!,
                           );
-                          context.read<EstadoListaDePessoas>().incluir(novaPessoa);
+
+                          if (pessoa == null) {
+                            // Criando
+                            context.read<EstadoListaDePessoas>().incluir(novaPessoa);
+                          } else {
+                            // Editando
+                            context.read<EstadoListaDePessoas>().atualizar(pessoa!, novaPessoa);
+                          }
                           Navigator.pop(context);
                         }
                       });

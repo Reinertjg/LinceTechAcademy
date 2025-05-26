@@ -46,25 +46,58 @@ class _TelaListagemState extends State<TelaListagem> {
               itemCount: listaFiltrada.length,
               itemBuilder: (context, index) {
                 final pessoa = listaFiltrada[index];
-                return ListTile(
-                  title: Text(pessoa.nome),
-                  subtitle: Text(pessoa.email),
-                  trailing: PopupMenuButton<String>(
-                    itemBuilder:
-                        (context) => [
-                          const PopupMenuItem(
-                            child: Text('Editar'),
-                            value: 'editar',
-                          ),
-                          const PopupMenuItem(child: Text('Excluir'), value: 'excluir',),
-                        ],
-                    onSelected: (valor) {
-                      if (valor == 'editar') {
-
-                      } else if (valor== 'excluir') {
-                        Provider.of<EstadoListaDePessoas>(context, listen: false).excluir(pessoa);
-                      }
-                    },
+                return Card(
+                  color: corPorTipoSanguineo(pessoa.tipoSanguineo).withValues(alpha: (0.6)),
+                  margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: Text(
+                                pessoa.nome,
+                                style: const TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            PopupMenuButton(
+                              itemBuilder: (context) => [
+                                const PopupMenuItem(
+                                  value: 'editar',
+                                  child: Text('Editar'),
+                                ),
+                                const PopupMenuItem(
+                                  value: 'excluir',
+                                  child: Text('Excluir'),
+                                ),
+                              ],
+                              onSelected: (value) {
+                                if (value == 'editar') {
+                                  Navigator.pushNamed(
+                                    context,
+                                    '/formulario',
+                                    arguments: pessoa,
+                                  );
+                                } else if (value == 'excluir') {
+                                  context.read<EstadoListaDePessoas>().excluir(pessoa);
+                                }
+                              },
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 6),
+                        Text('Email: ${pessoa.email}'),
+                        Text('Telefone: ${pessoa.telefone}'),
+                        Text('GitHub: ${pessoa.github}'),
+                        Text('Tipo sanguíneo: ${descreverTipo(pessoa.tipoSanguineo)}'),
+                      ],
+                    ),
                   ),
                 );
               },
@@ -76,23 +109,45 @@ class _TelaListagemState extends State<TelaListagem> {
   }
 }
 
+String descreverTipo(TipoSanguineo tipo) {
+  switch (tipo) {
+    case TipoSanguineo.aPositivo:
+      return "A+";                // A+
+    case TipoSanguineo.aNegativo:
+      return "A-";                // A-
+    case TipoSanguineo.bPositivo:
+      return "B+";                // B+
+    case TipoSanguineo.bNegativo:
+      return "B-";                // B-
+    case TipoSanguineo.oPositivo:
+      return "O+";                // O+
+    case TipoSanguineo.oNegativo:
+      return "O-";                // O-
+    case TipoSanguineo.abPositivo:
+      return "AB+";               // AB+
+    case TipoSanguineo.abNegativo:
+      return "AB-";               // AB_
+  }
+}
+
+
 Color corPorTipoSanguineo(TipoSanguineo tipo) {
   switch (tipo) {
     case TipoSanguineo.aPositivo:
-      return Colors.blue;
+      return Colors.blue;        // A+ → Azul
     case TipoSanguineo.aNegativo:
-      return Colors.red;
-    case TipoSanguineo.abPositivo:
-      return Colors.white;
-    case TipoSanguineo.abNegativo:
-      return Colors.yellow;
+      return Colors.red;         // A- → Vermelho
     case TipoSanguineo.bPositivo:
-      return Colors.green;
+      return Colors.purple;      // B+ → Roxo
     case TipoSanguineo.bNegativo:
-      return Colors.deepOrangeAccent;
+      return Colors.orange;      // B- → Laranja
     case TipoSanguineo.oPositivo:
-      return Colors.cyan;
+      return Colors.green;       // O+ → Verde
     case TipoSanguineo.oNegativo:
-      return Colors.pinkAccent;
+      return Colors.yellow;      // O- → Amarelo
+    case TipoSanguineo.abPositivo:
+      return Colors.cyan;        // AB+ → Ciano
+    case TipoSanguineo.abNegativo:
+      return Colors.white;       // AB- → Branco
   }
 }
