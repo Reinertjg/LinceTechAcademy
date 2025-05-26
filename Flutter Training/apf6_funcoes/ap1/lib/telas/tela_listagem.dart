@@ -22,8 +22,9 @@ class _TelaListagemState extends State<TelaListagem> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Listagem'),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Color(0xFF333446),
       ),
+      backgroundColor: Color(0xFF222831),
       body: Column(
         children: [
           Padding(

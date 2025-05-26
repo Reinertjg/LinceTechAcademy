@@ -13,8 +13,9 @@ class _TelaInicialState extends State<TelaInicial> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Tela Inicial'),
-          backgroundColor: Colors.deepOrange,
+          backgroundColor: Color(0xFF333446),
         ),
+        backgroundColor: Color(0xFF222831),
         body: Column(
           children: [
             ElevatedButton(onPressed: () {
@@ -26,8 +27,6 @@ class _TelaInicialState extends State<TelaInicial> {
             }, child: Text('Formulário'),
             ),
           ],
-
-
         ),
       );
   }

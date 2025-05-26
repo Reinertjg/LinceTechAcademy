@@ -52,9 +52,10 @@ class _TelaFormularioState extends State<TelaFormulario> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Formulario'),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Color(0xFF333446),
       ),
-      body: SingleChildScrollView(
+        backgroundColor: Color(0xFF222831),
+        body: SingleChildScrollView(
         child: Center(
           child: Form(
             key: key,

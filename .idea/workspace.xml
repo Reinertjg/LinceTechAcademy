@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: implementar edição de pessoas e estilizar tela de listagem">
-      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="refactor: populando a classe Pessoa">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_formulario.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_formulario.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_listagem.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_listagem.dart" afterDir="false" />
@@ -186,22 +184,6 @@
       <workItem from="1747873537294" duration="6591000" />
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
-    </task>
-    <task id="LOCAL-00033" summary="Corrigido atividade ap3_operadores\ap3.dart">
-      <option name="closed" value="true" />
-      <created>1744143268136</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1744143268136</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Corrigido atividade ap3_operadores\ap4.dart">
-      <option name="closed" value="true" />
-      <created>1744153086848</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1744153086848</updated>
     </task>
     <task id="LOCAL-00035" summary="Corrigido atividade ap3_operadores\ap5.dart">
       <option name="closed" value="true" />
@@ -579,7 +561,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748212069532</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="feat: implementar edição de pessoas e estilizar tela de listagem">
+      <option name="closed" value="true" />
+      <created>1748226566772</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1748226566772</updated>
+    </task>
+    <task id="LOCAL-00083" summary="refactor: populando a classe Pessoa">
+      <option name="closed" value="true" />
+      <created>1748226622902</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1748226622902</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizada Atividade ap6_erros\ap2.dart" />
     <MESSAGE value="Realizada Atividade ap6_erros\ap3.dart" />
     <MESSAGE value="Realizada Atividade ap6_erros\ap4.dart" />
     <MESSAGE value="Realizada Atividade ai_excecoes.md" />
@@ -634,7 +631,8 @@
     <MESSAGE value="Iniciando - alteracao Apf6_funcoes - Flutter Provider" />
     <MESSAGE value="Update - Apf6_funcoes - Flutter Provider" />
     <MESSAGE value="feat: implementar edição de pessoas e estilizar tela de listagem" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implementar edição de pessoas e estilizar tela de listagem" />
+    <MESSAGE value="refactor: populando a classe Pessoa" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: populando a classe Pessoa" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
