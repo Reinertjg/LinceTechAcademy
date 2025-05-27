@@ -8,26 +8,67 @@ class TelaInicial extends StatefulWidget {
 }
 
 class _TelaInicialState extends State<TelaInicial> {
+  double opacity = 1.0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Tela Inicial'),
-          backgroundColor: Color(0xFF333446),
+      appBar: AppBar(
+        title: Text('Tela Inicial'),
+        backgroundColor: Color(0xFF333446),
+      ),
+      backgroundColor: Color(0xFF222831),
+      body: Center(
+    child: Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          'Bem-vindo!',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 26,
+            fontWeight: FontWeight.bold,
+          ),
         ),
-        backgroundColor: Color(0xFF222831),
-        body: Column(
-          children: [
-            ElevatedButton(onPressed: () {
-              Navigator.pushNamed(context, '/listagem');
-            }, child: Text('Listagem'),
-            ),
-            ElevatedButton(onPressed: () {
-              Navigator.pushNamed(context, '/formulario');
-            }, child: Text('Formulário'),
-            ),
-          ],
+        SizedBox(height: 40),
+
+        blueButton(text: 'Listagem', route: '/listagem'),
+
+        SizedBox(height: 20),
+
+        blueButton(text: 'Formulario', route: '/formulario')
+
+      ],
+    ),)
+    ,
+    );
+  }
+  }
+  
+  class blueButton extends StatelessWidget {
+    const blueButton({required this.text, required this.route,super.key});
+    
+    final String text;
+    final String route;
+  
+    @override
+    Widget build(BuildContext context) {
+      return ElevatedButton(
+        onPressed: () {
+          Navigator.pushNamed(context, route);
+        },
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Color(0xFF00ADB5),
+          padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
+        child: Text(
+          text,
+          style: TextStyle(fontSize: 18, color: Colors.white),
         ),
       );
+    }
   }
-}
+  
