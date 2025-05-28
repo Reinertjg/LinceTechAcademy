@@ -1,0 +1,355 @@
+Index: Formação Flutter/apf2_funcoes/ap3.dart
+===================================================================
+diff --git a/Formação Flutter/apf2_funcoes/ap3.dart b/Formação Flutter/apf2_funcoes/ap3.dart
+deleted file mode 100644
+--- a/Formação Flutter/apf2_funcoes/ap3.dart	(revision 635662a75e81bc84026fc625336fbcfdfc7730db)
++++ /dev/null	(revision 635662a75e81bc84026fc625336fbcfdfc7730db)
+@@ -1,138 +0,0 @@
+-import 'dart:math';
+-
+-import 'package:flutter/material.dart';
+-
+-void main() {
+-  runApp(MyApp());
+-}
+-
+-class MyApp extends StatefulWidget {
+-  const MyApp({super.key});
+-
+-  @override
+-  State<MyApp> createState() => _MyAppState();
+-}
+-
+-class _MyAppState extends State<MyApp> {
+-  @override
+-  Widget build(BuildContext context) {
+-    return MaterialApp(home: _tela());
+-  }
+-}
+-
+-class _tela extends StatefulWidget {
+-  const _tela({super.key});
+-
+-  @override
+-  State<_tela> createState() => _telaState();
+-}
+-
+-class _telaState extends State<_tela> {
+-  Color corDaForma = Colors.red;
+-  String messageButton = 'Alterar para quadrado';
+-  bool mostrarForma = true;
+-
+-  void mudarForma() {
+-    mostrarForma = !mostrarForma;
+-    if(mostrarForma) {
+-      messageButton = 'Alterar para circulo';
+-    } else {
+-      messageButton = 'Alterar para quadrado';
+-    }
+-  }
+-
+-  @override
+-  Widget build(BuildContext context) {
+-
+-    return MaterialApp(
+-      home: Scaffold(
+-        backgroundColor: Colors.white,
+-        body: Center(
+-          child: Column(
+-            mainAxisAlignment: MainAxisAlignment.center,
+-            children: [
+-              Row(
+-                mainAxisAlignment: MainAxisAlignment.center,
+-                children: [
+-                  ElevatedButton(
+-                    onPressed: () {
+-                      setState(() {
+-                        mudarForma();
+-                      });
+-                    },
+-                    child: Text(messageButton),
+-                  ),
+-                  SizedBox(width: 15),
+-                  ElevatedButton(
+-                    onPressed: () {
+-                      setState(() {
+-                        corDaForma = gerarCorAleatoria();
+-                      });
+-                    },
+-                    child: Text('Cor aleatória'),
+-                  ),
+-                ],
+-              ),
+-              SizedBox(height: 20),
+-              mostrarForma? _Quadrado(cor: corDaForma,):_Circulo(cor: corDaForma,)
+-            ],
+-          ),
+-        ),
+-      ),
+-    );
+-  }
+-}
+-
+-
+-class _Quadrado extends StatefulWidget {
+-  final Color cor;
+-
+-  const _Quadrado({super.key, required this.cor});
+-
+-  @override
+-  State<_Quadrado> createState() => __QuadradoState();
+-}
+-
+-class __QuadradoState extends State<_Quadrado> {
+-  @override
+-  Widget build(BuildContext context) {
+-    return Container(
+-      height: 75,
+-      width: 75,
+-      color: widget.cor, 
+-    );
+-  }
+-}
+-
+-
+-
+-class _Circulo extends StatefulWidget {
+-  final Color cor;
+-
+-
+-  const _Circulo({super.key, required this.cor});
+-
+-  @override
+-  State<_Circulo> createState() => __CirculoState();
+-}
+-
+-class __CirculoState extends State<_Circulo> {
+-  @override
+-  Widget build(BuildContext context) {
+-    return Container(
+-      height: 75,
+-      width: 75,
+-      decoration: new BoxDecoration(color: widget.cor, shape: BoxShape.circle),
+-    );
+-  }
+-}
+-
+-Color gerarCorAleatoria() {
+-  final random = Random();
+-  return Color.fromARGB(
+-    255,
+-    random.nextInt(256),
+-    random.nextInt(256),
+-    random.nextInt(256),
+-  );
+-}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"NONE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"92c4af04-70cb-4ee6-8e18-869dd1bbf7ae\" name=\"Changes\" comment=\"style: Alteracao nas cores do app\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ClangdSettings\">\r\n    <option name=\"formatViaClangd\" value=\"false\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Reinertjg&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Reinertjg/LinceTechAcademy.git&quot;,\r\n    &quot;accountId&quot;: &quot;ba94ac2f-2ce2-43d6-89fc-5bab38c99f9b&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2vCpoTsrOMZmkGtFhcThky1cPlB\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Dart Command Line App.ap1.dart (1).executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.ap1.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.ap2.dart (1).executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.ap2.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.ap3.dart (1).executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.ap3.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.ap4.dart (1).executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.ap4.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.ap5.dart (1).executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.ap5.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.d1.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.d2.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.d3.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.d4.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.d5.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.d6.dart.executor&quot;: &quot;Debug&quot;,\r\n    &quot;Dart Command Line App.d7.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.d8.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Dart Command Line App.main.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;Flutter.main.dart (1).executor&quot;: &quot;Run&quot;,\r\n    &quot;Flutter.main.dart (2).executor&quot;: &quot;Debug&quot;,\r\n    &quot;Flutter.main.dart (3).executor&quot;: &quot;Debug&quot;,\r\n    &quot;Flutter.main.dart (4).executor&quot;: &quot;Debug&quot;,\r\n    &quot;Flutter.main.dart (5).executor&quot;: &quot;Run&quot;,\r\n    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,\r\n    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,\r\n    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/LinceTechAcademy&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,\r\n    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\jgcos_kqplwrp\\IdeaProjects\\LinceTechAcademy\" />\r\n      <recent name=\"C:\\Users\\jgcos_kqplwrp\\IdeaProjects\\LinceTechAcademy\\Formação Dart\\ap7_oop1\" />\r\n      <recent name=\"C:\\Users\\jgcos_kqplwrp\\IdeaProjects\\LinceTechAcademy\\Formação Dart\\ap6_erros\" />\r\n      <recent name=\"C:\\Users\\jgcos_kqplwrp\\IdeaProjects\\LinceTechAcademy\\Formação Dart\\ap5_logica\" />\r\n      <recent name=\"C:\\Users\\jgcos_kqplwrp\\IdeaProjects\\LinceTechAcademy\\Formação Dart\\ap4_operadores\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\jgcos_kqplwrp\\IdeaProjects\\LinceTechAcademy\\Formação Dart\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Flutter.main.dart (1)\">\r\n    <configuration name=\"d6.dart\" type=\"DartCommandLineRunConfigurationType\" factoryName=\"Dart Command Line Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/Formação Dart/dd2/d6.dart\" />\r\n      <option name=\"workingDirectory\" value=\"$PROJECT_DIR$/Formação Dart/dd2\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"d8.dart\" type=\"DartCommandLineRunConfigurationType\" factoryName=\"Dart Command Line Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/Formação Dart/dd2/d8.dart\" />\r\n      <option name=\"workingDirectory\" value=\"$PROJECT_DIR$/Formação Dart/dd2\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main.dart\" type=\"DartCommandLineRunConfigurationType\" factoryName=\"Dart Command Line Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart\" />\r\n      <option name=\"workingDirectory\" value=\"$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main.dart (1)\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main.dart\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/Flutter Training/draft/lib/main.dart\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Flutter.main.dart (1)\" />\r\n        <item itemvalue=\"Dart Command Line App.main.dart\" />\r\n        <item itemvalue=\"Dart Command Line App.d6.dart\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"92c4af04-70cb-4ee6-8e18-869dd1bbf7ae\" name=\"Changes\" comment=\"\" />\r\n      <created>1743659085085</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1743659085085</updated>\r\n      <workItem from=\"1743659086404\" duration=\"4732000\" />\r\n      <workItem from=\"1743700501359\" duration=\"43684000\" />\r\n      <workItem from=\"1744303789773\" duration=\"4143000\" />\r\n      <workItem from=\"1744319448387\" duration=\"8918000\" />\r\n      <workItem from=\"1744432278177\" duration=\"3207000\" />\r\n      <workItem from=\"1744478649579\" duration=\"4334000\" />\r\n      <workItem from=\"1744573734070\" duration=\"124000\" />\r\n      <workItem from=\"1744748995540\" duration=\"1607000\" />\r\n      <workItem from=\"1745369010430\" duration=\"14733000\" />\r\n      <workItem from=\"1745729339442\" duration=\"10074000\" />\r\n      <workItem from=\"1745878879132\" duration=\"12449000\" />\r\n      <workItem from=\"1746405179030\" duration=\"1042000\" />\r\n      <workItem from=\"1746498192401\" duration=\"3724000\" />\r\n      <workItem from=\"1747360256182\" duration=\"1968000\" />\r\n      <workItem from=\"1747392667943\" duration=\"182000\" />\r\n      <workItem from=\"1747392871377\" duration=\"1142000\" />\r\n      <workItem from=\"1747428878009\" duration=\"8490000\" />\r\n      <workItem from=\"1747497337866\" duration=\"10104000\" />\r\n      <workItem from=\"1747556756587\" duration=\"13124000\" />\r\n      <workItem from=\"1747873537294\" duration=\"6591000\" />\r\n      <workItem from=\"1747962560674\" duration=\"8727000\" />\r\n      <workItem from=\"1748088134858\" duration=\"3790000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00036\" summary=\"Corrigido atividade ia_variaveis.md\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744306108610</created>\r\n      <option name=\"number\" value=\"00036\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744306108610</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00037\" summary=\"Corrigido atividade ia_operadores.md\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744306134398</created>\r\n      <option name=\"number\" value=\"00037\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744306134398</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00038\" summary=\"Corrigido atividade ia_funcoes.md\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744306153253</created>\r\n      <option name=\"number\" value=\"00038\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744306153253</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00039\" summary=\"Corrigido atividade ia_colecoes.md\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744306171495</created>\r\n      <option name=\"number\" value=\"00039\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00039\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744306171495</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00040\" summary=\"Realizada documentação ap1_variaveis\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744306230704</created>\r\n      <option name=\"number\" value=\"00040\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00040\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744306230704</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00041\" summary=\"Configura Git\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744306245173</created>\r\n      <option name=\"number\" value=\"00041\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00041\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744306245173</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00042\" summary=\"Realizada Atividade ia_condicionais_e_lacos.md\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744320964280</created>\r\n      <option name=\"number\" value=\"00042\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00042\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744320964282</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00043\" summary=\"Realizada Atividade ap5_logica\\ap1.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744322565071</created>\r\n      <option name=\"number\" value=\"00043\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00043\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744322565071</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00044\" summary=\"Realizada Atividade ap5_logica\\ap1.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744323838056</created>\r\n      <option name=\"number\" value=\"00044\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00044\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744323838056</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00045\" summary=\"Realizada Atividade ap5_logica\\ap2.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744327802671</created>\r\n      <option name=\"number\" value=\"00045\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00045\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744327802671</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00046\" summary=\"Realizada Atividade ap5_logica\\ap3.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744329177938</created>\r\n      <option name=\"number\" value=\"00046\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00046\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744329177938</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00047\" summary=\"Realizada Atividade ap5_logica\\ap3.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744329213478</created>\r\n      <option name=\"number\" value=\"00047\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00047\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744329213478</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00048\" summary=\"Realizada Atividade ap5_logica\\ap4.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744330062453</created>\r\n      <option name=\"number\" value=\"00048\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00048\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744330062453</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00049\" summary=\"Realizada Atividade ap5_logica\\ap5.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744330604063</created>\r\n      <option name=\"number\" value=\"00049\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00049\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744330604063</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00050\" summary=\"Realizada Atividade ap6_erros\\ap1.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744434228745</created>\r\n      <option name=\"number\" value=\"00050\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00050\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744434228745</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00051\" summary=\"Realizada Atividade ap6_erros\\ap2.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744435231445</created>\r\n      <option name=\"number\" value=\"00051\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00051\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744435231445</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00052\" summary=\"Realizada Atividade ap6_erros\\ap3.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744481527532</created>\r\n      <option name=\"number\" value=\"00052\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00052\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744481527532</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00053\" summary=\"Realizada Atividade ap6_erros\\ap4.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744482934783</created>\r\n      <option name=\"number\" value=\"00053\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00053\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744482934783</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00054\" summary=\"Realizada Atividade ap6_erros\\ap3.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744482979817</created>\r\n      <option name=\"number\" value=\"00054\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00054\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744482979817</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00055\" summary=\"Realizada Atividade ap6_erros\\ap4.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744482992926</created>\r\n      <option name=\"number\" value=\"00055\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00055\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744482992926</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00056\" summary=\"Realizada Atividade ai_excecoes.md\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744750195544</created>\r\n      <option name=\"number\" value=\"00056\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00056\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744750195544</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00057\" summary=\"Realizada Atividade ia_oo1.md\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745370287260</created>\r\n      <option name=\"number\" value=\"00057\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00057\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745370287260</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00058\" summary=\"Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745373847839</created>\r\n      <option name=\"number\" value=\"00058\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00058\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745373847839</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00059\" summary=\"Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745549362792</created>\r\n      <option name=\"number\" value=\"00059\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00059\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745549362792</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00060\" summary=\"Realizada as atividades de concorrência (ap1.dart, ap2.dart, ap3.dart e ap4.dart).\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745730416217</created>\r\n      <option name=\"number\" value=\"00060\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00060\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745730416225</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00061\" summary=\"Realizada as atividades do Desafio cronometrado #1 (d1.dart, d2.dart, d3.dart, d4.dart, d5.dart, d6.dart e d7.dart).\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745792803961</created>\r\n      <option name=\"number\" value=\"00061\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00061\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745792803961</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00062\" summary=\"Realizada as atividades do Desafio cronometrado #2 (d1.dart, d2.dart).\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745899000833</created>\r\n      <option name=\"number\" value=\"00062\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00062\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745899000835</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00063\" summary=\"Realizando a atividade do Desafio cronometrado #2 (d3.dart).\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745922629084</created>\r\n      <option name=\"number\" value=\"00063\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00063\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745922629084</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00064\" summary=\"Realizando a atividade do Desafio cronometrado #2 (d3.dart).\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747360318760</created>\r\n      <option name=\"number\" value=\"00064\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00064\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747360318761</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00065\" summary=\"Realizado a reestruturação do repository\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747393125438</created>\r\n      <option name=\"number\" value=\"00065\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00065\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747393125439</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00066\" summary=\"Realizado a reestruturação do repository\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747428134261</created>\r\n      <option name=\"number\" value=\"00066\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00066\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747428134261</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00067\" summary=\"Adicionado projeto Flutter - AP2 Funcoes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747432145881</created>\r\n      <option name=\"number\" value=\"00067\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00067\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747432145881</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00068\" summary=\"Adicionado projeto Dart - Desafio cronometrado #2 (d4.dart)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747490376345</created>\r\n      <option name=\"number\" value=\"00068\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00068\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747490376345</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00069\" summary=\"Adicionado projeto Dart - Desafio cronometrado #2 (d5.dart)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747500438752</created>\r\n      <option name=\"number\" value=\"00069\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00069\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747500438754</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00070\" summary=\"Adicionado projeto Dart - Desafio cronometrado #2 (d6.dart)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747553070591</created>\r\n      <option name=\"number\" value=\"00070\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00070\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747553070591</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00071\" summary=\"Adicionado projeto Dart - Desafio cronometrado #2 (d7.dart)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747556856357</created>\r\n      <option name=\"number\" value=\"00071\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00071\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747556856357</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00072\" summary=\"Adicionado projeto Dart - Desafio cronometrado #2 (d8.dart)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747691757958</created>\r\n      <option name=\"number\" value=\"00072\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00072\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747691757958</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00073\" summary=\"Corrigido projeto Dart - Desafio cronometrado #2 (d8.dart)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747691785164</created>\r\n      <option name=\"number\" value=\"00073\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00073\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747691785164</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00074\" summary=\"Finalizado - Interação IA - Flutter: Programação\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747874692431</created>\r\n      <option name=\"number\" value=\"00074\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00074\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747874692432</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00075\" summary=\"feat: separa lógica de listagem de produtos em arquivos lista_produtos.dart e produtos_model.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747875170640</created>\r\n      <option name=\"number\" value=\"00075\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00075\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747875170640</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00076\" summary=\"feat: separa lógica de listagem de produtos em arquivos lista_produtos.dart e produtos_model.dart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747880246085</created>\r\n      <option name=\"number\" value=\"00076\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00076\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747880246085</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00077\" summary=\"Finalizado - Interação IA -  Flutter: Gerenciamento de estados\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747963226423</created>\r\n      <option name=\"number\" value=\"00077\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00077\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747963226423</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00078\" summary=\"Iniciando - Apf6_funcoes - Flutter Provider\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747968843271</created>\r\n      <option name=\"number\" value=\"00078\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00078\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747968843271</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00079\" summary=\"Iniciando - Apf6_funcoes - Flutter Provider\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1747968877290</created>\r\n      <option name=\"number\" value=\"00079\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00079\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1747968877290</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00080\" summary=\"Iniciando - alteracao Apf6_funcoes - Flutter Provider\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1748088363340</created>\r\n      <option name=\"number\" value=\"00080\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00080\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1748088363340</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00081\" summary=\"Update - Apf6_funcoes - Flutter Provider\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1748212069532</created>\r\n      <option name=\"number\" value=\"00081\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00081\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1748212069532</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00082\" summary=\"feat: implementar edição de pessoas e estilizar tela de listagem\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1748226566772</created>\r\n      <option name=\"number\" value=\"00082\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00082\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1748226566772</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00083\" summary=\"refactor: populando a classe Pessoa\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1748226622902</created>\r\n      <option name=\"number\" value=\"00083\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00083\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1748226622902</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00084\" summary=\"style: Alteracao nas cores do app\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1748227360511</created>\r\n      <option name=\"number\" value=\"00084\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00084\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1748227360511</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"85\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"main\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Realizada Atividade ap6_erros\\ap4.dart\" />\r\n    <MESSAGE value=\"Realizada Atividade ai_excecoes.md\" />\r\n    <MESSAGE value=\"Realizada Atividade ia_oo1.md\" />\r\n    <MESSAGE value=\"Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart.\" />\r\n    <MESSAGE value=\"Realizada as atividades de concorrência (ap1.dart, ap2.dart, ap3.dart e ap4.dart).\" />\r\n    <MESSAGE value=\"Realizada as atividades do Desafio cronometrado #1 (d1.dart, d2.dart, d3.dart, d4.dart, d5.dart, d6.dart e d7.dart).\" />\r\n    <MESSAGE value=\"Realizada as atividades do Desafio cronometrado #2 (d1.dart, d2.dart).\" />\r\n    <MESSAGE value=\"Realizando a atividade do Desafio cronometrado #2 (d3.dart).\" />\r\n    <MESSAGE value=\"Realizado a reestruturação do repository\" />\r\n    <MESSAGE value=\"Adicionado projeto Flutter - AP2 Funcoes\" />\r\n    <MESSAGE value=\"Adicionado projeto Dart - Desafio cronometrado #2 (d4.dart)\" />\r\n    <MESSAGE value=\"Adicionado projeto Dart - Desafio cronometrado #2 (d5.dart)\" />\r\n    <MESSAGE value=\"Adicionado projeto Dart - Desafio cronometrado #2 (d6.dart)\" />\r\n    <MESSAGE value=\"Adicionado projeto Dart - Desafio cronometrado #2 (d7.dart)\" />\r\n    <MESSAGE value=\"Adicionado projeto Dart - Desafio cronometrado #2 (d8.dart)\" />\r\n    <MESSAGE value=\"Corrigido projeto Dart - Desafio cronometrado #2 (d8.dart)\" />\r\n    <MESSAGE value=\"Finalizado - Interação IA - Flutter: Programação\" />\r\n    <MESSAGE value=\"feat: separa lógica de listagem de produtos em arquivos lista_produtos.dart e produtos_model.dart\" />\r\n    <MESSAGE value=\"Finalizado - Interação IA -  Flutter: Gerenciamento de estados\" />\r\n    <MESSAGE value=\"Iniciando - Apf6_funcoes - Flutter Provider\" />\r\n    <MESSAGE value=\"Iniciando - alteracao Apf6_funcoes - Flutter Provider\" />\r\n    <MESSAGE value=\"Update - Apf6_funcoes - Flutter Provider\" />\r\n    <MESSAGE value=\"feat: implementar edição de pessoas e estilizar tela de listagem\" />\r\n    <MESSAGE value=\"refactor: populando a classe Pessoa\" />\r\n    <MESSAGE value=\"style: Alteracao nas cores do app\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"style: Alteracao nas cores do app\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 635662a75e81bc84026fc625336fbcfdfc7730db)
++++ b/.idea/workspace.xml	(date 1748467591730)
+@@ -6,7 +6,42 @@
+   <component name="ChangeListManager">
+     <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="style: Alteracao nas cores do app">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugins.cmake" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugins.cmake" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugins.cmake" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugins.cmake" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugins.cmake" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugins.cmake" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugins.cmake" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugins.cmake" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugins.cmake" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugins.cmake" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Formação Flutter/apf2_funcoes/ap3.dart" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -50,56 +85,56 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Dart Command Line App.ap1.dart (1).executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.ap1.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.ap2.dart (1).executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.ap2.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.ap3.dart (1).executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.ap3.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.ap4.dart (1).executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.ap4.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.ap5.dart (1).executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.ap5.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.d1.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.d2.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.d3.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.d4.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.d5.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.d6.dart.executor&quot;: &quot;Debug&quot;,
+-    &quot;Dart Command Line App.d7.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.d8.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Dart Command Line App.main.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;Flutter.main.dart (1).executor&quot;: &quot;Run&quot;,
+-    &quot;Flutter.main.dart (2).executor&quot;: &quot;Debug&quot;,
+-    &quot;Flutter.main.dart (3).executor&quot;: &quot;Debug&quot;,
+-    &quot;Flutter.main.dart (4).executor&quot;: &quot;Debug&quot;,
+-    &quot;Flutter.main.dart (5).executor&quot;: &quot;Run&quot;,
+-    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/LinceTechAcademy&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Dart Command Line App.ap1.dart (1).executor": "Run",
++    "Dart Command Line App.ap1.dart.executor": "Run",
++    "Dart Command Line App.ap2.dart (1).executor": "Run",
++    "Dart Command Line App.ap2.dart.executor": "Run",
++    "Dart Command Line App.ap3.dart (1).executor": "Run",
++    "Dart Command Line App.ap3.dart.executor": "Run",
++    "Dart Command Line App.ap4.dart (1).executor": "Run",
++    "Dart Command Line App.ap4.dart.executor": "Run",
++    "Dart Command Line App.ap5.dart (1).executor": "Run",
++    "Dart Command Line App.ap5.dart.executor": "Run",
++    "Dart Command Line App.d1.dart.executor": "Run",
++    "Dart Command Line App.d2.dart.executor": "Run",
++    "Dart Command Line App.d3.dart.executor": "Run",
++    "Dart Command Line App.d4.dart.executor": "Run",
++    "Dart Command Line App.d5.dart.executor": "Run",
++    "Dart Command Line App.d6.dart.executor": "Debug",
++    "Dart Command Line App.d7.dart.executor": "Run",
++    "Dart Command Line App.d8.dart.executor": "Run",
++    "Dart Command Line App.main.dart.executor": "Run",
++    "Flutter.main.dart (1).executor": "Run",
++    "Flutter.main.dart (2).executor": "Run",
++    "Flutter.main.dart (3).executor": "Run",
++    "Flutter.main.dart (4).executor": "Run",
++    "Flutter.main.dart (5).executor": "Run",
++    "Flutter.main.dart.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.cidr.known.project.marker": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "RunOnceActivity.readMode.enableVisualFormatting": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "cf.first.check.clang-format": "false",
++    "cidr.known.project.marker": "true",
++    "dart.analysis.tool.window.visible": "false",
++    "git-widget-placeholder": "main",
++    "ignore.virus.scanning.warn.message": "true",
++    "io.flutter.reload.alreadyRun": "true",
++    "kotlin-language-version-configured": "true",
++    "last_opened_file_path": "C:/LinceTechAcademy",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "settings.editor.selected.configurable": "preferences.pluginManager",
++    "show.migrate.to.gradle.popup": "false",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy" />
+@@ -112,35 +147,34 @@
+       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Flutter.main.dart (1)">
+-    <configuration name="d6.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d6.dart" />
+-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
++  <component name="RunManager" selected="Flutter.main.dart (4)">
++    <configuration name="main.dart (1)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
++      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="d8.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d8.dart" />
+-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
++    <configuration name="main.dart (2)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
++      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/lib/main.dart" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="main.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+-      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" />
+-      <option name="workingDirectory" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1" />
++    <configuration name="main.dart (3)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
++      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/lib/main.dart" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="main.dart (1)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+-      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" />
++    <configuration name="main.dart (4)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
++      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/draft/lib/main.dart" />
+       <method v="2" />
+     </configuration>
+     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+-      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/draft/lib/main.dart" />
++      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/lib/main.dart" />
+       <method v="2" />
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Flutter.main.dart (4)" />
++        <item itemvalue="Flutter.main.dart" />
++        <item itemvalue="Flutter.main.dart (2)" />
++        <item itemvalue="Flutter.main.dart (3)" />
+         <item itemvalue="Flutter.main.dart (1)" />
+-        <item itemvalue="Dart Command Line App.main.dart" />
+-        <item itemvalue="Dart Command Line App.d6.dart" />
+       </list>
+     </recent_temporary>
+   </component>

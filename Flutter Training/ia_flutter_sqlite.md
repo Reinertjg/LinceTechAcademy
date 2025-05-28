@@ -175,7 +175,3 @@ Consultas bem otimizadas melhoram muito a performance do app.
 
 ---
 
-## Entrega da atividade  
-Para a entrega dessa atividade, crie um arquivo chamado `ia_flutter_sqlite.md` em seu repositório de estudos contendo sua interação com a ferramenta de IA e suas observações sobre as informações geradas. Envie o link do arquivo no canal de atividades, `#atividades`.  
-
----

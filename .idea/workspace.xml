@@ -6,7 +6,42 @@
   <component name="ChangeListManager">
     <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="style: Alteracao nas cores do app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/draft/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Formação Flutter/apf2_funcoes/ap3.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +107,9 @@
     &quot;Dart Command Line App.d8.dart.executor&quot;: &quot;Run&quot;,
     &quot;Dart Command Line App.main.dart.executor&quot;: &quot;Run&quot;,
     &quot;Flutter.main.dart (1).executor&quot;: &quot;Run&quot;,
-    &quot;Flutter.main.dart (2).executor&quot;: &quot;Debug&quot;,
-    &quot;Flutter.main.dart (3).executor&quot;: &quot;Debug&quot;,
-    &quot;Flutter.main.dart (4).executor&quot;: &quot;Debug&quot;,
+    &quot;Flutter.main.dart (2).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (3).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (4).executor&quot;: &quot;Run&quot;,
     &quot;Flutter.main.dart (5).executor&quot;: &quot;Run&quot;,
     &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -112,35 +147,34 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.main.dart (1)">
-    <configuration name="d6.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d6.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
-      <method v="2" />
-    </configuration>
-    <configuration name="d8.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d8.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Flutter.main.dart (4)">
     <configuration name="main.dart (1)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" />
       <method v="2" />
     </configuration>
-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+    <configuration name="main.dart (2)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf2_funcoes/ap3/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart (3)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf3_funcoes/ap1/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart (4)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Flutter Training/draft/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/lib/main.dart" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter.main.dart (4)" />
+        <item itemvalue="Flutter.main.dart" />
+        <item itemvalue="Flutter.main.dart (2)" />
+        <item itemvalue="Flutter.main.dart (3)" />
         <item itemvalue="Flutter.main.dart (1)" />
-        <item itemvalue="Dart Command Line App.main.dart" />
-        <item itemvalue="Dart Command Line App.d6.dart" />
       </list>
     </recent_temporary>
   </component>
