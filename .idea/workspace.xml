@@ -4,30 +4,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="docs: alterado atividade ia_flutter_sqlite.md">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/assets/calculadora.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/assets/calculadora2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/assets/lince_tech_academy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/assets/moeda.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/assets/regua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_calculadora.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_moeda.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_inicio.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/request.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/slides_academy_presencial_flutter.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="style: Alteracao nas cores do app">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +32,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -95,8 +82,8 @@
     "Dart Command Line App.main.dart.executor": "Run",
     "Flutter.main.dart (1).executor": "Run",
     "Flutter.main.dart (2).executor": "Run",
-    "Flutter.main.dart (3).executor": "Run",
-    "Flutter.main.dart (4).executor": "Run",
+    "Flutter.main.dart (3).executor": "Debug",
+    "Flutter.main.dart (4).executor": "Debug",
     "Flutter.main.dart (5).executor": "Run",
     "Flutter.main.dart.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -104,67 +91,65 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ToolWindow.Running Devices.ShowToolbar": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "device.streaming.spark.single.device.do.not.ask": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/joao.reinertcosta/StudioProjects/LinceTechAcademy/Flutter Training/tools_app",
+    "last_opened_file_path": "C:/LinceTechAcademy",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\joao.reinertcosta\StudioProjects\LinceTechAcademy\Flutter Training\tools_app" />
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy" />
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap7_oop1" />
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap6_erros" />
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap5_logica" />
+      <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap4_operadores" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\joao.reinertcosta\StudioProjects\LinceTechAcademy\Flutter Training" />
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.main.dart (3)">
-    <configuration name="main.dart (1)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" />
+  <component name="RunManager" selected="Flutter.main.dart (2)">
+    <configuration name="d6.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Formação Dart/dd2/d6.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Formação Dart/dd2" />
       <method v="2" />
     </configuration>
-    <configuration name="main.dart (3)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+    <configuration name="main.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart (1)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/main.dart" />
       <method v="2" />
     </configuration>
-    <configuration name="main.dart (4)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/draft/lib/main.dart" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main.dart (5)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/ferramentas/lib/main.dart" />
+    <configuration name="main.dart (2)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" />
       <method v="2" />
     </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/apf4_funcoes/ap1/lib/main.dart" />
+      <option name="filePath" value="$PROJECT_DIR$/Flutter Training/draft/lib/main.dart" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Flutter.main.dart (3)" />
+        <item itemvalue="Flutter.main.dart (2)" />
         <item itemvalue="Flutter.main.dart (1)" />
-        <item itemvalue="Flutter.main.dart (5)" />
-        <item itemvalue="Flutter.main.dart (4)" />
-        <item itemvalue="Flutter.main.dart" />
+        <item itemvalue="Dart Command Line App.main.dart" />
+        <item itemvalue="Dart Command Line App.d6.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +191,22 @@
       <workItem from="1747873537294" duration="6591000" />
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
+    </task>
+    <task id="LOCAL-00036" summary="Corrigido atividade ia_variaveis.md">
+      <option name="closed" value="true" />
+      <created>1744306108610</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1744306108610</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Corrigido atividade ia_operadores.md">
+      <option name="closed" value="true" />
+      <created>1744306134398</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1744306134398</updated>
     </task>
     <task id="LOCAL-00038" summary="Corrigido atividade ia_funcoes.md">
       <option name="closed" value="true" />
@@ -583,23 +584,7 @@
       <option name="project" value="LOCAL" />
       <updated>1748227360511</updated>
     </task>
-    <task id="LOCAL-00085" summary="docs: realizado atividade ia_flutter_internacionalizacao.md">
-      <option name="closed" value="true" />
-      <created>1748467801249</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1748467801249</updated>
-    </task>
-    <task id="LOCAL-00086" summary="docs: alterado atividade ia_flutter_sqlite.md">
-      <option name="closed" value="true" />
-      <created>1748467826972</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1748467826972</updated>
-    </task>
-    <option name="localTasksCounter" value="87" />
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,6 +614,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Realizada Atividade ap6_erros\ap4.dart" />
+    <MESSAGE value="Realizada Atividade ai_excecoes.md" />
     <MESSAGE value="Realizada Atividade ia_oo1.md" />
     <MESSAGE value="Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart." />
     <MESSAGE value="Realizada as atividades de concorrência (ap1.dart, ap2.dart, ap3.dart e ap4.dart)." />
@@ -652,24 +639,7 @@
     <MESSAGE value="feat: implementar edição de pessoas e estilizar tela de listagem" />
     <MESSAGE value="refactor: populando a classe Pessoa" />
     <MESSAGE value="style: Alteracao nas cores do app" />
-    <MESSAGE value="docs: realizado atividade ia_flutter_internacionalizacao.md" />
-    <MESSAGE value="docs: alterado atividade ia_flutter_sqlite.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: alterado atividade ia_flutter_sqlite.md" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart</url>
-          <line>54</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="style: Alteracao nas cores do app" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

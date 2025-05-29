@@ -9,7 +9,22 @@ class ConversorUnidade extends StatefulWidget {
 
 class _ConversorUnidadeState extends State<ConversorUnidade> {
   TipoConversor? tipoSelecionado;
-  TipoDistancia? tipoSelecionadoD;
+  String? unidadeOrigemSelecionada;
+  String? unidadeDestinoSelecionada;
+
+  final Map<TipoConversor, List<String>> dadosSelecioandos = {
+    TipoConversor.distancia: ['Km', 'm', 'cm'],
+    TipoConversor.temperatura: ['Celsius', 'Fahrenheit', 'Kelvin'],
+    TipoConversor.peso: ['Kg', 'g', 'mg'],
+  };
+
+  List<String> opcoesUnidades = [];
+
+  void trocar() {
+    final temp = unidadeOrigemSelecionada;
+    unidadeOrigemSelecionada = unidadeDestinoSelecionada;
+    unidadeDestinoSelecionada = temp;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +45,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
         // Container Branco
         child: Container(
           padding: EdgeInsets.all(20.0),
-          height: 330,
+          height: MediaQuery.of(context).size.width * 0.9,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(15)),
             color: Colors.white,
@@ -41,7 +56,6 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-
               // Text Tipo
               Padding(
                 padding: const EdgeInsets.only(left: 16.0),
@@ -55,15 +69,19 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
               DropdownButtonFormField<TipoConversor>(
                 value: tipoSelecionado,
                 items:
-                    TipoConversor.values.map((tipo) {
+                    dadosSelecioandos.keys.map((tipo) {
                       return DropdownMenuItem(
                         value: tipo,
                         child: Text(descreverTipo(tipo)),
                       );
                     }).toList(),
-                onChanged: (value) {
+                onChanged: (TipoConversor? value) {
                   setState(() {
-                    tipoSelecionado = value!;
+                    if (value == null) return;
+                    tipoSelecionado = value;
+                    opcoesUnidades = dadosSelecioandos[value] ?? [];
+                    unidadeOrigemSelecionada = opcoesUnidades[0];
+                    unidadeDestinoSelecionada = opcoesUnidades[1];
                   });
                 },
                 decoration: InputDecoration(
@@ -105,8 +123,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
               // Input Quantia
               Container(
-                decoration:
-                BoxDecoration(
+                decoration: BoxDecoration(
                   border: Border.all(color: Colors.grey, width: 1.5),
                   borderRadius: BorderRadius.circular(12),
                 ),
@@ -127,21 +144,38 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                       ),
                     ),
                     DropdownButtonHideUnderline(
-                      child: DropdownButton<TipoDistancia>(
+                      child: DropdownButton<String>(
                         underline: SizedBox(),
-                        value: tipoSelecionadoD,
-                        isDense: true,             // Menor altura
+                        value: unidadeOrigemSelecionada,
+                        isDense: true,
+                        // Menor altura
                         itemHeight: 48,
                         items:
-                            TipoDistancia.values.map((tipo) {
+                            opcoesUnidades.map((tipo) {
                               return DropdownMenuItem(
                                 value: tipo,
-                                child: Text(descreverTipoDistancia(tipo)),
+                                child: Text(tipo),
                               );
                             }).toList(),
                         onChanged: (value) {
                           setState(() {
-                            tipoSelecionadoD = value!;
+                            final temp = unidadeOrigemSelecionada;
+
+                            unidadeOrigemSelecionada = value!;
+
+                            if (unidadeOrigemSelecionada ==
+                                unidadeDestinoSelecionada) {
+                              print('Entrou');
+                              unidadeOrigemSelecionada =
+                                  unidadeDestinoSelecionada;
+                              unidadeDestinoSelecionada = temp;
+                            }
+                            print(
+                              'Segundo Drop: \n'
+                              'Valor1: $unidadeOrigemSelecionada\n'
+                              'Valor2: $unidadeDestinoSelecionada\n'
+                              'OpcoesUnidades: $opcoesUnidades',
+                            );
                           });
                         },
                       ),
@@ -152,18 +186,25 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
               const SizedBox(height: 15),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.arrow_downward_rounded,
-                    color: Color.fromRGBO(19, 75, 176, 1),
-                  ),
-                  Icon(
-                    Icons.arrow_upward_rounded,
-                    color: Color.fromRGBO(19, 75, 176, 1),
-                  ),
-                ],
+              InkWell(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.arrow_downward_rounded,
+                      color: Color.fromRGBO(19, 75, 176, 1),
+                    ),
+                    Icon(
+                      Icons.arrow_upward_rounded,
+                      color: Color.fromRGBO(19, 75, 176, 1),
+                    ),
+                  ],
+                ),
+                onTap: () {
+                  setState(() {
+                    trocar();
+                  });
+                },
               ),
 
               const SizedBox(height: 10),
@@ -179,8 +220,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
               // Output Converter para
               Container(
-                decoration:
-                BoxDecoration(
+                decoration: BoxDecoration(
                   border: Border.all(color: Colors.grey, width: 1.5),
                   borderRadius: BorderRadius.circular(12),
                 ),
@@ -201,21 +241,22 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                       ),
                     ),
                     DropdownButtonHideUnderline(
-                      child: DropdownButton<TipoDistancia>(
+                      child: DropdownButton<String>(
                         underline: SizedBox(),
-                        value: tipoSelecionadoD,
-                        isDense: true,             // Menor altura
+                        value: unidadeDestinoSelecionada,
+                        isDense: true,
+                        // Menor altura
                         itemHeight: 48,
                         items:
-                        TipoDistancia.values.map((tipo) {
-                          return DropdownMenuItem(
-                            value: tipo,
-                            child: Text(descreverTipoDistancia(tipo)),
-                          );
-                        }).toList(),
+                            opcoesUnidades.map((tipo) {
+                              return DropdownMenuItem(
+                                value: tipo,
+                                child: Text(tipo),
+                              );
+                            }).toList(),
                         onChanged: (value) {
                           setState(() {
-                            tipoSelecionadoD = value!;
+                            unidadeDestinoSelecionada = value!;
                           });
                         },
                       ),
@@ -230,12 +271,24 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('1 Km', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
-                  Text(' = ', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
-                  Text('1000 m', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color.fromRGBO(19, 75, 176, 1)),),
+                  Text(
+                    '1 Km',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    ' = ',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    '1000 m',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(19, 75, 176, 1),
+                    ),
+                  ),
                 ],
-              )
-
+              ),
             ],
           ),
         ),
@@ -246,24 +299,10 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
 enum TipoConversor { distancia, peso, temperatura }
 
-enum TipoDistancia { cemtimetros, metros, kilometros }
-
-enum TipoPeso { miligrama, grama, kilograma }
-
-enum TipoTemperatura { celsius, kelvin, fahrenheit }
-
 String descreverTipo(TipoConversor tipo) {
   return switch (tipo) {
     TipoConversor.distancia => 'Distancia',
     TipoConversor.peso => 'Peso',
     TipoConversor.temperatura => 'Temperatura',
-  };
-}
-
-String descreverTipoDistancia(TipoDistancia tipo) {
-  return switch (tipo) {
-    TipoDistancia.cemtimetros => 'CM',
-    TipoDistancia.metros => 'M',
-    TipoDistancia.kilometros => 'KM',
   };
 }
