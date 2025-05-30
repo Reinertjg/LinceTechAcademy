@@ -20,11 +20,30 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
   List<String> opcoesUnidades = [];
 
-  void trocar() {
-    final temp = unidadeOrigemSelecionada;
-    unidadeOrigemSelecionada = unidadeDestinoSelecionada;
-    unidadeDestinoSelecionada = temp;
+  void atualizarUnidade({
+    required bool atualizandoOrigem,
+    required String novaUnidade,
+  }) {
+    if (atualizandoOrigem) {
+      final temp = unidadeOrigemSelecionada;
+      unidadeOrigemSelecionada = novaUnidade;
+
+      if (unidadeOrigemSelecionada == unidadeDestinoSelecionada) {
+        unidadeOrigemSelecionada = unidadeDestinoSelecionada;
+        unidadeDestinoSelecionada = temp;
+      }
+    } else {
+      final temp = unidadeDestinoSelecionada;
+      unidadeDestinoSelecionada = novaUnidade;
+
+      if (unidadeOrigemSelecionada == unidadeDestinoSelecionada) {
+        unidadeDestinoSelecionada = unidadeOrigemSelecionada;
+        unidadeOrigemSelecionada = temp;
+      }
+    }
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -159,23 +178,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                             }).toList(),
                         onChanged: (value) {
                           setState(() {
-                            final temp = unidadeOrigemSelecionada;
-
-                            unidadeOrigemSelecionada = value!;
-
-                            if (unidadeOrigemSelecionada ==
-                                unidadeDestinoSelecionada) {
-                              print('Entrou');
-                              unidadeOrigemSelecionada =
-                                  unidadeDestinoSelecionada;
-                              unidadeDestinoSelecionada = temp;
-                            }
-                            print(
-                              'Segundo Drop: \n'
-                              'Valor1: $unidadeOrigemSelecionada\n'
-                              'Valor2: $unidadeDestinoSelecionada\n'
-                              'OpcoesUnidades: $opcoesUnidades',
-                            );
+                            atualizarUnidade(atualizandoOrigem: true, novaUnidade: value!);
                           });
                         },
                       ),
@@ -186,25 +189,29 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
               const SizedBox(height: 15),
 
-              InkWell(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.arrow_downward_rounded,
-                      color: Color.fromRGBO(19, 75, 176, 1),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  InkWell(
+                    onTap: () {
+                      setState(() {
+
+                      });
+                    },
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.arrow_downward_rounded,
+                          color: Color.fromRGBO(19, 75, 176, 1),
+                        ),
+                        Icon(
+                          Icons.arrow_upward_rounded,
+                          color: Color.fromRGBO(19, 75, 176, 1),
+                        ),
+                      ],
                     ),
-                    Icon(
-                      Icons.arrow_upward_rounded,
-                      color: Color.fromRGBO(19, 75, 176, 1),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  setState(() {
-                    trocar();
-                  });
-                },
+                  ),
+                ],
               ),
 
               const SizedBox(height: 10),
@@ -256,7 +263,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                             }).toList(),
                         onChanged: (value) {
                           setState(() {
-                            unidadeDestinoSelecionada = value!;
+                            atualizarUnidade(atualizandoOrigem: false, novaUnidade: value!);
                           });
                         },
                       ),

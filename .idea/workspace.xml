@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="style: Alteracao nas cores do app">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: Implementado funcionalidade nos campos DropdownButton">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,14 +183,6 @@
       <workItem from="1747873537294" duration="6591000" />
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
-    </task>
-    <task id="LOCAL-00036" summary="Corrigido atividade ia_variaveis.md">
-      <option name="closed" value="true" />
-      <created>1744306108610</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1744306108610</updated>
     </task>
     <task id="LOCAL-00037" summary="Corrigido atividade ia_operadores.md">
       <option name="closed" value="true" />
@@ -584,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748227360511</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="feat: Implementado funcionalidade nos campos DropdownButton">
+      <option name="closed" value="true" />
+      <created>1748562169084</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1748562169085</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizada Atividade ap6_erros\ap4.dart" />
     <MESSAGE value="Realizada Atividade ai_excecoes.md" />
     <MESSAGE value="Realizada Atividade ia_oo1.md" />
     <MESSAGE value="Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart." />
@@ -639,7 +630,8 @@
     <MESSAGE value="feat: implementar edição de pessoas e estilizar tela de listagem" />
     <MESSAGE value="refactor: populando a classe Pessoa" />
     <MESSAGE value="style: Alteracao nas cores do app" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: Alteracao nas cores do app" />
+    <MESSAGE value="feat: Implementado funcionalidade nos campos DropdownButton" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Implementado funcionalidade nos campos DropdownButton" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
