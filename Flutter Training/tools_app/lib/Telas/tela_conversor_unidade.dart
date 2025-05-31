@@ -8,9 +8,13 @@ class ConversorUnidade extends StatefulWidget {
 }
 
 class _ConversorUnidadeState extends State<ConversorUnidade> {
+  final TextEditingController origemController = TextEditingController();
+  final TextEditingController destinoController = TextEditingController();
+
   TipoConversor? tipoSelecionado;
   String? unidadeOrigemSelecionada;
   String? unidadeDestinoSelecionada;
+  bool textConversor = false;
 
   final Map<TipoConversor, List<String>> dadosSelecioandos = {
     TipoConversor.distancia: ['Km', 'm', 'cm'],
@@ -43,7 +47,77 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
     }
   }
 
+  void trocarUnidades() {
+    final temp = unidadeOrigemSelecionada;
+    unidadeOrigemSelecionada = unidadeDestinoSelecionada;
+    unidadeDestinoSelecionada = temp;
 
+    final tempController = origemController.text;
+    origemController.text = destinoController.text;
+    destinoController.text = tempController;
+  }
+
+  String gerarTextoEquivalencia() {
+    // Exemplo bem simples:
+    if (unidadeOrigemSelecionada == "Km" && unidadeDestinoSelecionada == "m") {
+      return "1000 m";
+    } else if (unidadeOrigemSelecionada == "Km" && unidadeDestinoSelecionada == "cm") {
+      return "100000 cm";
+    } else if (unidadeOrigemSelecionada == "m" && unidadeDestinoSelecionada == "Km") {
+      return "0,001 Km";
+    } else if (unidadeOrigemSelecionada == "m" && unidadeDestinoSelecionada == "cm") {
+      return "100 Cm";
+    } else if (unidadeOrigemSelecionada == "cm" && unidadeDestinoSelecionada == "m") {
+      return "0,01 m";
+    } else if (unidadeOrigemSelecionada == "cm" && unidadeDestinoSelecionada == "Km") {
+      return "0,00001 Km";
+    }
+    // Adicione as outras combinações conforme suas regras de conversão
+    return "Conversor não implementado";
+  }
+
+  void calcularConversao() {
+
+    final conversor = criarConversorCorreto(); // méodo que instancia a classe correta
+
+    if (campoEditado == CampoEditado.origem) {
+      if (origemController.text.isEmpty) {
+        destinoController.text = "";
+        return;
+      }
+
+      double valor = double.tryParse(origemController.text) ?? 0;
+      double resultado = conversor.converter(valor, unidadeOrigemSelecionada!, unidadeDestinoSelecionada!);
+      destinoController.text = resultado.toString();
+    } else if (campoEditado == CampoEditado.destino) {
+      if (destinoController.text.isEmpty) {
+        origemController.text = "";
+        return;
+      }
+
+      double valor = double.tryParse(destinoController.text) ?? 0;
+      double resultado = conversor.converter(valor, unidadeDestinoSelecionada!, unidadeOrigemSelecionada!);
+      origemController.text = resultado.toString();
+    }
+  }
+
+  // double calcularConversaoText() {
+  //   final conversor = criarConversorCorreto(); // méodo que instancia a classe correta
+  //   return conversor.converter(1, unidadeOrigemSelecionada!, unidadeDestinoSelecionada!);
+  // }
+
+  Conversor criarConversorCorreto() {
+    switch (tipoSelecionado) {
+      case TipoConversor.distancia:
+        return ConversorDistancia();
+      case TipoConversor.temperatura:
+        return ConversorTemperatura();
+      case TipoConversor.peso:
+        return ConversorPeso();
+      default:
+        throw Exception('Conversor não implementado');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -97,6 +171,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                 onChanged: (TipoConversor? value) {
                   setState(() {
                     if (value == null) return;
+                    textConversor = true;
                     tipoSelecionado = value;
                     opcoesUnidades = dadosSelecioandos[value] ?? [];
                     unidadeOrigemSelecionada = opcoesUnidades[0];
@@ -131,6 +206,8 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
               const SizedBox(height: 15),
 
+
+              /// TODO: Campo Quantia
               // Text Quantia
               Padding(
                 padding: const EdgeInsets.only(left: 16.0),
@@ -150,6 +227,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                   children: [
                     Expanded(
                       child: TextField(
+                        controller: origemController,
                         decoration: InputDecoration(
                           hintText: '0',
                           border: InputBorder.none,
@@ -160,6 +238,12 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                           ),
                         ),
                         keyboardType: TextInputType.number,
+                        onChanged: (value) {
+                          setState(() {
+                            campoEditado = CampoEditado.origem;
+                            calcularConversao();
+                          });
+                        },
                       ),
                     ),
                     DropdownButtonHideUnderline(
@@ -179,6 +263,8 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                         onChanged: (value) {
                           setState(() {
                             atualizarUnidade(atualizandoOrigem: true, novaUnidade: value!);
+                            campoEditado = CampoEditado.origem;
+                            calcularConversao();
                           });
                         },
                       ),
@@ -195,7 +281,8 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                   InkWell(
                     onTap: () {
                       setState(() {
-
+                        trocarUnidades();
+                        calcularConversao();
                       });
                     },
                     child: Row(
@@ -216,6 +303,8 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
               const SizedBox(height: 10),
 
+
+              /// TODO: Campo Converter para
               // Text Converter para
               Padding(
                 padding: const EdgeInsets.only(left: 16.0),
@@ -235,6 +324,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                   children: [
                     Expanded(
                       child: TextField(
+                        controller: destinoController,
                         decoration: InputDecoration(
                           hintText: '0',
                           border: InputBorder.none,
@@ -245,6 +335,10 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                           ),
                         ),
                         keyboardType: TextInputType.number,
+                        onChanged: (value) {
+                          campoEditado = CampoEditado.destino;
+                          calcularConversao();
+                        },
                       ),
                     ),
                     DropdownButtonHideUnderline(
@@ -264,6 +358,8 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                         onChanged: (value) {
                           setState(() {
                             atualizarUnidade(atualizandoOrigem: false, novaUnidade: value!);
+                            campoEditado = CampoEditado.destino;
+                            calcularConversao();
                           });
                         },
                       ),
@@ -274,20 +370,25 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
               const SizedBox(height: 10),
 
+              /// TODO: Text Conversão 1:1
               // Text Conversão 1:1
+              Visibility(
+                visible: textConversor,
+                child:
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    '1 Km',
+                    '1 $unidadeOrigemSelecionada',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+
                   ),
                   Text(
                     ' = ',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    '1000 m',
+                    gerarTextoEquivalencia(),
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -295,6 +396,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                     ),
                   ),
                 ],
+              ),
               ),
             ],
           ),
@@ -304,6 +406,9 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
   }
 }
 
+enum CampoEditado { origem, destino }
+CampoEditado? campoEditado;
+
 enum TipoConversor { distancia, peso, temperatura }
 
 String descreverTipo(TipoConversor tipo) {
@@ -312,4 +417,45 @@ String descreverTipo(TipoConversor tipo) {
     TipoConversor.peso => 'Peso',
     TipoConversor.temperatura => 'Temperatura',
   };
+}
+
+
+abstract class Conversor {
+  double converter(double valor, String origem, String destino);
+
+}
+class ConversorDistancia extends Conversor {
+  @override
+  double converter(double valor, String origem, String destino) {
+    if(origem == "Km" && destino == 'm'){
+      return valor * 1000;
+    } else if (origem == "Km" && destino == 'cm') {
+      return valor * 100000;
+    } else if (origem == "m" && destino == 'Km') {
+      return valor / 1000;
+    } else if (origem == "m" && destino == 'cm') {
+      return valor * 100;
+    } else if (origem == "cm" && destino == 'Km') {
+      return valor / 100000;
+    } else if (origem == "cm" && destino == 'm') {
+      return valor / 100;
+    }
+    return 0.0;
+  }
+}
+
+class ConversorTemperatura extends Conversor {
+  @override
+  double converter(double valor, String origem, String destino) {
+    // aqui vai a lógica só para distância
+    return 0.0;
+  }
+}
+
+class ConversorPeso extends Conversor {
+  @override
+  double converter(double valor, String origem, String destino) {
+    // aqui vai a lógica só para distância
+    return 0.0;
+  }
 }
