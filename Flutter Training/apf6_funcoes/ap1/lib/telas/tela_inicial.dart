@@ -45,17 +45,22 @@ class _TelaInicialState extends State<TelaInicial> {
   }
   }
   
-  class blueButton extends StatelessWidget {
+  class blueButton extends StatefulWidget {
     const blueButton({required this.text, required this.route,super.key});
     
     final String text;
     final String route;
-  
+
+  @override
+  State<blueButton> createState() => _blueButtonState();
+}
+
+class _blueButtonState extends State<blueButton> {
     @override
     Widget build(BuildContext context) {
       return ElevatedButton(
         onPressed: () {
-          Navigator.pushNamed(context, route);
+          Navigator.pushNamed(context, widget.route);
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: Color(0xFF00ADB5),
@@ -65,10 +70,10 @@ class _TelaInicialState extends State<TelaInicial> {
           ),
         ),
         child: Text(
-          text,
+          widget.text,
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
       );
     }
-  }
+}
   

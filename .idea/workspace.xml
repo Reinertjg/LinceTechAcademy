@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="refactor: alterado Text Conversao 1:1">
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="fix: correcao '_TypeError: Null check operator used on a null value'">
+      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/controllers/conversor_unidades_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/models/tipo_conversor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/pages/conversor_unidades_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/services/conversor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/services/conversor_distancia.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/services/conversor_peso.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/services/conversor_temperatura.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +118,7 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap4_operadores" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\LinceTechAcademy\Flutter Training\tools_app\lib" />
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
     </key>
   </component>
@@ -182,14 +192,6 @@
       <workItem from="1747873537294" duration="6591000" />
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
-    </task>
-    <task id="LOCAL-00043" summary="Realizada Atividade ap5_logica\ap1.dart">
-      <option name="closed" value="true" />
-      <created>1744322565071</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1744322565071</updated>
     </task>
     <task id="LOCAL-00044" summary="Realizada Atividade ap5_logica\ap1.dart">
       <option name="closed" value="true" />
@@ -575,7 +577,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748786159150</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="fix: correcao '_TypeError: Null check operator used on a null value'">
+      <option name="closed" value="true" />
+      <created>1748787407185</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1748787407185</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +615,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizando a atividade do Desafio cronometrado #2 (d3.dart)." />
     <MESSAGE value="Realizado a reestruturação do repository" />
     <MESSAGE value="Adicionado projeto Flutter - AP2 Funcoes" />
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d4.dart)" />
@@ -630,7 +639,8 @@
     <MESSAGE value="feat: implementado toda a logica do tipo Peso" />
     <MESSAGE value="style: identacao do codigo" />
     <MESSAGE value="refactor: alterado Text Conversao 1:1" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: alterado Text Conversao 1:1" />
+    <MESSAGE value="fix: correcao '_TypeError: Null check operator used on a null value'" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: correcao '_TypeError: Null check operator used on a null value'" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

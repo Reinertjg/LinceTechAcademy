@@ -5,6 +5,8 @@ import 'package:tools_app/Telas/tela_conversor_moeda.dart';
 import 'package:tools_app/Telas/tela_conversor_unidade.dart';
 import 'package:tools_app/Telas/tela_calculadora.dart';
 
+import 'modules/conversor_unidades/pages/conversor_unidades_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
