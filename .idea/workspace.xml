@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="fix: correcao '_TypeError: Null check operator used on a null value'">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/controllers/conversor_unidades_controller.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/models/tipo_conversor.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/pages/conversor_unidades_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/services/conversor.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/services/conversor_distancia.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/services/conversor_peso.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/services/conversor_temperatura.dart" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: refatora arquitetura do conversor de unidades&#10;&#10;- Separa responsabilidade em Pages, Controllers, Models e Services.&#10;- Cria controllers com lógica de estado e cálculo de conversão.&#10;- Isola serviços de conversão por tipo (Distância, Temperatura, Peso).&#10;- Implementa uso correto de TextEditingController com dispose().&#10;- Estrutura o projeto para expansão futura (moedas, calculadora).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_inicio.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_inicio.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/pages/conversor_unidades_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/pages/conversor_unidades_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +40,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -59,56 +53,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Dart Command Line App.ap1.dart (1).executor": "Run",
-    "Dart Command Line App.ap1.dart.executor": "Run",
-    "Dart Command Line App.ap2.dart (1).executor": "Run",
-    "Dart Command Line App.ap2.dart.executor": "Run",
-    "Dart Command Line App.ap3.dart (1).executor": "Run",
-    "Dart Command Line App.ap3.dart.executor": "Run",
-    "Dart Command Line App.ap4.dart (1).executor": "Run",
-    "Dart Command Line App.ap4.dart.executor": "Run",
-    "Dart Command Line App.ap5.dart (1).executor": "Run",
-    "Dart Command Line App.ap5.dart.executor": "Run",
-    "Dart Command Line App.d1.dart.executor": "Run",
-    "Dart Command Line App.d2.dart.executor": "Run",
-    "Dart Command Line App.d3.dart.executor": "Run",
-    "Dart Command Line App.d4.dart.executor": "Run",
-    "Dart Command Line App.d5.dart.executor": "Run",
-    "Dart Command Line App.d6.dart.executor": "Debug",
-    "Dart Command Line App.d7.dart.executor": "Run",
-    "Dart Command Line App.d8.dart.executor": "Run",
-    "Dart Command Line App.main.dart.executor": "Run",
-    "Flutter.main.dart (1).executor": "Run",
-    "Flutter.main.dart (2).executor": "Run",
-    "Flutter.main.dart (3).executor": "Debug",
-    "Flutter.main.dart (4).executor": "Debug",
-    "Flutter.main.dart (5).executor": "Run",
-    "Flutter.main.dart.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "io.flutter.reload.alreadyRun": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/LinceTechAcademy",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "device.explorer",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Dart Command Line App.ap1.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap1.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap2.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap2.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap3.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap3.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap4.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap4.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap5.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap5.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d1.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d2.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d3.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d4.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d5.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d6.dart.executor&quot;: &quot;Debug&quot;,
+    &quot;Dart Command Line App.d7.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d8.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (2).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (3).executor&quot;: &quot;Debug&quot;,
+    &quot;Flutter.main.dart (4).executor&quot;: &quot;Debug&quot;,
+    &quot;Flutter.main.dart (5).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/LinceTechAcademy&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy" />
@@ -148,6 +142,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Flutter.main.dart (2)" />
+        <item itemvalue="Flutter.main.dart" />
         <item itemvalue="Flutter.main.dart (1)" />
         <item itemvalue="Dart Command Line App.main.dart" />
         <item itemvalue="Dart Command Line App.d6.dart" />
@@ -192,14 +187,6 @@
       <workItem from="1747873537294" duration="6591000" />
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
-    </task>
-    <task id="LOCAL-00044" summary="Realizada Atividade ap5_logica\ap1.dart">
-      <option name="closed" value="true" />
-      <created>1744323838056</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1744323838056</updated>
     </task>
     <task id="LOCAL-00045" summary="Realizada Atividade ap5_logica\ap2.dart">
       <option name="closed" value="true" />
@@ -585,7 +572,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748787407185</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="feat: refatora arquitetura do conversor de unidades&#10;&#10;- Separa responsabilidade em Pages, Controllers, Models e Services.&#10;- Cria controllers com lógica de estado e cálculo de conversão.&#10;- Isola serviços de conversão por tipo (Distância, Temperatura, Peso).&#10;- Implementa uso correto de TextEditingController com dispose().&#10;- Estrutura o projeto para expansão futura (moedas, calculadora).&#10;e">
+      <option name="closed" value="true" />
+      <created>1748791576525</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1748791576525</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +610,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizado a reestruturação do repository" />
     <MESSAGE value="Adicionado projeto Flutter - AP2 Funcoes" />
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d4.dart)" />
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d5.dart)" />
@@ -640,7 +634,8 @@
     <MESSAGE value="style: identacao do codigo" />
     <MESSAGE value="refactor: alterado Text Conversao 1:1" />
     <MESSAGE value="fix: correcao '_TypeError: Null check operator used on a null value'" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: correcao '_TypeError: Null check operator used on a null value'" />
+    <MESSAGE value="feat: refatora arquitetura do conversor de unidades&#10;&#10;- Separa responsabilidade em Pages, Controllers, Models e Services.&#10;- Cria controllers com lógica de estado e cálculo de conversão.&#10;- Isola serviços de conversão por tipo (Distância, Temperatura, Peso).&#10;- Implementa uso correto de TextEditingController com dispose().&#10;- Estrutura o projeto para expansão futura (moedas, calculadora)." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: refatora arquitetura do conversor de unidades&#10;&#10;- Separa responsabilidade em Pages, Controllers, Models e Services.&#10;- Cria controllers com lógica de estado e cálculo de conversão.&#10;- Isola serviços de conversão por tipo (Distância, Temperatura, Peso).&#10;- Implementa uso correto de TextEditingController com dispose().&#10;- Estrutura o projeto para expansão futura (moedas, calculadora)." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

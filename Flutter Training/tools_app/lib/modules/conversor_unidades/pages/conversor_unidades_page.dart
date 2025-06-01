@@ -19,8 +19,6 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
     super.dispose();
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

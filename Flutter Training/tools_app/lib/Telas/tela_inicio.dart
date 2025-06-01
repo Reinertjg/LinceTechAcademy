@@ -1,4 +1,3 @@
-import 'package:tools_app/main.dart';
 import 'package:flutter/material.dart';
 
 class Telainicial extends StatelessWidget {
@@ -19,7 +18,8 @@ class Telainicial extends StatelessWidget {
 
               // Conversor de Moedas
               InkWell(
-                child: Container(
+                borderRadius: BorderRadius.all(Radius.circular(15)),
+                child: Ink(
                   width: 150,
                   height: 150,
                   decoration: BoxDecoration(
@@ -57,40 +57,41 @@ class Telainicial extends StatelessWidget {
 
               // Conversor de unidades
               InkWell(
-                child: Container(
-                  width: 150,
-                  height: 150,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(15)),
-                    color: Color.fromRGBO(19, 75, 176, 1),
-                      boxShadow: [
-                        BoxShadow(
-                            offset: Offset(5, 8),
-                            color: Colors.black,
-                            spreadRadius: 1,
-                            blurRadius: 1
-                        )
-                      ]
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset('assets/regua.png', height: 90, width: 90,),
-                      Text(
-                        'Conversor de unidades',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/conversorUnidades');
+                  },
+                  child: Ink(
+                    width: 150,
+                    height: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(15)),
+                      color: Color.fromRGBO(19, 75, 176, 1),
+                        boxShadow: [
+                          BoxShadow(
+                              offset: Offset(5, 8),
+                              color: Colors.black,
+                              spreadRadius: 1,
+                              blurRadius: 1
+                          )
+                        ]
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/regua.png', height: 90, width: 90,),
+                        Text(
+                          'Conversor de unidades',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
-              onTap: () {
-                  Navigator.pushNamed(context, '/conversorUnidades');
-              },
-              ),
 
             ],
           ),
@@ -98,10 +99,10 @@ class Telainicial extends StatelessWidget {
 
           // Calculadora
           InkWell(
+            borderRadius: BorderRadius.all(Radius.circular(15)),
             child:
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 35.0),
-                width: double.infinity,
+              Ink(
+                width: MediaQuery.of(context).size.width * 0.85,
                 height: 150,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
