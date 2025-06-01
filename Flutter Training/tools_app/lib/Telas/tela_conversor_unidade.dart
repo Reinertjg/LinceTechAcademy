@@ -62,54 +62,70 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
     // Distancia
     if (unidadeOrigemSelecionada == "Km" && unidadeDestinoSelecionada == "m") {
       return "1000 m";
-    } else if (unidadeOrigemSelecionada == "Km" && unidadeDestinoSelecionada == "cm") {
+    } else if (unidadeOrigemSelecionada == "Km" &&
+        unidadeDestinoSelecionada == "cm") {
       return "100000 cm";
-    } else if (unidadeOrigemSelecionada == "m" && unidadeDestinoSelecionada == "Km") {
+    } else if (unidadeOrigemSelecionada == "m" &&
+        unidadeDestinoSelecionada == "Km") {
       return "0,001 Km";
-    } else if (unidadeOrigemSelecionada == "m" && unidadeDestinoSelecionada == "cm") {
+    } else if (unidadeOrigemSelecionada == "m" &&
+        unidadeDestinoSelecionada == "cm") {
       return "100 Cm";
-    } else if (unidadeOrigemSelecionada == "cm" && unidadeDestinoSelecionada == "m") {
+    } else if (unidadeOrigemSelecionada == "cm" &&
+        unidadeDestinoSelecionada == "m") {
       return "0,01 m";
-    } else if (unidadeOrigemSelecionada == "cm" && unidadeDestinoSelecionada == "Km") {
+    } else if (unidadeOrigemSelecionada == "cm" &&
+        unidadeDestinoSelecionada == "Km") {
       return "0,00001 Km";
     }
     // TEMPERATURA
-    else if (unidadeOrigemSelecionada == "Celsius" && unidadeDestinoSelecionada == "Fahrenheit") {
+    else if (unidadeOrigemSelecionada == "Celsius" &&
+        unidadeDestinoSelecionada == "Fahrenheit") {
       return "32 °F";
-    } else if (unidadeOrigemSelecionada == "Celsius" && unidadeDestinoSelecionada == "Kelvin") {
+    } else if (unidadeOrigemSelecionada == "Celsius" &&
+        unidadeDestinoSelecionada == "Kelvin") {
       return "273.15 K";
-    } else if (unidadeOrigemSelecionada == "Fahrenheit" && unidadeDestinoSelecionada == "Celsius") {
+    } else if (unidadeOrigemSelecionada == "Fahrenheit" &&
+        unidadeDestinoSelecionada == "Celsius") {
       return "-17.78 °C";
-    } else if (unidadeOrigemSelecionada == "Fahrenheit" && unidadeDestinoSelecionada == "Kelvin") {
+    } else if (unidadeOrigemSelecionada == "Fahrenheit" &&
+        unidadeDestinoSelecionada == "Kelvin") {
       return "255.93 K";
-    } else if (unidadeOrigemSelecionada == "Kelvin" && unidadeDestinoSelecionada == "Celsius") {
+    } else if (unidadeOrigemSelecionada == "Kelvin" &&
+        unidadeDestinoSelecionada == "Celsius") {
       return "-272.15 °C";
-    } else if (unidadeOrigemSelecionada == "Kelvin" && unidadeDestinoSelecionada == "Fahrenheit") {
+    } else if (unidadeOrigemSelecionada == "Kelvin" &&
+        unidadeDestinoSelecionada == "Fahrenheit") {
       return "-457.87 °F";
     }
     // PESO
-    else if (unidadeOrigemSelecionada == "Kg" && unidadeDestinoSelecionada == "g") {
+    else if (unidadeOrigemSelecionada == "Kg" &&
+        unidadeDestinoSelecionada == "g") {
       return "1000 g";
-    } else if (unidadeOrigemSelecionada == "Kg" && unidadeDestinoSelecionada == "mg") {
+    } else if (unidadeOrigemSelecionada == "Kg" &&
+        unidadeDestinoSelecionada == "mg") {
       return "1000000 mg";
-    } else if (unidadeOrigemSelecionada == "g" && unidadeDestinoSelecionada == "Kg") {
+    } else if (unidadeOrigemSelecionada == "g" &&
+        unidadeDestinoSelecionada == "Kg") {
       return "0.001 Kg";
-    } else if (unidadeOrigemSelecionada == "g" && unidadeDestinoSelecionada == "mg") {
+    } else if (unidadeOrigemSelecionada == "g" &&
+        unidadeDestinoSelecionada == "mg") {
       return "1000 mg";
-    } else if (unidadeOrigemSelecionada == "mg" && unidadeDestinoSelecionada == "Kg") {
+    } else if (unidadeOrigemSelecionada == "mg" &&
+        unidadeDestinoSelecionada == "Kg") {
       return "0.000001 Kg";
-    } else if (unidadeOrigemSelecionada == "mg" && unidadeDestinoSelecionada == "g") {
+    } else if (unidadeOrigemSelecionada == "mg" &&
+        unidadeDestinoSelecionada == "g") {
       return "0.001 g";
     }
-
 
     // Adicione as outras combinações conforme suas regras de conversão
     return "Conversor não implementado";
   }
 
   void calcularConversao() {
-
-    final conversor = criarConversorCorreto(); // méodo que instancia a classe correta
+    final conversor =
+        criarConversorCorreto(); // méodo que instancia a classe correta
 
     if (campoEditado == CampoEditado.origem) {
       if (origemController.text.isEmpty) {
@@ -118,7 +134,11 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
       }
 
       double valor = double.tryParse(origemController.text) ?? 0;
-      double resultado = conversor.converter(valor, unidadeOrigemSelecionada!, unidadeDestinoSelecionada!);
+      double resultado = conversor.converter(
+        valor,
+        unidadeOrigemSelecionada!,
+        unidadeDestinoSelecionada!,
+      );
       destinoController.text = resultado.toString();
     } else if (campoEditado == CampoEditado.destino) {
       if (destinoController.text.isEmpty) {
@@ -127,7 +147,11 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
       }
 
       double valor = double.tryParse(destinoController.text) ?? 0;
-      double resultado = conversor.converter(valor, unidadeDestinoSelecionada!, unidadeOrigemSelecionada!);
+      double resultado = conversor.converter(
+        valor,
+        unidadeDestinoSelecionada!,
+        unidadeOrigemSelecionada!,
+      );
       origemController.text = resultado.toString();
     }
   }
@@ -245,7 +269,6 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
               const SizedBox(height: 15),
 
-
               /// TODO: Campo Quantia
               // Text Quantia
               Padding(
@@ -301,7 +324,10 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                             }).toList(),
                         onChanged: (value) {
                           setState(() {
-                            atualizarUnidade(atualizandoOrigem: true, novaUnidade: value!);
+                            atualizarUnidade(
+                              atualizandoOrigem: true,
+                              novaUnidade: value!,
+                            );
                             campoEditado = CampoEditado.origem;
                             calcularConversao();
                           });
@@ -341,7 +367,6 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
               ),
 
               const SizedBox(height: 10),
-
 
               /// TODO: Campo Converter para
               // Text Converter para
@@ -396,7 +421,10 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                             }).toList(),
                         onChanged: (value) {
                           setState(() {
-                            atualizarUnidade(atualizandoOrigem: false, novaUnidade: value!);
+                            atualizarUnidade(
+                              atualizandoOrigem: false,
+                              novaUnidade: value!,
+                            );
                             campoEditado = CampoEditado.destino;
                             calcularConversao();
                           });
@@ -413,29 +441,33 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
               // Text Conversão 1:1
               Visibility(
                 visible: textConversor,
-                child:
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    '${obterTextoOrigem()} $unidadeOrigemSelecionada',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-
-                  ),
-                  Text(
-                    ' = ',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    gerarTextoEquivalencia(),
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: Color.fromRGBO(19, 75, 176, 1),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      '${obterTextoOrigem()} $unidadeOrigemSelecionada',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                ],
-              ),
+                    Text(
+                      ' = ',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      gerarTextoEquivalencia(),
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromRGBO(19, 75, 176, 1),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
@@ -446,6 +478,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 }
 
 enum CampoEditado { origem, destino }
+
 CampoEditado? campoEditado;
 
 enum TipoConversor { distancia, peso, temperatura }
@@ -458,15 +491,14 @@ String descreverTipo(TipoConversor tipo) {
   };
 }
 
-
 abstract class Conversor {
   double converter(double valor, String origem, String destino);
-
 }
+
 class ConversorDistancia extends Conversor {
   @override
   double converter(double valor, String origem, String destino) {
-    if(origem == "Km" && destino == 'm'){
+    if (origem == "Km" && destino == 'm') {
       return valor * 1000;
     } else if (origem == "Km" && destino == 'cm') {
       return valor * 100000;
@@ -493,11 +525,15 @@ class ConversorTemperatura extends Conversor {
     } else if (origem == "Fahrenheit" && destino == 'Celsius') {
       return double.parse((((valor - 32) * 5 / 9).toStringAsFixed(2)));
     } else if (origem == "Fahrenheit" && destino == 'Kelvin') {
-      return double.parse(((((valor - 32) * 5 / 9) + 273.15).toStringAsFixed(2)));
+      return double.parse(
+        ((((valor - 32) * 5 / 9) + 273.15).toStringAsFixed(2)),
+      );
     } else if (origem == "Kelvin" && destino == 'Celsius') {
       return double.parse(((valor - 273.15).toStringAsFixed(2)));
     } else if (origem == "Kelvin" && destino == 'Fahrenheit') {
-      return double.parse(((((valor - 273.15) * 9 / 5) + 32).toStringAsFixed(2)));
+      return double.parse(
+        ((((valor - 273.15) * 9 / 5) + 32).toStringAsFixed(2)),
+      );
     }
     return 0.0;
   }
