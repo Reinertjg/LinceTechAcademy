@@ -14,6 +14,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
   TipoConversor? tipoSelecionado;
   String? unidadeOrigemSelecionada;
   String? unidadeDestinoSelecionada;
+  double textConversorDouble = 0.0;
   bool textConversor = false;
 
   final Map<TipoConversor, List<String>> dadosSelecioandos = {
@@ -57,73 +58,8 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
     destinoController.text = tempController;
   }
 
-  String gerarTextoEquivalencia() {
-    // Exemplo bem simples:
-    // Distancia
-    if (unidadeOrigemSelecionada == "Km" && unidadeDestinoSelecionada == "m") {
-      return "1000 m";
-    } else if (unidadeOrigemSelecionada == "Km" &&
-        unidadeDestinoSelecionada == "cm") {
-      return "100000 cm";
-    } else if (unidadeOrigemSelecionada == "m" &&
-        unidadeDestinoSelecionada == "Km") {
-      return "0,001 Km";
-    } else if (unidadeOrigemSelecionada == "m" &&
-        unidadeDestinoSelecionada == "cm") {
-      return "100 Cm";
-    } else if (unidadeOrigemSelecionada == "cm" &&
-        unidadeDestinoSelecionada == "m") {
-      return "0,01 m";
-    } else if (unidadeOrigemSelecionada == "cm" &&
-        unidadeDestinoSelecionada == "Km") {
-      return "0,00001 Km";
-    }
-    // TEMPERATURA
-    else if (unidadeOrigemSelecionada == "Celsius" &&
-        unidadeDestinoSelecionada == "Fahrenheit") {
-      return "32 °F";
-    } else if (unidadeOrigemSelecionada == "Celsius" &&
-        unidadeDestinoSelecionada == "Kelvin") {
-      return "273.15 K";
-    } else if (unidadeOrigemSelecionada == "Fahrenheit" &&
-        unidadeDestinoSelecionada == "Celsius") {
-      return "-17.78 °C";
-    } else if (unidadeOrigemSelecionada == "Fahrenheit" &&
-        unidadeDestinoSelecionada == "Kelvin") {
-      return "255.93 K";
-    } else if (unidadeOrigemSelecionada == "Kelvin" &&
-        unidadeDestinoSelecionada == "Celsius") {
-      return "-272.15 °C";
-    } else if (unidadeOrigemSelecionada == "Kelvin" &&
-        unidadeDestinoSelecionada == "Fahrenheit") {
-      return "-457.87 °F";
-    }
-    // PESO
-    else if (unidadeOrigemSelecionada == "Kg" &&
-        unidadeDestinoSelecionada == "g") {
-      return "1000 g";
-    } else if (unidadeOrigemSelecionada == "Kg" &&
-        unidadeDestinoSelecionada == "mg") {
-      return "1000000 mg";
-    } else if (unidadeOrigemSelecionada == "g" &&
-        unidadeDestinoSelecionada == "Kg") {
-      return "0.001 Kg";
-    } else if (unidadeOrigemSelecionada == "g" &&
-        unidadeDestinoSelecionada == "mg") {
-      return "1000 mg";
-    } else if (unidadeOrigemSelecionada == "mg" &&
-        unidadeDestinoSelecionada == "Kg") {
-      return "0.000001 Kg";
-    } else if (unidadeOrigemSelecionada == "mg" &&
-        unidadeDestinoSelecionada == "g") {
-      return "0.001 g";
-    }
-
-    // Adicione as outras combinações conforme suas regras de conversão
-    return "Conversor não implementado";
-  }
-
   void calcularConversao() {
+
     final conversor =
         criarConversorCorreto(); // méodo que instancia a classe correta
 
@@ -156,10 +92,17 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
     }
   }
 
-  // double calcularConversaoText() {
-  //   final conversor = criarConversorCorreto(); // méodo que instancia a classe correta
-  //   return conversor.converter(1, unidadeOrigemSelecionada!, unidadeDestinoSelecionada!);
-  // }
+  String calcularConversaoText() {
+    double valor = 1;
+    if (tipoSelecionado == null ) {
+      return '';
+    } else if (tipoSelecionado == TipoConversor.temperatura) {
+      valor = 0;
+    }
+    final conversor = criarConversorCorreto(); // méodo que instancia a classe correta
+    textConversorDouble = conversor.converter(valor, unidadeOrigemSelecionada!, unidadeDestinoSelecionada!);
+    return textConversorDouble.toString();
+  }
 
   String obterTextoOrigem() {
     if (tipoSelecionado == TipoConversor.temperatura) {
@@ -181,7 +124,15 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
         throw Exception('Conversor não implementado');
     }
   }
-
+  String abreviarTipo(String tipo) {
+      return switch (tipo) {
+        'Celsius' => '°C',
+        'Fahrenheit' => '°F',
+        'Kelvin' => 'K',
+      _ => tipo
+      };
+    }
+    
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -459,7 +410,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                       ),
                     ),
                     Text(
-                      gerarTextoEquivalencia(),
+                      "${calcularConversaoText()} ${abreviarTipo(unidadeDestinoSelecionada!)}",
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
@@ -490,6 +441,8 @@ String descreverTipo(TipoConversor tipo) {
     TipoConversor.temperatura => 'Temperatura',
   };
 }
+
+
 
 abstract class Conversor {
   double converter(double valor, String origem, String destino);

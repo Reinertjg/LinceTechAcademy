@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: implementado toda a logica do tipo Temperatura">
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="style: identacao do codigo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/apf6_funcoes/ap1/lib/telas/tela_inicial.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_conversor_unidade.dart" afterDir="false" />
@@ -183,22 +183,6 @@
       <workItem from="1747873537294" duration="6591000" />
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
-    </task>
-    <task id="LOCAL-00040" summary="Realizada documentação ap1_variaveis">
-      <option name="closed" value="true" />
-      <created>1744306230704</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1744306230704</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Configura Git">
-      <option name="closed" value="true" />
-      <created>1744306245173</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1744306245173</updated>
     </task>
     <task id="LOCAL-00042" summary="Realizada Atividade ia_condicionais_e_lacos.md">
       <option name="closed" value="true" />
@@ -576,7 +560,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748750532259</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="feat: implementado toda a logica do tipo Peso">
+      <option name="closed" value="true" />
+      <created>1748751796251</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1748751796251</updated>
+    </task>
+    <task id="LOCAL-00090" summary="style: identacao do codigo">
+      <option name="closed" value="true" />
+      <created>1748751857821</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1748751857821</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,8 +606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizada as atividades de concorrência (ap1.dart, ap2.dart, ap3.dart e ap4.dart)." />
-    <MESSAGE value="Realizada as atividades do Desafio cronometrado #1 (d1.dart, d2.dart, d3.dart, d4.dart, d5.dart, d6.dart e d7.dart)." />
     <MESSAGE value="Realizada as atividades do Desafio cronometrado #2 (d1.dart, d2.dart)." />
     <MESSAGE value="Realizando a atividade do Desafio cronometrado #2 (d3.dart)." />
     <MESSAGE value="Realizado a reestruturação do repository" />
@@ -631,7 +629,9 @@
     <MESSAGE value="refactor: refatorado funcionalidade nos campos DropdownButton" />
     <MESSAGE value="feat: implementado toda a logica do tipo Distancia" />
     <MESSAGE value="feat: implementado toda a logica do tipo Temperatura" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implementado toda a logica do tipo Temperatura" />
+    <MESSAGE value="feat: implementado toda a logica do tipo Peso" />
+    <MESSAGE value="style: identacao do codigo" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: identacao do codigo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
