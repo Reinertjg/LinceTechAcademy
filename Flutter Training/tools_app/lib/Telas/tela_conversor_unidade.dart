@@ -59,6 +59,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
   String gerarTextoEquivalencia() {
     // Exemplo bem simples:
+    // Distancia
     if (unidadeOrigemSelecionada == "Km" && unidadeDestinoSelecionada == "m") {
       return "1000 m";
     } else if (unidadeOrigemSelecionada == "Km" && unidadeDestinoSelecionada == "cm") {
@@ -72,6 +73,22 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
     } else if (unidadeOrigemSelecionada == "cm" && unidadeDestinoSelecionada == "Km") {
       return "0,00001 Km";
     }
+    // TEMPERATURA
+    else if (unidadeOrigemSelecionada == "Celsius" && unidadeDestinoSelecionada == "Fahrenheit") {
+      return "32 °F";
+    } else if (unidadeOrigemSelecionada == "Celsius" && unidadeDestinoSelecionada == "Kelvin") {
+      return "273.15 K";
+    } else if (unidadeOrigemSelecionada == "Fahrenheit" && unidadeDestinoSelecionada == "Celsius") {
+      return "-17.78 °C";
+    } else if (unidadeOrigemSelecionada == "Fahrenheit" && unidadeDestinoSelecionada == "Kelvin") {
+      return "255.93 K";
+    } else if (unidadeOrigemSelecionada == "Kelvin" && unidadeDestinoSelecionada == "Celsius") {
+      return "-272.15 °C";
+    } else if (unidadeOrigemSelecionada == "Kelvin" && unidadeDestinoSelecionada == "Fahrenheit") {
+      return "-457.87 °F";
+    }
+  
+
     // Adicione as outras combinações conforme suas regras de conversão
     return "Conversor não implementado";
   }
@@ -105,6 +122,14 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
   //   final conversor = criarConversorCorreto(); // méodo que instancia a classe correta
   //   return conversor.converter(1, unidadeOrigemSelecionada!, unidadeDestinoSelecionada!);
   // }
+
+  String obterTextoOrigem() {
+    if (tipoSelecionado == TipoConversor.temperatura) {
+      return '0';
+    } else {
+      return "1";
+    }
+  }
 
   Conversor criarConversorCorreto() {
     switch (tipoSelecionado) {
@@ -379,7 +404,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    '1 $unidadeOrigemSelecionada',
+                    '${obterTextoOrigem()} $unidadeOrigemSelecionada',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
 
                   ),
@@ -447,7 +472,19 @@ class ConversorDistancia extends Conversor {
 class ConversorTemperatura extends Conversor {
   @override
   double converter(double valor, String origem, String destino) {
-    // aqui vai a lógica só para distância
+    if (origem == "Celsius" && destino == 'Fahrenheit') {
+      return double.parse(((valor * 9 / 5) + 32).toStringAsFixed(2));
+    } else if (origem == "Celsius" && destino == 'Kelvin') {
+      return double.parse(((valor + 273.15).toStringAsFixed(2)));
+    } else if (origem == "Fahrenheit" && destino == 'Celsius') {
+      return double.parse((((valor - 32) * 5 / 9).toStringAsFixed(2)));
+    } else if (origem == "Fahrenheit" && destino == 'Kelvin') {
+      return double.parse(((((valor - 32) * 5 / 9) + 273.15).toStringAsFixed(2)));
+    } else if (origem == "Kelvin" && destino == 'Celsius') {
+      return double.parse(((valor - 273.15).toStringAsFixed(2)));
+    } else if (origem == "Kelvin" && destino == 'Fahrenheit') {
+      return double.parse(((((valor - 273.15) * 9 / 5) + 32).toStringAsFixed(2)));
+    }
     return 0.0;
   }
 }
