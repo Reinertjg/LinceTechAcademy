@@ -124,8 +124,9 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
         throw Exception('Conversor não implementado');
     }
   }
-  String abreviarTipo(String tipo) {
-      return switch (tipo) {
+  String abreviarTipo(String? tipo) {
+    if (tipo == null) return '';
+    return switch (tipo) {
         'Celsius' => '°C',
         'Fahrenheit' => '°F',
         'Kelvin' => 'K',
@@ -410,7 +411,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                       ),
                     ),
                     Text(
-                      "${calcularConversaoText()} ${abreviarTipo(unidadeDestinoSelecionada!)}",
+                      "${calcularConversaoText()} ${abreviarTipo(unidadeDestinoSelecionada)}",
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
