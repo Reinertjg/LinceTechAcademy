@@ -87,7 +87,21 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
     } else if (unidadeOrigemSelecionada == "Kelvin" && unidadeDestinoSelecionada == "Fahrenheit") {
       return "-457.87 °F";
     }
-  
+    // PESO
+    else if (unidadeOrigemSelecionada == "Kg" && unidadeDestinoSelecionada == "g") {
+      return "1000 g";
+    } else if (unidadeOrigemSelecionada == "Kg" && unidadeDestinoSelecionada == "mg") {
+      return "1000000 mg";
+    } else if (unidadeOrigemSelecionada == "g" && unidadeDestinoSelecionada == "Kg") {
+      return "0.001 Kg";
+    } else if (unidadeOrigemSelecionada == "g" && unidadeDestinoSelecionada == "mg") {
+      return "1000 mg";
+    } else if (unidadeOrigemSelecionada == "mg" && unidadeDestinoSelecionada == "Kg") {
+      return "0.000001 Kg";
+    } else if (unidadeOrigemSelecionada == "mg" && unidadeDestinoSelecionada == "g") {
+      return "0.001 g";
+    }
+
 
     // Adicione as outras combinações conforme suas regras de conversão
     return "Conversor não implementado";
@@ -492,7 +506,19 @@ class ConversorTemperatura extends Conversor {
 class ConversorPeso extends Conversor {
   @override
   double converter(double valor, String origem, String destino) {
-    // aqui vai a lógica só para distância
+    if (origem == "Kg" && destino == 'g') {
+      return valor * 1000;
+    } else if (origem == "Kg" && destino == 'mg') {
+      return valor * 1000000;
+    } else if (origem == "g" && destino == 'Kg') {
+      return valor / 1000;
+    } else if (origem == "g" && destino == 'mg') {
+      return valor * 1000;
+    } else if (origem == "mg" && destino == 'Kg') {
+      return valor / 1000000;
+    } else if (origem == "mg" && destino == 'g') {
+      return valor / 1000;
+    }
     return 0.0;
   }
 }
