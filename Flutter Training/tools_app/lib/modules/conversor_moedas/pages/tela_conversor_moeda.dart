@@ -2,6 +2,8 @@ import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:tools_app/modules/conversor_moedas/controller/conversor_moedas_controller.dart';
 
+import '../models/tipo_conversor.dart';
+
 class ConversorMoeda extends StatefulWidget {
   const ConversorMoeda({super.key});
 
@@ -15,7 +17,7 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
   @override
   void dispose() {
     controller.origemController.dispose();
-    controller.origemController.dispose();
+    controller.destinoController.dispose();
     super.dispose();
   }
 
@@ -80,7 +82,10 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                         ),
                         keyboardType: TextInputType.number,
                         onChanged: (value) {
-                          setState(() {});
+                          setState(() {
+                            controller.campoEditado == CampoEditadoMoeda.origem;
+                            controller.calcularConversao();
+                          });
                         },
                       ),
                     ),
@@ -119,7 +124,9 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                             }).toList(),
                         onChanged: (value) {
                           setState(() {
+                            controller.atualizarUnidade(atualizandoOrigem: true, novaUnidade: value!);
                             controller.moedaOrigemSelecionada = value;
+                            print(controller.moedaOrigemSelecionada);
                           });
                         },
                       ),
@@ -130,12 +137,15 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
 
               SizedBox(height: 30),
 
+              /// Icons Trocar
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   InkWell(
                     onTap: () {
-                      setState(() {});
+                      setState(() {
+                        controller.trocarMoedas();
+                      });
                     },
                     child: Row(
                       children: [
@@ -178,10 +188,10 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                         Expanded(
                           // Campo de texto para a origem
                           child: TextField(
-                            controller: controller.origemController,
+                            controller: controller.destinoController,
                             decoration: InputDecoration(
-                              hintText: 'Digite a quantia',
                               border: InputBorder.none,
+                              hintText: 'Valor convertido',
                               isDense: true,
                               contentPadding: EdgeInsets.symmetric(
                                 horizontal: 16,
@@ -190,7 +200,8 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                             ),
                             keyboardType: TextInputType.number,
                             onChanged: (value) {
-                              setState(() {});
+                              setState(() {
+                              });
                             },
                           ),
                         ),
@@ -199,7 +210,7 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                         DropdownButtonHideUnderline(
                           child: DropdownButton<String>(
                             underline: SizedBox(),
-                            value: controller.moedaOrigemSelecionada,
+                            value: controller.moedaDestinoSelecionada,
                             isDense: true,
                             // Menor altura
                             itemHeight: 48,
@@ -229,7 +240,8 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                                 }).toList(),
                             onChanged: (value) {
                               setState(() {
-                                controller.moedaOrigemSelecionada = value;
+                                controller.atualizarUnidade(atualizandoOrigem: false, novaUnidade: value!);
+                                controller.moedaDestinoSelecionada = value;
                               });
                             },
                           ),
