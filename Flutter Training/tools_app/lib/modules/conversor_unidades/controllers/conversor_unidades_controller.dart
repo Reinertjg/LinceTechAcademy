@@ -5,8 +5,6 @@ import '../services/conversor_distancia.dart';
 import '../services/conversor_temperatura.dart';
 import '../services/conversor_peso.dart';
 
-CampoEditado? campoEditado;
-
 class ConversorUnidadesController {
   // Controladores de texto
   final TextEditingController origemController = TextEditingController();
@@ -18,7 +16,7 @@ class ConversorUnidadesController {
   String? unidadeDestinoSelecionada;
   bool textConversor = false;
   double textConversorDouble = 0.0;
-  CampoEditado? campoEditado;
+  CampoEditadoUnidade? campoEditado;
 
   // Dados fixos
   final Map<TipoConversor, List<String>> dadosSelecioandos = {
@@ -76,7 +74,7 @@ class ConversorUnidadesController {
     final conversor =
         criarConversorCorreto(); // méodo que instancia a classe correta
 
-    if (campoEditado == CampoEditado.origem) {
+    if (campoEditado == CampoEditadoUnidade.origem) {
       if (origemController.text.isEmpty) {
         destinoController.text = "";
         return;
@@ -89,7 +87,7 @@ class ConversorUnidadesController {
         unidadeDestinoSelecionada!,
       );
       destinoController.text = resultado.toString();
-    } else if (campoEditado == CampoEditado.destino) {
+    } else if (campoEditado == CampoEditadoUnidade.destino) {
       if (destinoController.text.isEmpty) {
         origemController.text = "";
         return;

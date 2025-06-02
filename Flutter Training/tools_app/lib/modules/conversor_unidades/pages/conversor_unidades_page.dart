@@ -128,7 +128,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                       child: TextField(
                         controller: controller.origemController,
                         decoration: InputDecoration(
-                          hintText: '0',
+                          hintText: 'Digite a quantia',
                           border: InputBorder.none,
                           isDense: true,
                           contentPadding: EdgeInsets.symmetric(
@@ -139,7 +139,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                         keyboardType: TextInputType.number,
                         onChanged: (value) {
                           setState(() {
-                            controller.campoEditado = CampoEditado.origem;
+                            controller.campoEditado = CampoEditadoUnidade.origem;
                             controller.calcularConversao();
                           });
                         },
@@ -165,7 +165,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                               atualizandoOrigem: true,
                               novaUnidade: value!,
                             );
-                            controller.campoEditado = CampoEditado.origem;
+                            controller.campoEditado = CampoEditadoUnidade.origem;
                             controller.calcularConversao();
                           });
                         },
@@ -227,7 +227,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                       child: TextField(
                         controller: controller.destinoController,
                         decoration: InputDecoration(
-                          hintText: '0',
+                          hintText: 'Digite a quantia',
                           border: InputBorder.none,
                           isDense: true,
                           contentPadding: EdgeInsets.symmetric(
@@ -237,7 +237,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
                         ),
                         keyboardType: TextInputType.number,
                         onChanged: (value) {
-                          controller.campoEditado = CampoEditado.destino;
+                          controller.campoEditado = CampoEditadoUnidade.destino;
                           controller.calcularConversao();
                         },
                       ),

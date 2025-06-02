@@ -1,4 +1,4 @@
-enum CampoEditado { origem, destino }
+enum CampoEditadoUnidade { origem, destino }
 enum TipoConversor { distancia, peso, temperatura }
 
 String descreverTipo(TipoConversor tipo) {
