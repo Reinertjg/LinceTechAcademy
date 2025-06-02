@@ -1,7 +1,7 @@
 import 'package:tools_app/Telas/tela_calculadora.dart';
 import 'package:flutter/material.dart';
 import 'package:tools_app/Telas/tela_inicio.dart';
-import 'package:tools_app/Telas/tela_conversor_moeda.dart';
+import 'package:tools_app/modules/conversor_moedas/pages/tela_conversor_moeda.dart';
 import 'modules/conversor_unidades/pages/conversor_unidades_page.dart';
 
 void main() {
