@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="style: Alterado o hintText do page">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_moedas/models/tipo_conversor.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_moedas/services/moeda_service.dart" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: adiciona conversão de moedas via API&#10;&#10;Implementa consumo da API Frankfurter para converter moedas em tempo real.&#10;Inclui validação de entrada e tratamento básico de erros.">
       <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_inicio.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_inicio.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_moedas/controller/conversor_moedas_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_moedas/controller/conversor_moedas_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_moedas/pages/tela_conversor_moeda.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_moedas/pages/tela_conversor_moeda.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,22 +187,6 @@
       <workItem from="1747873537294" duration="6591000" />
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
-    </task>
-    <task id="LOCAL-00039" summary="Corrigido atividade ia_colecoes.md">
-      <option name="closed" value="true" />
-      <created>1744306171495</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1744306171495</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Realizada documentação ap1_variaveis">
-      <option name="closed" value="true" />
-      <created>1744306230704</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1744306230704</updated>
     </task>
     <task id="LOCAL-00041" summary="Configura Git">
       <option name="closed" value="true" />
@@ -585,7 +564,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748903416572</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="feat: adiciona conversão de moedas via API&#10;&#10;Implementa consumo da API Frankfurter para converter moedas em tempo real.&#10;Inclui validação de entrada e tratamento básico de erros.">
+      <option name="closed" value="true" />
+      <created>1748903480753</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1748903480753</updated>
+    </task>
+    <task id="LOCAL-00089" summary="feat: adiciona conversão de moedas via API&#10;&#10;Implementa consumo da API Frankfurter para converter moedas em tempo real.&#10;Inclui validação de entrada e tratamento básico de erros.">
+      <option name="closed" value="true" />
+      <created>1748903488346</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1748903488346</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +610,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart." />
     <MESSAGE value="Realizada as atividades de concorrência (ap1.dart, ap2.dart, ap3.dart e ap4.dart)." />
     <MESSAGE value="Realizada as atividades do Desafio cronometrado #1 (d1.dart, d2.dart, d3.dart, d4.dart, d5.dart, d6.dart e d7.dart)." />
     <MESSAGE value="Realizada as atividades do Desafio cronometrado #2 (d1.dart, d2.dart)." />
@@ -640,7 +634,8 @@
     <MESSAGE value="docs: realizado atividade ia_flutter_internacionalizacao.md" />
     <MESSAGE value="docs: alterado atividade ia_flutter_sqlite.md" />
     <MESSAGE value="style: Alterado o hintText do page" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: Alterado o hintText do page" />
+    <MESSAGE value="feat: adiciona conversão de moedas via API&#10;&#10;Implementa consumo da API Frankfurter para converter moedas em tempo real.&#10;Inclui validação de entrada e tratamento básico de erros." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adiciona conversão de moedas via API&#10;&#10;Implementa consumo da API Frankfurter para converter moedas em tempo real.&#10;Inclui validação de entrada e tratamento básico de erros." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

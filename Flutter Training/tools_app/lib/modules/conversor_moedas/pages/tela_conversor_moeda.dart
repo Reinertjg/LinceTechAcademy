@@ -71,19 +71,20 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                       // Campo de texto para a origem
                       child: TextField(
                         controller: controller.origemController,
+                        style: TextStyle(fontWeight: FontWeight.bold),
                         decoration: InputDecoration(
                           hintText: 'Digite a quantia',
                           border: InputBorder.none,
                           isDense: true,
                           contentPadding: EdgeInsets.symmetric(
-                            horizontal: 16,
-                            vertical: 10,
+                            horizontal: 24,
+                            vertical: 18,
                           ),
                         ),
                         keyboardType: TextInputType.number,
                         onChanged: (value) {
                           setState(() {
-                            controller.campoEditado == CampoEditadoMoeda.origem;
+                            controller.campoEditado = CampoEditadoMoeda.origem;
                             controller.calcularConversao();
                           });
                         },
@@ -100,17 +101,7 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                         itemHeight: 48,
                         items:
                             controller.opcoesMoedas.map((tipo) {
-                              String label;
-                              switch (tipo) {
-                                case 'USD':
-                                  label = 'USD';
-                                  break;
-                                case 'BRL':
-                                  label = 'BRL';
-                                  break;
-                                default:
-                                  label = tipo;
-                              }
+                              String label = controller.formatarLabelMoeda(tipo);
                               return DropdownMenuItem(
                                 value: tipo,
                                 child: Row(
@@ -126,7 +117,7 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                           setState(() {
                             controller.atualizarUnidade(atualizandoOrigem: true, novaUnidade: value!);
                             controller.moedaOrigemSelecionada = value;
-                            print(controller.moedaOrigemSelecionada);
+                            controller.calcularConversao();
                           });
                         },
                       ),
@@ -189,18 +180,21 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                           // Campo de texto para a origem
                           child: TextField(
                             controller: controller.destinoController,
+                            style: TextStyle(fontWeight: FontWeight.bold),
                             decoration: InputDecoration(
                               border: InputBorder.none,
                               hintText: 'Valor convertido',
                               isDense: true,
                               contentPadding: EdgeInsets.symmetric(
-                                horizontal: 16,
-                                vertical: 10,
+                                horizontal: 24,
+                                vertical: 18,
                               ),
                             ),
                             keyboardType: TextInputType.number,
                             onChanged: (value) {
                               setState(() {
+                                controller.campoEditado = CampoEditadoMoeda.destino;
+                                controller.calcularConversao();
                               });
                             },
                           ),
@@ -216,17 +210,7 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                             itemHeight: 48,
                             items:
                                 controller.opcoesMoedas.map((tipo) {
-                                  String label;
-                                  switch (tipo) {
-                                    case 'USD':
-                                      label = 'USD';
-                                      break;
-                                    case 'BRL':
-                                      label = 'BRL';
-                                      break;
-                                    default:
-                                      label = tipo;
-                                  }
+                                  String label = controller.formatarLabelMoeda(tipo);
                                   return DropdownMenuItem(
                                     value: tipo,
                                     child: Row(
@@ -242,6 +226,7 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                               setState(() {
                                 controller.atualizarUnidade(atualizandoOrigem: false, novaUnidade: value!);
                                 controller.moedaDestinoSelecionada = value;
+                                controller.calcularConversao();
                               });
                             },
                           ),

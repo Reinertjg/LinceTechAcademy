@@ -15,7 +15,34 @@ class ConversorMoedasController {
   final opcoesMoedas = [
     'BRL',
     'USD',
+    'EUR',
+    'JPY',
+    'GBP',
   ];
+
+  String formatarLabelMoeda(String tipo) {
+    String label;
+    switch (tipo) {
+      case 'BRL':
+        label = 'BRL';
+        break;
+      case 'USD':
+        label = 'USD';
+        break;
+      case 'EUR':
+        label = 'EUR';
+        break;
+        case 'JPY':
+        label = 'JPY';
+        break;
+        case 'GBP':
+        label = 'GBP';
+        break;
+      default:
+        label = tipo;
+    }
+    return label;
+  }
 
 
   void atualizarUnidade({
@@ -52,23 +79,20 @@ class ConversorMoedasController {
   }
 
   void calcularConversao() async{
-    destinoController.text = await conversor(moedaOrigemSelecionada!, moedaDestinoSelecionada!, double.tryParse(origemController.text) ?? 0.0);
 
     if (campoEditado == CampoEditadoMoeda.origem) {
       if (origemController.text.isEmpty) {
         destinoController.text = "";
         return;
       }
-
+      destinoController.text = await conversor(moedaOrigemSelecionada!, moedaDestinoSelecionada!, double.tryParse(origemController.text) ?? 0.0);
 
     } else if (campoEditado == CampoEditadoMoeda.destino) {
       if (destinoController.text.isEmpty) {
         origemController.text = "";
         return;
       }
-
-      double valor = double.tryParse(destinoController.text) ?? 0;
-
+      origemController.text = await conversor(moedaDestinoSelecionada!, moedaOrigemSelecionada!, double.tryParse(destinoController.text) ?? 0.0);
     }
   }
 
