@@ -16,7 +16,6 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
   final controller = ConversorMoedasController();
   final service = MoedaService();
 
-
   @override
   void dispose() {
     controller.origemController.dispose();
@@ -32,7 +31,7 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
 
   Future<void> carregarMoedasData() async {
     await service.createMapData();
-    setState(() {});  // força a reconstrução da tela após o Future terminar
+    setState(() {}); // força a reconstrução da tela após o Future terminar
   }
 
   @override
@@ -46,13 +45,13 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
         ),
         actions: [
           IconButton(
-             icon: Icon(Icons.refresh, color: Colors.white,),
+            icon: Icon(Icons.refresh, color: Colors.white),
             onPressed: () {
-               setState(() {
-                 carregarMoedasData();
-               });
+              setState(() {
+                carregarMoedasData();
+              });
             },
-          )
+          ),
         ],
         centerTitle: true,
         backgroundColor: Color.fromRGBO(0, 20, 70, 1),
@@ -125,7 +124,9 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                         itemHeight: 48,
                         items:
                             controller.opcoesMoedas.map((tipo) {
-                              String label = controller.formatarLabelMoeda(tipo);
+                              String label = controller.formatarLabelMoeda(
+                                tipo,
+                              );
                               return DropdownMenuItem(
                                 value: tipo,
                                 child: Row(
@@ -139,7 +140,10 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                             }).toList(),
                         onChanged: (value) {
                           setState(() {
-                            controller.atualizarUnidade(atualizandoOrigem: true, novaUnidade: value!);
+                            controller.atualizarUnidade(
+                              atualizandoOrigem: true,
+                              novaUnidade: value!,
+                            );
                             controller.moedaOrigemSelecionada = value;
                             controller.calcularConversao();
                           });
@@ -217,7 +221,8 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                             keyboardType: TextInputType.number,
                             onChanged: (value) {
                               setState(() {
-                                controller.campoEditado = CampoEditadoMoeda.destino;
+                                controller.campoEditado =
+                                    CampoEditadoMoeda.destino;
                                 controller.calcularConversao();
                               });
                             },
@@ -234,7 +239,9 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                             itemHeight: 48,
                             items:
                                 controller.opcoesMoedas.map((tipo) {
-                                  String label = controller.formatarLabelMoeda(tipo);
+                                  String label = controller.formatarLabelMoeda(
+                                    tipo,
+                                  );
                                   return DropdownMenuItem(
                                     value: tipo,
                                     child: Row(
@@ -248,7 +255,10 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                                 }).toList(),
                             onChanged: (value) {
                               setState(() {
-                                controller.atualizarUnidade(atualizandoOrigem: false, novaUnidade: value!);
+                                controller.atualizarUnidade(
+                                  atualizandoOrigem: false,
+                                  novaUnidade: value!,
+                                );
                                 controller.moedaDestinoSelecionada = value;
                                 controller.calcularConversao();
                               });
@@ -261,37 +271,30 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                 ],
               ),
 
-              SizedBox(height: 20),
+              SizedBox(height: 50),
+
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    '100 ${controller
-                        .moedaOrigemSelecionada}',
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    '${iconMoedas[controller.moedaOrigemSelecionada]} 100 ${controller.moedaOrigemSelecionada}',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     ' = ',
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     "${controller.calcularConversaoText()} ${controller.moedaDestinoSelecionada}",
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: Color.fromRGBO(19, 75, 176, 1),
                     ),
                   ),
                 ],
               ),
-
             ],
           ),
         ),

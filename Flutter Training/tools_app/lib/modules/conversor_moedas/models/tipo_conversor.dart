@@ -32,3 +32,11 @@ final Map<String, Map<String, double>> taxas = {
     'JPY': 194.64,
   }
 };
+
+final Map<String, String> iconMoedas = {
+    'BRL': 'R\$',
+    'USD': '\$',
+    'EUR': '€',
+    'JPY': '¥',
+    'GBP': '£',
+  };

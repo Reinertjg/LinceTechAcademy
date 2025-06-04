@@ -9,9 +9,9 @@ class ConversorMoedasController {
   final TextEditingController origemController = TextEditingController();
   final TextEditingController destinoController = TextEditingController();
 
-  String? moedaOrigemSelecionada = 'BRL';
-  String? moedaDestinoSelecionada = 'USD';
-  String? textConvertido;
+  String moedaOrigemSelecionada = 'BRL';
+  String moedaDestinoSelecionada = 'USD';
+  String textConvertido = '';
   CampoEditadoMoeda? campoEditado;
 
   final opcoesMoedas = [
@@ -86,20 +86,21 @@ class ConversorMoedasController {
         destinoController.text = "";
         return;
       }
-      destinoController.text = service.converter(moedaDestino: moedaDestinoSelecionada!, moedaOrigem: moedaOrigemSelecionada!, valor:double.tryParse(origemController.text) ?? 0.0);
+      destinoController.text = service.converter(moedaOrigem: moedaOrigemSelecionada! ,moedaDestino: moedaDestinoSelecionada!, valor:double.tryParse(origemController.text) ?? 0.0);
 
     } else if (campoEditado == CampoEditadoMoeda.destino) {
       if (destinoController.text.isEmpty) {
         origemController.text = "";
         return;
       }
-      origemController.text = service.converter(moedaDestino: moedaDestinoSelecionada!, moedaOrigem: moedaOrigemSelecionada!, valor:double.tryParse(destinoController.text) ?? 0.0);
+      origemController.text = service.converter(moedaOrigem: moedaDestinoSelecionada!, moedaDestino: moedaOrigemSelecionada!, valor:double.tryParse(destinoController.text) ?? 0.0);
     }
   }
 
   String calcularConversaoText() {
     double valor = 100.0;
-    textConvertido =  service.converter(moedaDestino: moedaDestinoSelecionada!, moedaOrigem: moedaOrigemSelecionada!, valor:valor);
+    textConvertido = iconMoedas[moedaDestinoSelecionada] ?? '';
+    textConvertido +=  service.converter(moedaDestino: moedaDestinoSelecionada!, moedaOrigem: moedaOrigemSelecionada!, valor:valor);
     return textConvertido ?? "0.00";
   }
 
