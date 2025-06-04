@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:tools_app/modules/conversor_moedas/controller/conversor_moedas_controller.dart';
 
 import '../models/tipo_conversor.dart';
+import '../services/moeda_service.dart';
 
 class ConversorMoeda extends StatefulWidget {
   const ConversorMoeda({super.key});
@@ -13,12 +14,25 @@ class ConversorMoeda extends StatefulWidget {
 
 class _ConversorMoedaState extends State<ConversorMoeda> {
   final controller = ConversorMoedasController();
+  final service = MoedaService();
+
 
   @override
   void dispose() {
     controller.origemController.dispose();
     controller.destinoController.dispose();
     super.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    carregarMoedasData();
+  }
+
+  Future<void> carregarMoedasData() async {
+    await service.createMapData();
+    setState(() {});  // força a reconstrução da tela após o Future terminar
   }
 
   @override
@@ -30,6 +44,16 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
           'Conversor de Moedas',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
+        actions: [
+          IconButton(
+             icon: Icon(Icons.refresh, color: Colors.white,),
+            onPressed: () {
+               setState(() {
+                 carregarMoedasData();
+               });
+            },
+          )
+        ],
         centerTitle: true,
         backgroundColor: Color.fromRGBO(0, 20, 70, 1),
       ),
@@ -40,7 +64,7 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
         // Container Branco
         child: Container(
           padding: EdgeInsets.all(20.0),
-          height: MediaQuery.of(context).size.width * 0.9,
+          height: MediaQuery.of(context).size.width * 1.2,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(15)),
             color: Colors.white,
@@ -236,6 +260,38 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                   ),
                 ],
               ),
+
+              SizedBox(height: 20),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    '100 ${controller
+                        .moedaOrigemSelecionada}',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    ' = ',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "${controller.calcularConversaoText()} ${controller.moedaDestinoSelecionada}",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(19, 75, 176, 1),
+                    ),
+                  ),
+                ],
+              ),
+
             ],
           ),
         ),

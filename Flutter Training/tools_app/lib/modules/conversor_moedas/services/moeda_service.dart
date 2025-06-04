@@ -1,11 +1,32 @@
-import 'package:http/http.dart' as http;
-import 'dart:convert';
+import 'package:tools_app/modules/conversor_moedas/services/api_sevice.dart';
 
-Future<String> conversor(String moedaOrigem, String moedaDestino, double quantidade) async{
-  var url =  Uri.parse('https://api.frankfurter.app/latest?from=${moedaOrigem}&to=${moedaDestino}');
-  var response = await http.read(url);
-  var data = jsonDecode(response);
+import '../models/tipo_conversor.dart';
 
-  var valor = (quantidade * data["rates"][moedaDestino]).toStringAsFixed(2);
-  return valor;
+class MoedaService {
+
+
+  Future<void> createMapData() async{
+    for(var moedaOrigem in taxas.keys) {
+      var data = await conversorData(moedaOrigem);
+      for(var moedaDestino in taxas[moedaOrigem]!.keys) {
+        taxas[moedaOrigem]![moedaDestino] = data['rates'][moedaDestino];
+      }
+    }
+  }
+
+  String converter({
+    required String moedaOrigem,
+    required String moedaDestino,
+    required double valor,
+  }) {
+
+    if (taxas[moedaOrigem] == null || taxas[moedaOrigem]![moedaDestino] == null) {
+      throw Exception('Taxa de conversão não disponível');
+    }
+    return (valor * taxas[moedaOrigem]![moedaDestino]!).toStringAsFixed(2);
+  }
+
 }
+
+
+
