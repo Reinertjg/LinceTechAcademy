@@ -13,6 +13,7 @@ class ConversorMoedasController {
   String moedaDestinoSelecionada = 'USD';
   String textConvertido = '';
   CampoEditadoMoeda? campoEditado;
+  DateTime dataUltimaAtualizacao = DateTime.now();
 
   final opcoesMoedas = [
     'BRL',
@@ -86,23 +87,35 @@ class ConversorMoedasController {
         destinoController.text = "";
         return;
       }
-      destinoController.text = service.converter(moedaOrigem: moedaOrigemSelecionada! ,moedaDestino: moedaDestinoSelecionada!, valor:double.tryParse(origemController.text) ?? 0.0);
+      destinoController.text = service.converter(moedaOrigem: moedaOrigemSelecionada ,moedaDestino: moedaDestinoSelecionada, valor:double.tryParse(origemController.text) ?? 0.0);
 
     } else if (campoEditado == CampoEditadoMoeda.destino) {
       if (destinoController.text.isEmpty) {
         origemController.text = "";
         return;
       }
-      origemController.text = service.converter(moedaOrigem: moedaDestinoSelecionada!, moedaDestino: moedaOrigemSelecionada!, valor:double.tryParse(destinoController.text) ?? 0.0);
+      origemController.text = service.converter(moedaOrigem: moedaDestinoSelecionada, moedaDestino: moedaOrigemSelecionada, valor:double.tryParse(destinoController.text) ?? 0.0);
     }
   }
 
   String calcularConversaoText() {
     double valor = 100.0;
     textConvertido = iconMoedas[moedaDestinoSelecionada] ?? '';
-    textConvertido +=  service.converter(moedaDestino: moedaDestinoSelecionada!, moedaOrigem: moedaOrigemSelecionada!, valor:valor);
-    return textConvertido ?? "0.00";
+    textConvertido +=  service.converter(moedaDestino: moedaDestinoSelecionada, moedaOrigem: moedaOrigemSelecionada, valor:valor);
+    return textConvertido;
   }
 
+  String get dataFormatada {
+      final day = dataUltimaAtualizacao.day.toString().padLeft(2, '0');
+      final month = dataUltimaAtualizacao.month.toString().padLeft(2, '0');
+      final year = dataUltimaAtualizacao.year;
+      return '$day/$month/$year';
+  }
+
+  String get horaFormatada {
+    final hour = dataUltimaAtualizacao.hour.toString().padLeft(2, '0');
+    final minute = dataUltimaAtualizacao.minute.toString().padLeft(2, '0');
+    return '$hour:$minute';
+  }
 
 }

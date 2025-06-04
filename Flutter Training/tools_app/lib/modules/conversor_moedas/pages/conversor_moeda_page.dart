@@ -171,10 +171,12 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
                         Icon(
                           Icons.arrow_downward_rounded,
                           color: Color.fromRGBO(19, 75, 176, 1),
+                          size: 30,
                         ),
                         Icon(
                           Icons.arrow_upward_rounded,
                           color: Color.fromRGBO(19, 75, 176, 1),
+                          size: 30,
                         ),
                       ],
                     ),
@@ -273,26 +275,50 @@ class _ConversorMoedaState extends State<ConversorMoeda> {
 
               SizedBox(height: 50),
 
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              Column(
                 children: [
-                  Text(
-                    '${iconMoedas[controller.moedaOrigemSelecionada]} 100 ${controller.moedaOrigemSelecionada}',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  RichText(
+                      text: TextSpan(
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),
+                        children: [
+                          TextSpan(text: '${iconMoedas[controller.moedaOrigemSelecionada]} 100 ${controller.moedaOrigemSelecionada} = '),
+                          TextSpan(
+                            text: '${controller.calcularConversaoText()} ${controller.moedaDestinoSelecionada}',
+                            style: TextStyle(color: Color.fromRGBO(19, 75, 176, 1))
+                          ),
+                        ]
+                      )
                   ),
-                  Text(
-                    ' = ',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    "${controller.calcularConversaoText()} ${controller.moedaDestinoSelecionada}",
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Color.fromRGBO(19, 75, 176, 1),
+
+                  SizedBox(height: 30),
+
+                  RichText(
+                    text: TextSpan(
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      children: [
+                        TextSpan(text: 'Cotação feita em '),
+                        TextSpan(
+                          text: controller.dataFormatada,
+                          style: TextStyle(color: Color.fromRGBO(19, 75, 176, 1)),
+                        ),
+                        TextSpan(text: ' às '),
+                        TextSpan(
+                          text: controller.horaFormatada,
+                          style: TextStyle(color: Color.fromRGBO(19, 75, 176, 1)),
+                        ),
+                        TextSpan(text: ' UTC'),
+                      ],
                     ),
-                  ),
+                  )
+
                 ],
               ),
             ],
