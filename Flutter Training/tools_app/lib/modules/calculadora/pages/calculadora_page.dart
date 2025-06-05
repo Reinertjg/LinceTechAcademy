@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 
-class Calculadora extends StatelessWidget {
+import '../controller/calculadora_controller.dart';
+
+class Calculadora extends StatefulWidget {
   const Calculadora({super.key});
+
+  @override
+  State<Calculadora> createState() => _CalculadoraState();
+
+}
+
+class _CalculadoraState extends State<Calculadora> {
+  final controller = CalculadoraController();
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +32,7 @@ class Calculadora extends StatelessWidget {
         // Container Branco
         child: Container(
           padding: EdgeInsets.all(20.0),
-          height: MediaQuery.of(context).size.width * 1.7,
+          height: MediaQuery.of(context).size.width * 1.5,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(15)),
             color: Colors.white,
@@ -33,20 +43,51 @@ class Calculadora extends StatelessWidget {
               // Display da Calculadora
               Container(
                 alignment: Alignment.centerRight,
-                child: Text(
-                  '0',
-                  style: TextStyle(
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold,
-                  ),
+                child: Column(
+                  children: [
+                    TextFormField(
+                      controller: controller.operacaoController,
+                      readOnly: true,
+                      textAlign: TextAlign.end,
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromRGBO(0, 20, 70, 1),
+                      ),
+                      decoration: InputDecoration(
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide.none
+                        ),
+                        focusedBorder: UnderlineInputBorder(
+                            borderSide: BorderSide.none
+                        ),
+                      ),
+                    ),
+                    TextFormField(
+                      controller: controller.valorController,
+                      readOnly: true,
+                      textAlign: TextAlign.end,
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                        // color: Color.fromRGBO(0, 20, 70, 1),
+                      ),
+                      decoration: InputDecoration(
+                        enabledBorder: UnderlineInputBorder(),
+                        focusedBorder: UnderlineInputBorder(),
+                        hintText: '0',
+                      ),
+                    ),
+                  ],
                 ),
               ),
 
               Wrap(
-                spacing: 6,
-                runSpacing: 8,
+                spacing: 15,
+                runSpacing: 15,
                 children: [
-                  buildTecla('AC', width: 165),
+                  buildTecla('AC', width: 155),
                   buildTecla('%'),
                   buildTecla('÷'),
                   buildTecla('7'),
@@ -61,12 +102,11 @@ class Calculadora extends StatelessWidget {
                   buildTecla('2'),
                   buildTecla('3'),
                   buildTecla('+'),
-                  buildTecla('0', width: 165),
+                  buildTecla('0', width: 155),
                   buildTecla('.'),
                   buildTecla('='),
                 ],
-              )
-
+              ),
             ],
           ),
         ),
@@ -74,33 +114,30 @@ class Calculadora extends StatelessWidget {
     );
   }
 
-  Widget buildTecla(String label, {double width = 80}) {
-    return Container(
-      width: width,
-      height: 80,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(15)),
-        color: Color.fromRGBO(19, 75, 176, 1),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black,
-            offset: Offset(2, 3),
-          ),
-        ],
-      ),
-      child:
-      Center(
-        child: Text(
-          label,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
+  Widget buildTecla(String label, {double width = 70}) {
+    return GestureDetector(
+      onTap: () {
+        controller.calcularResultado(label);
+      },
+      child: Container(
+        width: width,
+        height: 70,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(15)),
+          color: Color.fromRGBO(19, 75, 176, 1),
+          boxShadow: [BoxShadow(color: Colors.black, offset: Offset(2, 3))],
+        ),
+        child: Center(
+          child: Text(
+            label,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),
     );
   }
 }
-
-
