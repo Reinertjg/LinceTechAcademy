@@ -76,7 +76,7 @@ class _CalculadoraState extends State<Calculadora> {
                       decoration: InputDecoration(
                         enabledBorder: UnderlineInputBorder(),
                         focusedBorder: UnderlineInputBorder(),
-                        hintText: '0',
+                        hintText: controller.hintText,
                       ),
                     ),
                   ],
@@ -117,7 +117,9 @@ class _CalculadoraState extends State<Calculadora> {
   Widget buildTecla(String label, {double width = 70}) {
     return GestureDetector(
       onTap: () {
-        controller.calcularResultado(label);
+        setState(() {
+          controller.calcularResultado(label);
+        });
       },
       child: Container(
         width: width,

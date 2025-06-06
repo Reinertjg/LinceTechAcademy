@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: adiciona mais moedas para a conversão.">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/controller/calculadora_controller.dart" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: renomeia tela_calculadora.dart para calculadora_page.dart e refatora layout da calculadora">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_2025_7_07_PM_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/controller/calculadora_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/controller/calculadora_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/pages/calculadora_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/pages/calculadora_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_moedas/controller/conversor_moedas_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_moedas/controller/conversor_moedas_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +40,12 @@
     &quot;assignee&quot;: &quot;Reinertjg&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Reinertjg/LinceTechAcademy.git",
-    "accountId": "b0af527a-ebb2-4642-9ea9-9817ae763115"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Reinertjg/LinceTechAcademy.git&quot;,
+    &quot;accountId&quot;: &quot;ba94ac2f-2ce2-43d6-89fc-5bab38c99f9b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -108,7 +107,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -122,7 +121,6 @@
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart\ap6_erros" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\joao.reinertcosta\StudioProjects\LinceTechAcademy\Flutter Training\tools_app\lib\modules\calculadora\controller" />
       <recent name="C:\LinceTechAcademy\Flutter Training\tools_app\lib\modules\calculadora\pages" />
       <recent name="C:\Users\joao.reinertcosta\StudioProjects\LinceTechAcademy\Flutter Training" />
       <recent name="C:\Users\jgcos_kqplwrp\IdeaProjects\LinceTechAcademy\Formação Dart" />
