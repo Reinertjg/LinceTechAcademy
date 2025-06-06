@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: adiciona mais moedas para a conversão.">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/controller/calculadora_controller.dart" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: implementa controlador e lógica da calculadora">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/controller/calculadora_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/controller/calculadora_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/pages/calculadora_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/pages/calculadora_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_moedas/controller/conversor_moedas_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_moedas/controller/conversor_moedas_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,14 +195,6 @@
       <workItem from="1747873537294" duration="6591000" />
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
-    </task>
-    <task id="LOCAL-00045" summary="Realizada Atividade ap5_logica\ap2.dart">
-      <option name="closed" value="true" />
-      <created>1744327802671</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1744327802671</updated>
     </task>
     <task id="LOCAL-00046" summary="Realizada Atividade ap5_logica\ap3.dart">
       <option name="closed" value="true" />
@@ -590,7 +580,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749082565461</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="feat: implementa controlador e lógica da calculadora">
+      <option name="closed" value="true" />
+      <created>1749156751918</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1749156751918</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +618,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Realizado a reestruturação do repository" />
     <MESSAGE value="Adicionado projeto Flutter - AP2 Funcoes" />
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d4.dart)" />
     <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d5.dart)" />
@@ -645,7 +642,8 @@
     <MESSAGE value="feat: adiciona ícones para moedas e refatora código do conversor" />
     <MESSAGE value="feat: adiciona exibição da data e hora da cotação no conversor de moedas" />
     <MESSAGE value="feat: renomeia tela_calculadora.dart para calculadora_page.dart e refatora layout da calculadora" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: renomeia tela_calculadora.dart para calculadora_page.dart e refatora layout da calculadora" />
+    <MESSAGE value="feat: implementa controlador e lógica da calculadora" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implementa controlador e lógica da calculadora" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
