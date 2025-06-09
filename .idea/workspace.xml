@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: renomeia tela_calculadora.dart para calculadora_page.dart e refatora layout da calculadora">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_2025_7_07_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_06_2025_17_48_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/controller/calculadora_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/controller/calculadora_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/pages/calculadora_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/calculadora/pages/calculadora_page.dart" afterDir="false" />
     </list>
