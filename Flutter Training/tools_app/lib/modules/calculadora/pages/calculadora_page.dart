@@ -76,7 +76,7 @@ class _CalculadoraState extends State<Calculadora> {
                       decoration: InputDecoration(
                         enabledBorder: UnderlineInputBorder(),
                         focusedBorder: UnderlineInputBorder(),
-                        hintText: controller.hintText,
+                        hintText: controller.hint,
                       ),
                     ),
                   ],
@@ -122,8 +122,8 @@ class _CalculadoraState extends State<Calculadora> {
         });
       },
       child: Container(
-        width: width,
-        height: 70,
+        width: MediaQuery.of(context).size.width * (width / 450),
+        height: MediaQuery.of(context).size.width * 0.15,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(15)),
           color: Color.fromRGBO(19, 75, 176, 1),
