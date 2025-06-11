@@ -75,6 +75,9 @@
       <excludeFolder url="file://$MODULE_DIR$/Flutter Training/tools_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/Flutter Training/tools_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/Flutter Training/tools_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter Training/list_videos/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter Training/list_videos/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter Training/list_videos/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
