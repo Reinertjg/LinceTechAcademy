@@ -13,18 +13,39 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final filtroController = TextEditingController();
+  String filtro = '';
+  bool isFiltered = false;
+
   @override
   Widget build(BuildContext context) {
     final themeBackgroud = context
         .read<SettingsThemeRepository>()
         .getBackground;
     final themeAppBar = context.read<SettingsThemeRepository>().getAppBar;
+    final lista = context.watch<CreateFavoriteRepository>().favorites;
+    final listaFiltrada =
+    lista.where((v) => v.title.toLowerCase().contains(filtro)).toList();
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: isFiltered ?
+            TextField(
+              controller: filtroController,
+              decoration: InputDecoration(
+                hintText: 'Pesquisar vídeos...',
+                border: InputBorder.none,
+              ),
+              style: TextStyle(color: Colors.black),
+              onChanged: (value) {
+                  setState(() {
+                    filtro = value.toLowerCase();
+                  });
+              },
+            )
+          : Text(
             'Favortitos YT',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
           ),
@@ -33,6 +54,9 @@ class _HomeState extends State<Home> {
             IconButton(
               icon: Icon(Icons.search_rounded, color: Colors.black, size: 35),
               onPressed: () {
+                setState(() {
+                  isFiltered = !isFiltered;
+                });
               },
             ),
             SizedBox(width: 10),
@@ -63,10 +87,39 @@ class _HomeState extends State<Home> {
                     );
                   }
                   return ListView.builder(
-                    itemCount: favoriteRepository.favorites.length,
-                    itemBuilder: (_, index) => FavoriteVideoCard(
-                      favoriteVideo: favoriteRepository.favorites[index],
-                    ),
+                    itemCount: listaFiltrada.length,
+                    itemBuilder: (_, index) {
+                      final favoriteVideo = listaFiltrada[index];
+                      return Card(
+                        color: Colors.white,
+                        margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                        child: Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Center(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(12),
+                                  child: Image.network(
+                                    favoriteVideo.thumbnailUrl,
+                                    width: 400,
+                                    height: 185,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+
+                              const SizedBox(height: 6),
+
+                              Text(favoriteVideo.title),
+
+                              Text(favoriteVideo.category),
+                            ],
+                          ),
+                        ),
+                      );
+                    }
                   );
                 },
               ),
