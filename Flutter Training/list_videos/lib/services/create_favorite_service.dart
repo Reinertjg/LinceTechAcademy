@@ -1,9 +1,8 @@
-
 import 'package:flutter/cupertino.dart';
 
 import '../models/video_model.dart';
 
-class CreateFavoriteRepository with ChangeNotifier{
+class CreateFavoriteRepository with ChangeNotifier {
 
   final _favoritesList = <FavoriteVideo>[];
 
@@ -19,4 +18,16 @@ class CreateFavoriteRepository with ChangeNotifier{
     notifyListeners();
   }
 
+}
+
+class CreateFavoriteService {
+
+  String createCategory(String category) {
+    print(category);
+    category = category.replaceAll(' ', '');
+    category = category.replaceAll(',', ' #');
+
+    print(category);
+    return '#$category';
+  }
 }

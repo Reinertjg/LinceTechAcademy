@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 
 import '../controller/create_favorite_controller.dart';
 import '../main.dart';
-import '../network/noembed_http.dart';
 
 class CreateFavorite extends StatefulWidget {
   const CreateFavorite({super.key});
@@ -15,8 +14,8 @@ class CreateFavorite extends StatefulWidget {
 class _CreateFavoriteState extends State<CreateFavorite> {
   final createFavoriteController = CreateFavoriteController();
 
-  final controllerUrl = TextEditingController();
-  final controllerCategory = TextEditingController();
+  final videoUrlController = TextEditingController();
+  final videoCategoryController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -32,12 +31,31 @@ class _CreateFavoriteState extends State<CreateFavorite> {
           IconButton(
             icon: Icon(Icons.save, size: 35),
             onPressed: () async {
-              await createFavoriteController.saveFavorite(
+              bool valido = await createFavoriteController.saveFavorite(
                 context,
-                controllerUrl.text,
-                controllerCategory.text,
+                videoUrlController.text,
+                videoCategoryController.text,
               );
-              Navigator.pop(context);
+              if (valido) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text("Vídeo adicionado com sucesso!"),
+                    backgroundColor: Colors.green,
+                    duration: Duration(seconds: 1),
+                  ),
+                );
+                Future.delayed(Duration(seconds: 2), () {
+                  Navigator.pop(context);
+                });
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text("Vídeo não encontrado!"),
+                    backgroundColor: Colors.red,
+                    duration: Duration(seconds: 3),
+                  ),
+                );
+              }
             },
           ),
           IconButton(
@@ -61,10 +79,10 @@ class _CreateFavoriteState extends State<CreateFavorite> {
             ),
             SizedBox(height: 15),
             TextFormField(
-              controller: controllerUrl,
+              controller: videoUrlController,
               decoration: InputDecoration(
-                hintText: 'youtube.com/watch?v=gcklghjBV6c&t',
-                labelText: 'URL',
+                hintText: 'youtube.com/watch?v=*******',
+                labelText: 'Codigo do Vídeo',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
@@ -84,7 +102,7 @@ class _CreateFavoriteState extends State<CreateFavorite> {
             ),
             SizedBox(height: 15),
             TextFormField(
-              controller: controllerCategory,
+              controller: videoCategoryController,
               decoration: InputDecoration(
                 hintText: 'jogos,filmes,musica',
                 labelText: 'Categoria',
@@ -100,6 +118,8 @@ class _CreateFavoriteState extends State<CreateFavorite> {
           ],
         ),
       ),
+
     );
+
   }
 }

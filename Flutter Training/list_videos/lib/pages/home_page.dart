@@ -19,7 +19,6 @@ class _HomeState extends State<Home> {
         .read<SettingsThemeRepository>()
         .getBackground;
     final themeAppBar = context.read<SettingsThemeRepository>().getAppBar;
-    final lista = context.watch<CreateFavoriteRepository>().favorites;
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -34,7 +33,6 @@ class _HomeState extends State<Home> {
             IconButton(
               icon: Icon(Icons.search_rounded, color: Colors.black, size: 35),
               onPressed: () {
-                // do something
               },
             ),
             SizedBox(width: 10),
@@ -52,25 +50,27 @@ class _HomeState extends State<Home> {
           children: [
             Expanded(
               child: Consumer<CreateFavoriteRepository>(
-                    builder: (context, favoriteRepository, child) {
-                      if (favoriteRepository.favorites.isEmpty) {
-                        return Center(
-                          child: ListTile(
-                            leading: Icon(Icons.star_border),
-                            title: Text(
-                              'Nenhum vídeo favorito encontrado.',
-                              style: TextStyle(fontSize: 18, color: Colors.grey),
-                            ),
-                          )
-                        );
-                      }
-                      return ListView.builder(
-                        itemCount: favoriteRepository.favorites.length,
-                        itemBuilder: (_, index) => FavoriteVideoCard(favoriteVideo: favoriteRepository.favorites[index]),
-                      );
-                    },
-                  ),
-            )
+                builder: (context, favoriteRepository, child) {
+                  if (favoriteRepository.favorites.isEmpty) {
+                    return Center(
+                      child: ListTile(
+                        leading: Icon(Icons.star_border),
+                        title: Text(
+                          'Nenhum vídeo favorito encontrado.',
+                          style: TextStyle(fontSize: 18, color: Colors.grey),
+                        ),
+                      ),
+                    );
+                  }
+                  return ListView.builder(
+                    itemCount: favoriteRepository.favorites.length,
+                    itemBuilder: (_, index) => FavoriteVideoCard(
+                      favoriteVideo: favoriteRepository.favorites[index],
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
         floatingActionButton: FloatingActionButton(
@@ -87,54 +87,38 @@ class _HomeState extends State<Home> {
 }
 
 class FavoriteVideoCard extends StatefulWidget {
-    final FavoriteVideo favoriteVideo;
+  final FavoriteVideo favoriteVideo;
 
-    const FavoriteVideoCard({super.key, required this.favoriteVideo});
+  const FavoriteVideoCard({super.key, required this.favoriteVideo});
 
-    @override
-    State<FavoriteVideoCard> createState() => _FavoriteVideoCardState();
-  }
+  @override
+  State<FavoriteVideoCard> createState() => _FavoriteVideoCardState();
+}
+
 class _FavoriteVideoCardState extends State<FavoriteVideoCard> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.white.withValues(alpha: 0.6),
+      color: Colors.white,
       margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       child: Padding(
         padding: const EdgeInsets.all(12),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: Image.network(
-                    widget.favoriteVideo.thumbnailUrl,
-                    width: 120,
-                    height: 90,
-                    fit: BoxFit.cover,
-                  )
-                ),
-                PopupMenuButton(
-                  itemBuilder: (context) => [
-                    const PopupMenuItem(
-                      value: 'editar',
-                      child: Text('Editar'),
-                    ),
-                    const PopupMenuItem(
-                      value: 'excluir',
-                      child: Text('Excluir'),
-                    ),
-                  ],
-                  onSelected: (value) {
-                    // Handle edit or delete action
-                  },
-                ),
-              ],
+            Center(
+              child: Image.network(
+                widget.favoriteVideo.thumbnailUrl,
+                width: 400,
+                height: 195,
+                fit: BoxFit.cover,
+              ),
             ),
+
             const SizedBox(height: 6),
+
             Text(widget.favoriteVideo.title),
+
             Text(widget.favoriteVideo.category),
           ],
         ),
@@ -142,4 +126,3 @@ class _FavoriteVideoCardState extends State<FavoriteVideoCard> {
     );
   }
 }
-
