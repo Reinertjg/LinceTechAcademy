@@ -1,6 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../../../database/db.dart';
 import '../models/tipo_conversor.dart';
 import '../controllers/conversor_unidades_controller.dart';
+
+class OperationUnidade extends ChangeNotifier {
+  final controllerDB = OperacaoUnidadesController();
+  final controller = ConversorUnidadesController();
+
+  TextEditingController get origemController => controller.origemController;
+  TextEditingController get destinoController => controller.destinoController;
+  String? get unidadeOrigemSelecionada => controller.unidadeOrigemSelecionada;
+  String? get unidadeDestinoSelecionada => controller.unidadeDestinoSelecionada;
+
+  Future<void> insert() async {
+    final operacao = ConversorUnidadesModel(
+      valorOrigem: origemController.text,
+      tipoOrigem: controller.tipoSelecionado.toString(),
+      valorDestino: destinoController.text,
+      tipoDestino: controller.unidadeDestinoSelecionada ?? '',
+    );
+
+    await controllerDB.insert(operacao);
+    notifyListeners();
+  }
+}
 
 class ConversorUnidade extends StatefulWidget {
   const ConversorUnidade({super.key});
@@ -21,6 +45,8 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
 
   @override
   Widget build(BuildContext context) {
+    final state = Provider.of<OperationUnidade>(context, listen: false);
+
     return Scaffold(
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.white),
@@ -30,6 +56,15 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
         ),
         centerTitle: true,
         backgroundColor: Color.fromRGBO(0, 20, 70, 1),
+        actions: <Widget>[
+          IconButton(
+            onPressed: () async {
+              await state.insert();
+            },
+            icon: Icon(Icons.save_outlined, size: 35),
+            color: Colors.black,
+          ),
+        ],
       ),
       backgroundColor: Color.fromRGBO(230, 230, 230, 1),
       body: Padding(

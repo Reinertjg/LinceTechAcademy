@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../modules/conversor_moedas/services/moeda_service.dart';
+import 'modules/conversor_moedas/services/moeda_service.dart';
 
 class Telainicial extends StatelessWidget {
   const Telainicial({super.key});
