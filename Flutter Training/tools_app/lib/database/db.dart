@@ -60,6 +60,7 @@ class DB {
 }
 
 class OperacaoUnidadesController {
+
   Future<void> insert(ConversorUnidadesModel unidades) async {
     final db = await DB.instance.database;
     final map = DB.toMap(unidades);
@@ -69,5 +70,28 @@ class OperacaoUnidadesController {
       map,
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
+  }
+
+  Future<List<ConversorUnidadesModel>> select() async {
+    final db = await DB.instance.database;
+
+    final List<Map<String, dynamic>> result = await db.query(
+        DB.tableName,
+    );
+
+    var list = <ConversorUnidadesModel>[];
+
+    for (final item in result) {
+      list.add(
+          ConversorUnidadesModel(
+          valorOrigem: item[DB.valorOrigem],
+          tipoOrigem: item[DB.tipoOrigem],
+          valorDestino: item[DB.valorDestino],
+          tipoDestino: item[DB.tipoDestino]
+          )
+      );
+    }
+
+    return list;
   }
 }

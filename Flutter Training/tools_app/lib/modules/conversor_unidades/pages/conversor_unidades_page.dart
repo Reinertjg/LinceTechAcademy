@@ -5,8 +5,12 @@ import '../models/tipo_conversor.dart';
 import '../controllers/conversor_unidades_controller.dart';
 
 class OperationUnidade extends ChangeNotifier {
+  OperacaoStare() {
+    load();
+  }
   final controllerDB = OperacaoUnidadesController();
   final controller = ConversorUnidadesController();
+  final _listaOperacoes = <ConversorUnidadesModel>[];
 
   TextEditingController get origemController => controller.origemController;
   TextEditingController get destinoController => controller.destinoController;
@@ -22,6 +26,17 @@ class OperationUnidade extends ChangeNotifier {
     );
 
     await controllerDB.insert(operacao);
+    await load();
+
+    notifyListeners();
+  }
+
+  Future<void> load() async {
+    final lista = await controllerDB.select();
+
+    _listaOperacoes.clear();
+    _listaOperacoes.addAll(lista);
+
     notifyListeners();
   }
 }
@@ -344,7 +359,7 @@ class _ConversorUnidadeState extends State<ConversorUnidade> {
             ],
           ),
         ),
-      ),
+      )
     );
   }
 }

@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: add search functionality to favorite videos and improve UI display">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/database/db.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/repositories/conversor_unidade_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/Telas/tela_inicio.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/home_scream.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/models/tipo_conversor.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/models/tipo_conversor.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/database/db.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/database/db.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/pages/conversor_unidades_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/pages/conversor_unidades_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,58 +59,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Dart Command Line App.ap1.dart (1).executor": "Run",
-    "Dart Command Line App.ap1.dart.executor": "Run",
-    "Dart Command Line App.ap2.dart (1).executor": "Run",
-    "Dart Command Line App.ap2.dart.executor": "Run",
-    "Dart Command Line App.ap3.dart (1).executor": "Run",
-    "Dart Command Line App.ap3.dart.executor": "Run",
-    "Dart Command Line App.ap4.dart (1).executor": "Run",
-    "Dart Command Line App.ap4.dart.executor": "Run",
-    "Dart Command Line App.ap5.dart (1).executor": "Run",
-    "Dart Command Line App.ap5.dart.executor": "Run",
-    "Dart Command Line App.d1.dart.executor": "Run",
-    "Dart Command Line App.d2.dart.executor": "Run",
-    "Dart Command Line App.d3.dart.executor": "Run",
-    "Dart Command Line App.d4.dart.executor": "Run",
-    "Dart Command Line App.d5.dart.executor": "Run",
-    "Dart Command Line App.d6.dart.executor": "Debug",
-    "Dart Command Line App.d7.dart.executor": "Run",
-    "Dart Command Line App.d8.dart.executor": "Run",
-    "Dart Command Line App.main.dart.executor": "Run",
-    "Flutter.main.dart (1).executor": "Run",
-    "Flutter.main.dart (2).executor": "Run",
-    "Flutter.main.dart (3).executor": "Run",
-    "Flutter.main.dart (4).executor": "Run",
-    "Flutter.main.dart (5).executor": "Run",
-    "Flutter.main.dart.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ToolWindow.Running Devices.ShowToolbar": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "device.streaming.spark.single.device.do.not.ask": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "io.flutter.reload.alreadyRun": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/joao.reinertcosta/StudioProjects/LinceTechAcademy/Flutter Training/tools_app/lib/modules/conversor_moedas/services",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Dart Command Line App.ap1.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap1.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap2.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap2.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap3.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap3.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap4.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap4.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap5.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.ap5.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d1.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d2.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d3.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d4.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d5.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d6.dart.executor&quot;: &quot;Debug&quot;,
+    &quot;Dart Command Line App.d7.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.d8.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Dart Command Line App.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (2).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (3).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (4).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart (5).executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindow.Running Devices.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;device.streaming.spark.single.device.do.not.ask&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/joao.reinertcosta/StudioProjects/LinceTechAcademy/Flutter Training/tools_app/lib/modules/conversor_moedas/services&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\joao.reinertcosta\StudioProjects\LinceTechAcademy\Flutter Training\tools_app\lib\modules\conversor_moedas\services" />
