@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: add search functionality to favorite videos and improve UI display">
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: enhance unit conversion functionality with database integration and data loading">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/database/db.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/database/db.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/pages/conversor_unidades_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/lib/modules/conversor_unidades/pages/conversor_unidades_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/tools_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/tools_app/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,14 +198,6 @@
       <workItem from="1747873537294" duration="6591000" />
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
-    </task>
-    <task id="LOCAL-00051" summary="Realizada Atividade ap6_erros\ap2.dart">
-      <option name="closed" value="true" />
-      <created>1744435231445</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1744435231445</updated>
     </task>
     <task id="LOCAL-00052" summary="Realizada Atividade ap6_erros\ap3.dart">
       <option name="closed" value="true" />
@@ -589,7 +583,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750015001277</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="feat: enhance unit conversion functionality with database integration and data loading">
+      <option name="closed" value="true" />
+      <created>1750520445193</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1750520445195</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +621,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adicionado projeto Dart - Desafio cronometrado #2 (d8.dart)" />
     <MESSAGE value="Corrigido projeto Dart - Desafio cronometrado #2 (d8.dart)" />
     <MESSAGE value="Finalizado - Interação IA - Flutter: Programação" />
     <MESSAGE value="feat: separa lógica de listagem de produtos em arquivos lista_produtos.dart e produtos_model.dart" />
@@ -644,7 +645,8 @@
     <MESSAGE value="feat: add initial project structure and configuration files for Flutter application" />
     <MESSAGE value="feat: update favorite video handling and improve category management" />
     <MESSAGE value="feat: add search functionality to favorite videos and improve UI display" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add search functionality to favorite videos and improve UI display" />
+    <MESSAGE value="feat: enhance unit conversion functionality with database integration and data loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: enhance unit conversion functionality with database integration and data loading" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
