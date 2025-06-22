@@ -8,13 +8,18 @@ import 'package:tools_app/modules/conversor_moedas/pages/conversor_moeda_page.da
 import 'package:tools_app/repositories/conversor_unidade_repository.dart';
 import 'modules/conversor_unidades/pages/conversor_unidades_page.dart';
 
-Future<void> main() async {
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
 
-  Provider(
-    create: (_) => ConversorUnidadeRepository(),
-    child: const MyApp(),
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => OperationUnidade(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: MyApp(),
+      ),
+    ),
   );
-
 }
 
 class MyApp extends StatelessWidget {
