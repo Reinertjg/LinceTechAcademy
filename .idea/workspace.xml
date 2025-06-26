@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: make MyApp constructor constant for improved performance">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/taks_app/assets/images/academia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/taks_app/assets/images/bike.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/taks_app/assets/images/dart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/taks_app/assets/images/flutter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter Training/taks_app/assets/images/video_game.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LinceTechAcademy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: update task images to local assets and adjust configuration files">
       <change beforePath="$PROJECT_DIR$/Flutter Training/taks_app/lib/components/task.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/taks_app/lib/components/task.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/taks_app/lib/screens/initial_scream.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/taks_app/lib/screens/initial_scream.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flutter Training/taks_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/taks_app/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,14 +195,6 @@
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
       <workItem from="1750644157304" duration="4000" />
-    </task>
-    <task id="LOCAL-00066" summary="Realizado a reestruturação do repository">
-      <option name="closed" value="true" />
-      <created>1747428134261</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1747428134261</updated>
     </task>
     <task id="LOCAL-00067" summary="Adicionado projeto Flutter - AP2 Funcoes">
       <option name="closed" value="true" />
@@ -597,7 +580,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750907788634</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="feat: update task images to local assets and adjust configuration files">
+      <option name="closed" value="true" />
+      <created>1750908938652</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1750908938652</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +618,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: implementa conversão de moedas com API e refatora estrutura do projeto" />
     <MESSAGE value="feat: adiciona ícones para moedas e refatora código do conversor" />
     <MESSAGE value="feat: adiciona exibição da data e hora da cotação no conversor de moedas" />
     <MESSAGE value="feat: renomeia tela_calculadora.dart para calculadora_page.dart e refatora layout da calculadora" />
@@ -652,7 +642,8 @@
     <MESSAGE value="feat: implement InitialScream widget with animated opacity and task list" />
     <MESSAGE value="feat: refactor file structure and update imports for InitialScream and task components" />
     <MESSAGE value="feat: make MyApp constructor constant for improved performance" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: make MyApp constructor constant for improved performance" />
+    <MESSAGE value="feat: update task images to local assets and adjust configuration files" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update task images to local assets and adjust configuration files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

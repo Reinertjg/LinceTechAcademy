@@ -124,6 +124,7 @@ class _TaskState extends State<Task> {
                             ? (level / widget.difficulty) / 5
                             : 1,
                         backgroundColor: Colors.white,
+
                       ),
                     ),
                     Text(
