@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: remove unused imports to clean up main.dart">
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: initialize Flutter project structure with essential files and configurations">
       <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/taks_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/taks_app/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flutter Training/taks_app/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/taks_app/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,22 +198,6 @@
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
       <workItem from="1750644157304" duration="4000" />
-    </task>
-    <task id="LOCAL-00058" summary="Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart.">
-      <option name="closed" value="true" />
-      <created>1745373847839</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1745373847839</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Realizada as atividades ap1.dart, ap2.dart, ap3.dart e ap4.dart.">
-      <option name="closed" value="true" />
-      <created>1745549362792</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1745549362792</updated>
     </task>
     <task id="LOCAL-00060" summary="Realizada as atividades de concorrência (ap1.dart, ap2.dart, ap3.dart e ap4.dart).">
       <option name="closed" value="true" />
@@ -589,7 +575,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750624120350</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="feat: add new device selection data to enhance configuration options">
+      <option name="closed" value="true" />
+      <created>1750651505834</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1750651505834</updated>
+    </task>
+    <task id="LOCAL-00108" summary="feat: initialize Flutter project structure with essential files and configurations">
+      <option name="closed" value="true" />
+      <created>1750651554807</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1750651554807</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,8 +621,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update - Apf6_funcoes - Flutter Provider" />
-    <MESSAGE value="feat: implementar edição de pessoas e estilizar tela de listagem" />
     <MESSAGE value="refactor: populando a classe Pessoa" />
     <MESSAGE value="style: Alteracao nas cores do app" />
     <MESSAGE value="docs: realizado atividade ia_flutter_internacionalizacao.md" />
@@ -644,7 +644,9 @@
     <MESSAGE value="feat: refactor main function to improve initialization and app structure" />
     <MESSAGE value="feat: clean up pubspec.yaml and workspace.xml for better project organization" />
     <MESSAGE value="feat: remove unused imports to clean up main.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: remove unused imports to clean up main.dart" />
+    <MESSAGE value="feat: add new device selection data to enhance configuration options" />
+    <MESSAGE value="feat: initialize Flutter project structure with essential files and configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: initialize Flutter project structure with essential files and configurations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
