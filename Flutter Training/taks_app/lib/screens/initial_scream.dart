@@ -18,7 +18,7 @@ class _InitialScreamState extends State<InitialScream> {
       appBar: AppBar(title: Text('Task App')),
       body: AnimatedOpacity(
         opacity: opacity ? 1 : 0,
-        duration: Duration(seconds: 2),
+        duration: Duration(seconds: 1),
         child: ListView(
           children: [
             Task('Flutter', 'assets/images/flutter.png', 5),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taks_app/components/prestige.dart';
 
 import 'difficulty.dart';
 
@@ -15,6 +16,7 @@ class Task extends StatefulWidget {
 
 class _TaskState extends State<Task> {
   int level = 0;
+  int prestige = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class _TaskState extends State<Task> {
           Container(
             height: 140,
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: prestigeConfig(prestige),
               borderRadius: BorderRadius.circular(10),
             ),
           ),
@@ -82,6 +84,13 @@ class _TaskState extends State<Task> {
                             setState(() {
                               level++;
                             });
+                            if(prestige > 4) {
+                              return;
+                            } else if (level >= widget.difficulty * 5) {
+                              // Aumentar o nível de prestígio
+                              prestige++;
+                              level = 0; // Resetar nível após conclusão
+                            }
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.blueAccent,
