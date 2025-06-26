@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: add Difficulty widget to display difficulty level with stars">
-      <change afterPath="$PROJECT_DIR$/Flutter Training/taks_app/lib/task.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="92c4af04-70cb-4ee6-8e18-869dd1bbf7ae" name="Changes" comment="feat: implement InitialScream widget with animated opacity and task list">
       <change beforePath="$PROJECT_DIR$/Flutter Training/taks_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Flutter Training/taks_app/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,14 +195,6 @@
       <workItem from="1747962560674" duration="8727000" />
       <workItem from="1748088134858" duration="3790000" />
       <workItem from="1750644157304" duration="4000" />
-    </task>
-    <task id="LOCAL-00063" summary="Realizando a atividade do Desafio cronometrado #2 (d3.dart).">
-      <option name="closed" value="true" />
-      <created>1745922629084</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1745922629084</updated>
     </task>
     <task id="LOCAL-00064" summary="Realizando a atividade do Desafio cronometrado #2 (d3.dart).">
       <option name="closed" value="true" />
@@ -590,7 +580,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750906499279</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="feat: implement InitialScream widget with animated opacity and task list">
+      <option name="closed" value="true" />
+      <created>1750907078726</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1750907078726</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +618,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="docs: alterado atividade ia_flutter_sqlite.md" />
     <MESSAGE value="style: Alterado o hintText do page" />
     <MESSAGE value="feat: adiciona conversão de moedas via API&#10;&#10;Implementa consumo da API Frankfurter para converter moedas em tempo real.&#10;Inclui validação de entrada e tratamento básico de erros." />
     <MESSAGE value="feat: implementa conversão de moedas com API e refatora estrutura do projeto" />
@@ -645,7 +642,8 @@
     <MESSAGE value="feat: enhance task management UI with animated opacity and improved task details" />
     <MESSAGE value="feat: update device selection data and clean up configuration files" />
     <MESSAGE value="feat: add Difficulty widget to display difficulty level with stars" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Difficulty widget to display difficulty level with stars" />
+    <MESSAGE value="feat: implement InitialScream widget with animated opacity and task list" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implement InitialScream widget with animated opacity and task list" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

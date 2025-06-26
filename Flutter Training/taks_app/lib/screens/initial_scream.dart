@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:taks_app/task.dart';
+import 'package:taks_app/components/task.dart';
 
 class InitialScream extends StatefulWidget {
   const InitialScream({super.key});
