@@ -52,7 +52,7 @@ class _TaskState extends State<Task> {
                       color: Colors.black26,
                       width: 72,
                       height: 100,
-                      child: Image.network(widget.imageUrl, fit: BoxFit.cover),
+                      child: Image.asset(widget.imageUrl, fit: BoxFit.cover),
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,

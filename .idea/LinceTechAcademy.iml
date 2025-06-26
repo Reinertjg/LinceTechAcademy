@@ -102,6 +102,9 @@
       <excludeFolder url="file://$MODULE_DIR$/Flutter Training/list_videos/windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/Flutter Training/list_videos/windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/Flutter Training/list_videos/windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter Training/taks_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter Training/taks_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter Training/taks_app/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
